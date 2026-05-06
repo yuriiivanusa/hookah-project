@@ -21,16 +21,15 @@ extension ResultExtensions<T> on Result<T> {
   bool get isFailure => this is Failure<T>;
 
   T? get dataOrNull => switch (this) {
-        Success<T>(:final data) => data,
-        Failure<T>() => null,
-      };
+    Success<T>(:final data) => data,
+    Failure<T>() => null,
+  };
 
   R when<R>({
     required R Function(T data) success,
     required R Function(AppException exception) failure,
-  }) =>
-      switch (this) {
-        Success<T>(:final data) => success(data),
-        Failure<T>(:final exception) => failure(exception),
-      };
+  }) => switch (this) {
+    Success<T>(:final data) => success(data),
+    Failure<T>(:final exception) => failure(exception),
+  };
 }

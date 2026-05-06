@@ -26,7 +26,8 @@ FirebaseStorage firebaseStorage(Ref ref) => FirebaseStorage.instance;
 FirebaseAnalytics firebaseAnalytics(Ref ref) => FirebaseAnalytics.instance;
 
 @Riverpod(keepAlive: true)
-AuthService authService(Ref ref) => AuthService(ref.watch(firebaseAuthProvider));
+AuthService authService(Ref ref) =>
+    AuthService(ref.watch(firebaseAuthProvider));
 
 @Riverpod(keepAlive: true)
 FirestoreService firestoreService(Ref ref) =>

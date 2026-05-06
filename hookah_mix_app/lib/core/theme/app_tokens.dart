@@ -9,10 +9,18 @@ sealed class AppTokens {
   static const double radiusXl = 24;
   static const double radiusFull = 999;
 
-  static const BorderRadius borderRadiusSm = BorderRadius.all(Radius.circular(radiusSm));
-  static const BorderRadius borderRadiusMd = BorderRadius.all(Radius.circular(radiusMd));
-  static const BorderRadius borderRadiusLg = BorderRadius.all(Radius.circular(radiusLg));
-  static const BorderRadius borderRadiusXl = BorderRadius.all(Radius.circular(radiusXl));
+  static const BorderRadius borderRadiusSm = BorderRadius.all(
+    Radius.circular(radiusSm),
+  );
+  static const BorderRadius borderRadiusMd = BorderRadius.all(
+    Radius.circular(radiusMd),
+  );
+  static const BorderRadius borderRadiusLg = BorderRadius.all(
+    Radius.circular(radiusLg),
+  );
+  static const BorderRadius borderRadiusXl = BorderRadius.all(
+    Radius.circular(radiusXl),
+  );
 
   // Elevation
   static const double elevationNone = 0;
@@ -22,28 +30,28 @@ sealed class AppTokens {
 
   // Shadows
   static List<BoxShadow> get shadowSm => [
-        BoxShadow(
-          color: Colors.black.withValues(alpha: 0.15),
-          blurRadius: 4,
-          offset: const Offset(0, 2),
-        ),
-      ];
+    BoxShadow(
+      color: Colors.black.withValues(alpha: 0.15),
+      blurRadius: 4,
+      offset: const Offset(0, 2),
+    ),
+  ];
 
   static List<BoxShadow> get shadowMd => [
-        BoxShadow(
-          color: Colors.black.withValues(alpha: 0.25),
-          blurRadius: 8,
-          offset: const Offset(0, 4),
-        ),
-      ];
+    BoxShadow(
+      color: Colors.black.withValues(alpha: 0.25),
+      blurRadius: 8,
+      offset: const Offset(0, 4),
+    ),
+  ];
 
   static List<BoxShadow> get shadowLg => [
-        BoxShadow(
-          color: Colors.black.withValues(alpha: 0.35),
-          blurRadius: 16,
-          offset: const Offset(0, 8),
-        ),
-      ];
+    BoxShadow(
+      color: Colors.black.withValues(alpha: 0.35),
+      blurRadius: 16,
+      offset: const Offset(0, 8),
+    ),
+  ];
 
   // Animation durations
   static const Duration durationFast = Duration(milliseconds: 150);

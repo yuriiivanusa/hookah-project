@@ -41,31 +41,31 @@ sealed class AppColors {
 
   // Light scheme
   static ColorScheme get lightScheme => ColorScheme(
-        brightness: Brightness.light,
-        primary: primary,
-        onPrimary: onPrimary,
-        secondary: secondary,
-        onSecondary: onSecondary,
-        surface: backgroundLight,
-        onSurface: onSurfaceLight,
-        error: error,
-        onError: onError,
-        surfaceContainerHighest: const Color(0xFFEDE0D4),
-        outline: outline,
-      );
+    brightness: Brightness.light,
+    primary: primary,
+    onPrimary: onPrimary,
+    secondary: secondary,
+    onSecondary: onSecondary,
+    surface: backgroundLight,
+    onSurface: onSurfaceLight,
+    error: error,
+    onError: onError,
+    surfaceContainerHighest: const Color(0xFFEDE0D4),
+    outline: outline,
+  );
 
   // Dark scheme
   static ColorScheme get darkScheme => ColorScheme(
-        brightness: Brightness.dark,
-        primary: primary,
-        onPrimary: onPrimary,
-        secondary: secondary,
-        onSecondary: onSecondary,
-        surface: surface,
-        onSurface: onSurfaceDark,
-        error: error,
-        onError: onError,
-        surfaceContainerHighest: surfaceContainerHigh,
-        outline: outline,
-      );
+    brightness: Brightness.dark,
+    primary: primary,
+    onPrimary: onPrimary,
+    secondary: secondary,
+    onSecondary: onSecondary,
+    surface: surface,
+    onSurface: onSurfaceDark,
+    error: error,
+    onError: onError,
+    surfaceContainerHighest: surfaceContainerHigh,
+    outline: outline,
+  );
 }

@@ -24,28 +24,35 @@ class AppButton extends StatelessWidget {
         ? const SizedBox(
             width: 20,
             height: 20,
-            child: CircularProgressIndicator(strokeWidth: 2, color: Colors.white),
+            child: CircularProgressIndicator(
+              strokeWidth: 2,
+              color: Colors.white,
+            ),
           )
         : icon != null
-            ? Row(
-                mainAxisSize: MainAxisSize.min,
-                children: [Icon(icon, size: 18), const SizedBox(width: 8), Text(label)],
-              )
-            : Text(label);
+        ? Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Icon(icon, size: 18),
+              const SizedBox(width: 8),
+              Text(label),
+            ],
+          )
+        : Text(label);
 
     return switch (variant) {
       AppButtonVariant.primary => ElevatedButton(
-          onPressed: isLoading ? null : onPressed,
-          child: child,
-        ),
+        onPressed: isLoading ? null : onPressed,
+        child: child,
+      ),
       AppButtonVariant.outlined => OutlinedButton(
-          onPressed: isLoading ? null : onPressed,
-          child: child,
-        ),
+        onPressed: isLoading ? null : onPressed,
+        child: child,
+      ),
       AppButtonVariant.text => TextButton(
-          onPressed: isLoading ? null : onPressed,
-          child: child,
-        ),
+        onPressed: isLoading ? null : onPressed,
+        child: child,
+      ),
     };
   }
 }

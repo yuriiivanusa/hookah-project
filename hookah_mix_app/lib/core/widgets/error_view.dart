@@ -2,11 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hookah_mix_master/core/extensions/context_extensions.dart';
 
 class ErrorView extends StatelessWidget {
-  const ErrorView({
-    super.key,
-    required this.message,
-    this.onRetry,
-  });
+  const ErrorView({super.key, required this.message, this.onRetry});
 
   final String message;
   final VoidCallback? onRetry;

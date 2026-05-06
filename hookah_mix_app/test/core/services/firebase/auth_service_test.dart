@@ -16,7 +16,10 @@ void main() {
     test('returns user on success', () async {
       final auth = MockFirebaseAuth(signedIn: false);
       final service = AuthService(auth);
-      final user = await service.signIn(email: 'test@test.com', password: 'password123');
+      final user = await service.signIn(
+        email: 'test@test.com',
+        password: 'password123',
+      );
       expect(user, isNotNull);
     });
   });

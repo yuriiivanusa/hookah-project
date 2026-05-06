@@ -1,7 +1,9 @@
 sealed class Validators {
   static String? email(String? value) {
     if (value == null || value.isEmpty) return 'Email is required';
-    if (!RegExp(r'^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$').hasMatch(value)) {
+    if (!RegExp(
+      r'^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$',
+    ).hasMatch(value)) {
       return 'Enter a valid email';
     }
     return null;
@@ -23,7 +25,9 @@ sealed class Validators {
     if (value == null || value.isEmpty) return 'Percentage is required';
     final number = double.tryParse(value);
     if (number == null) return 'Enter a valid number';
-    if (number <= 0 || number > 100) return 'Percentage must be between 1 and 100';
+    if (number <= 0 || number > 100) {
+      return 'Percentage must be between 1 and 100';
+    }
     return null;
   }
 

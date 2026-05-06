@@ -17,9 +17,15 @@ class FirestoreService {
     try {
       Query<Map<String, dynamic>> query = _db.collection(path);
       for (final f in filters) {
-        query = query.where(f.field, isEqualTo: f.isEqualTo, arrayContainsAny: f.arrayContainsAny);
+        query = query.where(
+          f.field,
+          isEqualTo: f.isEqualTo,
+          arrayContainsAny: f.arrayContainsAny,
+        );
       }
-      if (orderBy != null) query = query.orderBy(orderBy, descending: descending);
+      if (orderBy != null) {
+        query = query.orderBy(orderBy, descending: descending);
+      }
       if (limit != null) query = query.limit(limit);
       if (startAfter != null) query = query.startAfterDocument(startAfter);
 
@@ -40,7 +46,10 @@ class FirestoreService {
     }
   }
 
-  Future<String> addDocument(String collection, Map<String, dynamic> data) async {
+  Future<String> addDocument(
+    String collection,
+    Map<String, dynamic> data,
+  ) async {
     try {
       final ref = await _db.collection(collection).add(data);
       return ref.id;
@@ -49,7 +58,11 @@ class FirestoreService {
     }
   }
 
-  Future<void> setDocument(String path, Map<String, dynamic> data, {bool merge = false}) async {
+  Future<void> setDocument(
+    String path,
+    Map<String, dynamic> data, {
+    bool merge = false,
+  }) async {
     try {
       await _db.doc(path).set(data, SetOptions(merge: merge));
     } on FirebaseException catch (e) {
@@ -74,15 +87,19 @@ class FirestoreService {
   }
 
   NetworkException _mapError(FirebaseException e) => switch (e.code) {
-        'permission-denied' => NetworkException.permissionDenied(),
-        'not-found' => NetworkException.notFound(),
-        'unavailable' || 'deadline-exceeded' => NetworkException.timeout(),
-        _ => NetworkException.unknown(e.message),
-      };
+    'permission-denied' => NetworkException.permissionDenied(),
+    'not-found' => NetworkException.notFound(),
+    'unavailable' || 'deadline-exceeded' => NetworkException.timeout(),
+    _ => NetworkException.unknown(e.message),
+  };
 }
 
 class QueryFilter {
-  const QueryFilter({required this.field, this.isEqualTo, this.arrayContainsAny});
+  const QueryFilter({
+    required this.field,
+    this.isEqualTo,
+    this.arrayContainsAny,
+  });
 
   final String field;
   final Object? isEqualTo;

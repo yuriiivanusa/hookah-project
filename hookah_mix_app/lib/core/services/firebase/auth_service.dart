@@ -44,12 +44,12 @@ class AuthService {
   }
 
   AuthException _mapError(FirebaseAuthException e) => switch (e.code) {
-        'invalid-email' => AuthException.invalidEmail(),
-        'weak-password' => AuthException.weakPassword(),
-        'email-already-in-use' => AuthException.emailAlreadyInUse(),
-        'user-not-found' => AuthException.userNotFound(),
-        'wrong-password' || 'invalid-credential' => AuthException.wrongPassword(),
-        'too-many-requests' => AuthException.tooManyRequests(),
-        _ => AuthException.unknown(e.message),
-      };
+    'invalid-email' => AuthException.invalidEmail(),
+    'weak-password' => AuthException.weakPassword(),
+    'email-already-in-use' => AuthException.emailAlreadyInUse(),
+    'user-not-found' => AuthException.userNotFound(),
+    'wrong-password' || 'invalid-credential' => AuthException.wrongPassword(),
+    'too-many-requests' => AuthException.tooManyRequests(),
+    _ => AuthException.unknown(e.message),
+  };
 }

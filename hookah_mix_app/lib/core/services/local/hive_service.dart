@@ -12,8 +12,10 @@ class HiveService {
     _initialized = true;
   }
 
-  Box<String> get tobaccoBox => Hive.box<String>(StringConstants.tobaccoBoxName);
-  Box<String> get userPrefsBox => Hive.box<String>(StringConstants.userPrefsBoxName);
+  Box<String> get tobaccoBox =>
+      Hive.box<String>(StringConstants.tobaccoBoxName);
+  Box<String> get userPrefsBox =>
+      Hive.box<String>(StringConstants.userPrefsBoxName);
 
   Future<void> put(String boxName, String key, String value) async {
     await Hive.box<String>(boxName).put(key, value);

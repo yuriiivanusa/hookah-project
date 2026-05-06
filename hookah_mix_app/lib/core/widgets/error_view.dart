@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hookah_mix_master/core/extensions/context_extensions.dart';
 
 class ErrorView extends StatelessWidget {
   const ErrorView({
@@ -31,7 +32,7 @@ class ErrorView extends StatelessWidget {
               OutlinedButton.icon(
                 onPressed: onRetry,
                 icon: const Icon(Icons.refresh),
-                label: const Text('Retry'),
+                label: Text(context.l10n.generalRetry),
               ),
             ],
           ],

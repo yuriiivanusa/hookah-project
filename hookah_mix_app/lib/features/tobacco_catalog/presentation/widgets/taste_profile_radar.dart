@@ -6,11 +6,7 @@ import 'package:hookah_mix_master/features/tobacco_catalog/domain/entities/taste
 const _labels = ['Sweet', 'Sour', 'Fresh', 'Spicy', 'Bitter', 'Floral'];
 
 class TasteProfileRadar extends StatelessWidget {
-  const TasteProfileRadar({
-    super.key,
-    required this.profile,
-    this.size = 200,
-  });
+  const TasteProfileRadar({super.key, required this.profile, this.size = 200});
 
   final TasteProfile profile;
   final double size;
@@ -74,10 +70,7 @@ class _RadarPainter extends CustomPainter {
       final path = Path();
       for (int i = 0; i < _sides; i++) {
         final angle = _angleForIndex(i);
-        final point = Offset(
-          center.dx + r * cos(angle),
-          center.dy + r * sin(angle),
-        );
+        final point = Offset(center.dx + r * cos(angle), center.dy + r * sin(angle));
         if (i == 0) {
           path.moveTo(point.dx, point.dy);
         } else {
@@ -135,16 +128,13 @@ class _RadarPainter extends CustomPainter {
       final y = center.dy + labelRadius * sin(angle);
       final label = i < _labels.length ? _labels[i] : '';
 
-      final span = TextSpan(text: label, style: style.copyWith(color: labelColor));
-      final painter = TextPainter(
-        text: span,
-        textDirection: TextDirection.ltr,
-      )..layout();
-
-      painter.paint(
-        canvas,
-        Offset(x - painter.width / 2, y - painter.height / 2),
+      final span = TextSpan(
+        text: label,
+        style: style.copyWith(color: labelColor),
       );
+      final painter = TextPainter(text: span, textDirection: TextDirection.ltr)..layout();
+
+      painter.paint(canvas, Offset(x - painter.width / 2, y - painter.height / 2));
     }
   }
 
@@ -152,7 +142,5 @@ class _RadarPainter extends CustomPainter {
 
   @override
   bool shouldRepaint(_RadarPainter old) =>
-      old.values != values ||
-      old.fillColor != fillColor ||
-      old.strokeColor != strokeColor;
+      old.values != values || old.fillColor != fillColor || old.strokeColor != strokeColor;
 }

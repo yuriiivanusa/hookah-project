@@ -17,23 +17,22 @@ Tobacco _makeTobacco({
   int strength = 3,
   List<String> flavorCategories = const ['fruity'],
   int popularity = 90,
-}) =>
-    Tobacco(
-      id: id,
-      brandId: 'b1',
-      brandName: 'Fumari',
-      brandCountry: 'US',
-      nameEn: nameEn,
-      nameUk: 'Назва',
-      leafType: 'virginia',
-      strength: strength,
-      flavorCategories: flavorCategories,
-      tasteNotes: const [],
-      tasteProfile: const TasteProfile(),
-      descriptionEn: 'Desc',
-      descriptionUk: 'Опис',
-      popularity: popularity,
-    );
+}) => Tobacco(
+  id: id,
+  brandId: 'b1',
+  brandName: 'Fumari',
+  brandCountry: 'US',
+  nameEn: nameEn,
+  nameUk: 'Назва',
+  leafType: 'virginia',
+  strength: strength,
+  flavorCategories: flavorCategories,
+  tasteNotes: const [],
+  tasteProfile: const TasteProfile(),
+  descriptionEn: 'Desc',
+  descriptionUk: 'Опис',
+  popularity: popularity,
+);
 
 void main() {
   setUpAll(() => registerFallbackValue(const TobaccoFilter()));
@@ -44,23 +43,20 @@ void main() {
     repo = _MockRepo();
     when(() => repo.getTobaccos()).thenAnswer((_) async => [_makeTobacco()]);
     when(() => repo.getBrands()).thenAnswer((_) async => <Brand>[]);
-    when(() => repo.filterTobaccos(any())).thenAnswer(
-      (inv) async {
-        final filter = inv.positionalArguments.first as TobaccoFilter;
-        var all = [_makeTobacco()];
-        if (filter.query.isNotEmpty) {
-          all = all
-              .where((t) => t.nameEn.toLowerCase().contains(filter.query.toLowerCase()))
-              .toList();
-        }
-        return all;
-      },
-    );
+    when(() => repo.filterTobaccos(any())).thenAnswer((inv) async {
+      final filter = inv.positionalArguments.first as TobaccoFilter;
+      var all = [_makeTobacco()];
+      if (filter.query.isNotEmpty) {
+        all = all
+            .where((t) => t.nameEn.toLowerCase().contains(filter.query.toLowerCase()))
+            .toList();
+      }
+      return all;
+    });
   });
 
-  ProviderContainer makeContainer() => ProviderContainer(
-        overrides: [tobaccoRepositoryProvider.overrideWithValue(repo)],
-      );
+  ProviderContainer makeContainer() =>
+      ProviderContainer(overrides: [tobaccoRepositoryProvider.overrideWithValue(repo)]);
 
   group('filteredTobaccoListProvider', () {
     test('returns tobacco list with default filter', () async {

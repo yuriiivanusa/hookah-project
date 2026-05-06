@@ -12,8 +12,7 @@ part of 'theme_provider.dart';
 @ProviderFor(ThemeMode$)
 final themeMode$Provider = ThemeMode$Provider._();
 
-final class ThemeMode$Provider
-    extends $NotifierProvider<ThemeMode$, ThemeMode> {
+final class ThemeMode$Provider extends $NotifierProvider<ThemeMode$, ThemeMode> {
   ThemeMode$Provider._()
     : super(
         from: null,
@@ -34,10 +33,7 @@ final class ThemeMode$Provider
 
   /// {@macro riverpod.override_with_value}
   Override overrideWithValue(ThemeMode value) {
-    return $ProviderOverride(
-      origin: this,
-      providerOverride: $SyncValueProvider<ThemeMode>(value),
-    );
+    return $ProviderOverride(origin: this, providerOverride: $SyncValueProvider<ThemeMode>(value));
   }
 }
 

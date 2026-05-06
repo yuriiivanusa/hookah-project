@@ -12,17 +12,14 @@ class CatalogFilter extends _$CatalogFilter {
 
   void setBrand(String? brandId) => state = state.copyWith(brandId: brandId);
 
-  void setLeafType(String? leafType) =>
-      state = state.copyWith(leafType: leafType);
+  void setLeafType(String? leafType) => state = state.copyWith(leafType: leafType);
 
-  void setFlavorCategory(String? category) =>
-      state = state.copyWith(flavorCategory: category);
+  void setFlavorCategory(String? category) => state = state.copyWith(flavorCategory: category);
 
   void setStrengthRange(int min, int max) =>
       state = state.copyWith(minStrength: min, maxStrength: max);
 
-  void setSortOrder(TobaccoSortOrder order) =>
-      state = state.copyWith(sortOrder: order);
+  void setSortOrder(TobaccoSortOrder order) => state = state.copyWith(sortOrder: order);
 
   void clearFilters() => state = state.clear();
 }

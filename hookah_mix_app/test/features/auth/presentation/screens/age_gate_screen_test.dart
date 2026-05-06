@@ -11,14 +11,8 @@ void main() {
     routerConfig: GoRouter(
       initialLocation: '/age-gate',
       routes: [
-        GoRoute(
-          path: '/age-gate',
-          builder: (context, state) => const AgeGateScreen(),
-        ),
-        GoRoute(
-          path: '/login',
-          builder: (context, state) => const Text('Login Screen'),
-        ),
+        GoRoute(path: '/age-gate', builder: (context, state) => const AgeGateScreen()),
+        GoRoute(path: '/login', builder: (context, state) => const Text('Login Screen')),
       ],
     ),
   );

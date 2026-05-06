@@ -23,23 +23,17 @@ void main() {
         ),
       ).thenAnswer((_) async {});
       await sut.writeAuthToken('my-token');
-      verify(
-        () => mockStorage.write(key: 'auth_token', value: 'my-token'),
-      ).called(1);
+      verify(() => mockStorage.write(key: 'auth_token', value: 'my-token')).called(1);
     });
 
     test('readAuthToken calls storage.read with correct key', () async {
-      when(
-        () => mockStorage.read(key: 'auth_token'),
-      ).thenAnswer((_) async => 'my-token');
+      when(() => mockStorage.read(key: 'auth_token')).thenAnswer((_) async => 'my-token');
       final result = await sut.readAuthToken();
       expect(result, 'my-token');
     });
 
     test('deleteAuthToken calls storage.delete', () async {
-      when(
-        () => mockStorage.delete(key: 'auth_token'),
-      ).thenAnswer((_) async {});
+      when(() => mockStorage.delete(key: 'auth_token')).thenAnswer((_) async {});
       await sut.deleteAuthToken();
       verify(() => mockStorage.delete(key: 'auth_token')).called(1);
     });

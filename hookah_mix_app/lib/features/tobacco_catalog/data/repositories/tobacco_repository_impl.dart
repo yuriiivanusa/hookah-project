@@ -69,25 +69,17 @@ class TobaccoRepositoryImpl implements TobaccoRepository {
     }
 
     if (filter.brandId != null) {
-      tobaccos =
-          tobaccos.where((t) => t.brandId == filter.brandId).toList();
+      tobaccos = tobaccos.where((t) => t.brandId == filter.brandId).toList();
     }
     if (filter.leafType != null) {
-      tobaccos =
-          tobaccos.where((t) => t.leafType == filter.leafType).toList();
+      tobaccos = tobaccos.where((t) => t.leafType == filter.leafType).toList();
     }
     if (filter.flavorCategory != null) {
-      tobaccos = tobaccos
-          .where((t) => t.flavorCategories.contains(filter.flavorCategory))
-          .toList();
+      tobaccos = tobaccos.where((t) => t.flavorCategories.contains(filter.flavorCategory)).toList();
     }
 
     tobaccos = tobaccos
-        .where(
-          (t) =>
-              t.strength >= filter.minStrength &&
-              t.strength <= filter.maxStrength,
-        )
+        .where((t) => t.strength >= filter.minStrength && t.strength <= filter.maxStrength)
         .toList();
 
     switch (filter.sortOrder) {

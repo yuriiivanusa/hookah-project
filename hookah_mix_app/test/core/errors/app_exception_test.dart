@@ -49,10 +49,7 @@ void main() {
 
     test('Result.when routes correctly', () {
       const success = Success<String>('ok');
-      final value = success.when(
-        success: (data) => data,
-        failure: (_) => 'error',
-      );
+      final value = success.when(success: (data) => data, failure: (_) => 'error');
       expect(value, 'ok');
     });
   });

@@ -26,8 +26,7 @@ class BrandDto {
   final LocalizedString description;
   final int popularity;
 
-  factory BrandDto.fromJson(Map<String, dynamic> json) =>
-      _$BrandDtoFromJson(json);
+  factory BrandDto.fromJson(Map<String, dynamic> json) => _$BrandDtoFromJson(json);
   Map<String, dynamic> toJson() => _$BrandDtoToJson(this);
 
   factory BrandDto.fromFirestore(String docId, Map<String, dynamic> data) =>

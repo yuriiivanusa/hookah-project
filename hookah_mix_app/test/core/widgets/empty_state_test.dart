@@ -13,13 +13,7 @@ void main() {
   testWidgets('shows action button when provided', (tester) async {
     var tapped = false;
     await tester.pumpWidget(
-      wrap(
-        EmptyState(
-          message: 'Empty',
-          action: () => tapped = true,
-          actionLabel: 'Add',
-        ),
-      ),
+      wrap(EmptyState(message: 'Empty', action: () => tapped = true, actionLabel: 'Add')),
     );
     expect(find.text('Add'), findsOneWidget);
     await tester.tap(find.text('Add'));

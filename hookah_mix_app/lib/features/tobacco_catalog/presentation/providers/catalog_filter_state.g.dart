@@ -12,8 +12,7 @@ part of 'catalog_filter_state.dart';
 @ProviderFor(CatalogFilter)
 final catalogFilterProvider = CatalogFilterProvider._();
 
-final class CatalogFilterProvider
-    extends $NotifierProvider<CatalogFilter, TobaccoFilter> {
+final class CatalogFilterProvider extends $NotifierProvider<CatalogFilter, TobaccoFilter> {
   CatalogFilterProvider._()
     : super(
         from: null,

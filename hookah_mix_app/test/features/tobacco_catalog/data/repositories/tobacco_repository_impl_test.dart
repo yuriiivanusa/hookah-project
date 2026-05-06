@@ -24,29 +24,28 @@ TobaccoDto _makeDto({
   List<String> flavorCategories = const ['fruity'],
   List<String> tasteNotes = const ['blueberry'],
   int popularity = 90,
-}) =>
-    TobaccoDto(
-      id: id,
-      brand: TobaccoBrandRef(id: brandId, name: brandName, country: brandCountry),
-      name: LocalizedString(en: nameEn, uk: nameUk),
-      leafType: leafType,
-      strength: strength,
-      flavorCategories: flavorCategories,
-      tasteNotes: tasteNotes,
-      tasteProfile: const TasteProfileDto(),
-      description: const LocalizedString(en: 'Desc', uk: 'Опис'),
-      popularity: popularity,
-    );
+}) => TobaccoDto(
+  id: id,
+  brand: TobaccoBrandRef(id: brandId, name: brandName, country: brandCountry),
+  name: LocalizedString(en: nameEn, uk: nameUk),
+  leafType: leafType,
+  strength: strength,
+  flavorCategories: flavorCategories,
+  tasteNotes: tasteNotes,
+  tasteProfile: const TasteProfileDto(),
+  description: const LocalizedString(en: 'Desc', uk: 'Опис'),
+  popularity: popularity,
+);
 
 BrandDto _makeBrandDto({String id = 'b1', String name = 'Fumari'}) => BrandDto(
-      id: id,
-      name: name,
-      country: 'US',
-      countryName: const LocalizedString(en: 'United States', uk: 'США'),
-      leafType: 'virginia',
-      description: const LocalizedString(en: 'Premium brand', uk: 'Преміум бренд'),
-      popularity: 90,
-    );
+  id: id,
+  name: name,
+  country: 'US',
+  countryName: const LocalizedString(en: 'United States', uk: 'США'),
+  leafType: 'virginia',
+  description: const LocalizedString(en: 'Premium brand', uk: 'Преміум бренд'),
+  popularity: 90,
+);
 
 void main() {
   late _MockRemote remote;
@@ -66,9 +65,7 @@ void main() {
     when(() => remote.getTobaccos()).thenAnswer((_) async => [sampleDto]);
     when(() => remote.getBrands()).thenAnswer((_) async => [sampleBrand]);
     when(() => remote.getCatalogVersion()).thenAnswer((_) async => '1.0.0');
-    when(
-      () => local.cacheTobaccos(any(), any(), any()),
-    ).thenAnswer((_) async {});
+    when(() => local.cacheTobaccos(any(), any(), any())).thenAnswer((_) async {});
   });
 
   group('getTobaccos', () {
@@ -114,50 +111,34 @@ void main() {
     });
 
     test('filters by query matching name', () async {
-      final result = await sut.filterTobaccos(
-        const TobaccoFilter(query: 'blue'),
-      );
+      final result = await sut.filterTobaccos(const TobaccoFilter(query: 'blue'));
       expect(result.length, 1);
 
-      final noMatch = await sut.filterTobaccos(
-        const TobaccoFilter(query: 'zzz'),
-      );
+      final noMatch = await sut.filterTobaccos(const TobaccoFilter(query: 'zzz'));
       expect(noMatch, isEmpty);
     });
 
     test('filters by brandId', () async {
-      final match = await sut.filterTobaccos(
-        const TobaccoFilter(brandId: 'b1'),
-      );
+      final match = await sut.filterTobaccos(const TobaccoFilter(brandId: 'b1'));
       expect(match.length, 1);
 
-      final noMatch = await sut.filterTobaccos(
-        const TobaccoFilter(brandId: 'other'),
-      );
+      final noMatch = await sut.filterTobaccos(const TobaccoFilter(brandId: 'other'));
       expect(noMatch, isEmpty);
     });
 
     test('filters by flavorCategory', () async {
-      final match = await sut.filterTobaccos(
-        const TobaccoFilter(flavorCategory: 'fruity'),
-      );
+      final match = await sut.filterTobaccos(const TobaccoFilter(flavorCategory: 'fruity'));
       expect(match.length, 1);
 
-      final noMatch = await sut.filterTobaccos(
-        const TobaccoFilter(flavorCategory: 'mint'),
-      );
+      final noMatch = await sut.filterTobaccos(const TobaccoFilter(flavorCategory: 'mint'));
       expect(noMatch, isEmpty);
     });
 
     test('filters by strength range', () async {
-      final match = await sut.filterTobaccos(
-        const TobaccoFilter(minStrength: 2, maxStrength: 4),
-      );
+      final match = await sut.filterTobaccos(const TobaccoFilter(minStrength: 2, maxStrength: 4));
       expect(match.length, 1);
 
-      final noMatch = await sut.filterTobaccos(
-        const TobaccoFilter(minStrength: 4, maxStrength: 5),
-      );
+      final noMatch = await sut.filterTobaccos(const TobaccoFilter(minStrength: 4, maxStrength: 5));
       expect(noMatch, isEmpty);
     });
 

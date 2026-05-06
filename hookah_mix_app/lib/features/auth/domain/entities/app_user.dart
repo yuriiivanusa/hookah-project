@@ -15,6 +15,5 @@ abstract class AppUser with _$AppUser {
 
   const AppUser._();
 
-  static AppUser guest() =>
-      const AppUser(id: 'guest', email: '', isGuest: true);
+  static AppUser guest() => const AppUser(id: 'guest', email: '', isGuest: true);
 }

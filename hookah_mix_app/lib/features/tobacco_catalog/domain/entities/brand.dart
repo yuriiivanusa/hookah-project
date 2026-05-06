@@ -19,6 +19,5 @@ abstract class Brand with _$Brand {
 
   const Brand._();
 
-  String localCountryName(String locale) =>
-      locale == 'uk' ? countryNameUk : countryNameEn;
+  String localCountryName(String locale) => locale == 'uk' ? countryNameUk : countryNameEn;
 }

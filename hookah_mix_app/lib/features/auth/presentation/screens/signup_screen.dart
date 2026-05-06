@@ -44,9 +44,9 @@ class _SignupScreenState extends ConsumerState<SignupScreen> {
   Future<void> _submit() async {
     if (!_formKey.currentState!.validate()) return;
     if (_dateOfBirth == null) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Please select your date of birth')),
-      );
+      ScaffoldMessenger.of(
+        context,
+      ).showSnackBar(const SnackBar(content: Text('Please select your date of birth')));
       return;
     }
     if (!_ageConfirmed) {
@@ -72,10 +72,7 @@ class _SignupScreenState extends ConsumerState<SignupScreen> {
     ref.listen(authProvider, (_, state) {
       if (state is AuthStateError) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text(state.message),
-            backgroundColor: context.colorScheme.error,
-          ),
+          SnackBar(content: Text(state.message), backgroundColor: context.colorScheme.error),
         );
       }
     });

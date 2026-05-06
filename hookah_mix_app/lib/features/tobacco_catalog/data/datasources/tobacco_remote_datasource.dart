@@ -9,9 +9,7 @@ class TobaccoRemoteDataSource {
 
   Future<List<TobaccoDto>> getTobaccos() async {
     final snapshot = await _firestore.collection('tobaccos').get();
-    return snapshot.docs
-        .map((doc) => TobaccoDto.fromFirestore(doc.id, doc.data()))
-        .toList();
+    return snapshot.docs.map((doc) => TobaccoDto.fromFirestore(doc.id, doc.data())).toList();
   }
 
   Future<TobaccoDto?> getTobaccoById(String id) async {
@@ -22,14 +20,11 @@ class TobaccoRemoteDataSource {
 
   Future<List<BrandDto>> getBrands() async {
     final snapshot = await _firestore.collection('brands').get();
-    return snapshot.docs
-        .map((doc) => BrandDto.fromFirestore(doc.id, doc.data()))
-        .toList();
+    return snapshot.docs.map((doc) => BrandDto.fromFirestore(doc.id, doc.data())).toList();
   }
 
   Future<String?> getCatalogVersion() async {
-    final doc =
-        await _firestore.collection('metadata').doc('catalog').get();
+    final doc = await _firestore.collection('metadata').doc('catalog').get();
     return doc.data()?['version'] as String?;
   }
 }

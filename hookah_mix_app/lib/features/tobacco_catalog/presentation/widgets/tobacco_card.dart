@@ -27,11 +27,7 @@ class TobaccoCard extends StatelessWidget {
                 topLeft: Radius.circular(AppTokens.radiusMd),
                 bottomLeft: Radius.circular(AppTokens.radiusMd),
               ),
-              child: TobaccoImagePlaceholder(
-                imageUrl: tobacco.imageUrl,
-                width: 88,
-                height: 88,
-              ),
+              child: TobaccoImagePlaceholder(imageUrl: tobacco.imageUrl, width: 88, height: 88),
             ),
             Expanded(
               child: Padding(
@@ -71,11 +67,7 @@ class TobaccoCard extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.only(right: 8),
-              child: Icon(
-                Icons.chevron_right,
-                size: 20,
-                color: theme.colorScheme.onSurfaceVariant,
-              ),
+              child: Icon(Icons.chevron_right, size: 20, color: theme.colorScheme.onSurfaceVariant),
             ),
           ],
         ),

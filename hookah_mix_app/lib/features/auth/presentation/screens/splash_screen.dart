@@ -29,11 +29,7 @@ class _SplashScreenState extends State<SplashScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Icon(
-              Icons.local_fire_department,
-              size: 80,
-              color: AppColors.primary,
-            ),
+            const Icon(Icons.local_fire_department, size: 80, color: AppColors.primary),
             const SizedBox(height: 16),
             Text(context.l10n.appName, style: context.textTheme.headlineLarge),
             const SizedBox(height: 48),

@@ -52,20 +52,13 @@ class _TobaccoDetailBody extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          TobaccoImagePlaceholder(
-            imageUrl: tobacco.imageUrl,
-            width: double.infinity,
-            height: 220,
-          ),
+          TobaccoImagePlaceholder(imageUrl: tobacco.imageUrl, width: double.infinity, height: 220),
           Padding(
             padding: const EdgeInsets.all(16),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(
-                  tobacco.localName(locale),
-                  style: theme.textTheme.headlineSmall,
-                ),
+                Text(tobacco.localName(locale), style: theme.textTheme.headlineSmall),
                 const SizedBox(height: 4),
                 Text(
                   tobacco.brandName,
@@ -79,19 +72,12 @@ class _TobaccoDetailBody extends StatelessWidget {
                   value: '${tobacco.brandName} · ${tobacco.brandCountry}',
                 ),
                 const SizedBox(height: 4),
-                _InfoRow(
-                  label: l10n.catalogFilterStrength,
-                  value: '${tobacco.strength} / 5',
-                ),
+                _InfoRow(label: l10n.catalogFilterStrength, value: '${tobacco.strength} / 5'),
                 const SizedBox(height: 16),
-                Text(
-                  tobacco.localDescription(locale),
-                  style: theme.textTheme.bodyMedium,
-                ),
+                Text(tobacco.localDescription(locale), style: theme.textTheme.bodyMedium),
                 const SizedBox(height: 24),
                 if (tobacco.tasteNotes.isNotEmpty) ...[
-                  Text(l10n.catalogFlavorNotes,
-                      style: theme.textTheme.titleSmall),
+                  Text(l10n.catalogFlavorNotes, style: theme.textTheme.titleSmall),
                   const SizedBox(height: 8),
                   Wrap(
                     spacing: 8,
@@ -108,12 +94,7 @@ class _TobaccoDetailBody extends StatelessWidget {
                   ),
                   const SizedBox(height: 24),
                 ],
-                Center(
-                  child: TasteProfileRadar(
-                    profile: tobacco.tasteProfile,
-                    size: 220,
-                  ),
-                ),
+                Center(child: TasteProfileRadar(profile: tobacco.tasteProfile, size: 220)),
                 const SizedBox(height: 32),
                 SizedBox(
                   width: double.infinity,
@@ -131,9 +112,7 @@ class _TobaccoDetailBody extends StatelessWidget {
                     label: Text(l10n.catalogAddToFavorites),
                     onPressed: () {},
                     style: OutlinedButton.styleFrom(
-                      shape: const RoundedRectangleBorder(
-                        borderRadius: AppTokens.borderRadiusMd,
-                      ),
+                      shape: const RoundedRectangleBorder(borderRadius: AppTokens.borderRadiusMd),
                     ),
                   ),
                 ),
@@ -159,9 +138,7 @@ class _InfoRow extends StatelessWidget {
       children: [
         Text(
           '$label: ',
-          style: theme.textTheme.bodySmall?.copyWith(
-            color: theme.colorScheme.onSurfaceVariant,
-          ),
+          style: theme.textTheme.bodySmall?.copyWith(color: theme.colorScheme.onSurfaceVariant),
         ),
         Text(value, style: theme.textTheme.bodySmall),
       ],

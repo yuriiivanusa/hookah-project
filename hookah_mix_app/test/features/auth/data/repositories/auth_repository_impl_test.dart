@@ -36,20 +36,13 @@ void main() {
         value: any(named: 'value'),
       ),
     ).thenAnswer((_) async {});
-    when(
-      () => mockFlutterStorage.read(key: any(named: 'key')),
-    ).thenAnswer((_) async => null);
-    when(
-      () => mockFlutterStorage.delete(key: any(named: 'key')),
-    ).thenAnswer((_) async {});
+    when(() => mockFlutterStorage.read(key: any(named: 'key'))).thenAnswer((_) async => null);
+    when(() => mockFlutterStorage.delete(key: any(named: 'key'))).thenAnswer((_) async {});
   });
 
   group('login', () {
     test('returns AppUser on success', () async {
-      final user = await sut.login(
-        email: 'test@test.com',
-        password: 'password123',
-      );
+      final user = await sut.login(email: 'test@test.com', password: 'password123');
       expect(user, isA<AppUser>());
       expect(user.email, 'test@test.com');
     });
@@ -82,9 +75,7 @@ void main() {
   group('logout', () {
     test('clears local storage', () async {
       await sut.logout();
-      verify(
-        () => mockFlutterStorage.delete(key: any(named: 'key')),
-      ).called(greaterThan(0));
+      verify(() => mockFlutterStorage.delete(key: any(named: 'key'))).called(greaterThan(0));
     });
   });
 

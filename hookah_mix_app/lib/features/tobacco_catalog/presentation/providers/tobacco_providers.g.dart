@@ -13,12 +13,7 @@ part of 'tobacco_providers.dart';
 final tobaccoRepositoryProvider = TobaccoRepositoryProvider._();
 
 final class TobaccoRepositoryProvider
-    extends
-        $FunctionalProvider<
-          TobaccoRepository,
-          TobaccoRepository,
-          TobaccoRepository
-        >
+    extends $FunctionalProvider<TobaccoRepository, TobaccoRepository, TobaccoRepository>
     with $Provider<TobaccoRepository> {
   TobaccoRepositoryProvider._()
     : super(
@@ -36,9 +31,8 @@ final class TobaccoRepositoryProvider
 
   @$internal
   @override
-  $ProviderElement<TobaccoRepository> $createElement(
-    $ProviderPointer pointer,
-  ) => $ProviderElement(pointer);
+  $ProviderElement<TobaccoRepository> $createElement($ProviderPointer pointer) =>
+      $ProviderElement(pointer);
 
   @override
   TobaccoRepository create(Ref ref) {
@@ -60,12 +54,7 @@ String _$tobaccoRepositoryHash() => r'97654c0baf6505a051d7ca04613a28ff0199d31c';
 final tobaccoListProvider = TobaccoListProvider._();
 
 final class TobaccoListProvider
-    extends
-        $FunctionalProvider<
-          AsyncValue<List<Tobacco>>,
-          List<Tobacco>,
-          FutureOr<List<Tobacco>>
-        >
+    extends $FunctionalProvider<AsyncValue<List<Tobacco>>, List<Tobacco>, FutureOr<List<Tobacco>>>
     with $FutureModifier<List<Tobacco>>, $FutureProvider<List<Tobacco>> {
   TobaccoListProvider._()
     : super(
@@ -83,9 +72,8 @@ final class TobaccoListProvider
 
   @$internal
   @override
-  $FutureProviderElement<List<Tobacco>> $createElement(
-    $ProviderPointer pointer,
-  ) => $FutureProviderElement(pointer);
+  $FutureProviderElement<List<Tobacco>> $createElement($ProviderPointer pointer) =>
+      $FutureProviderElement(pointer);
 
   @override
   FutureOr<List<Tobacco>> create(Ref ref) {
@@ -99,12 +87,7 @@ String _$tobaccoListHash() => r'f8b5b8b6f22dd80e1a2ee4dcc91791ef08d19eb9';
 final brandListProvider = BrandListProvider._();
 
 final class BrandListProvider
-    extends
-        $FunctionalProvider<
-          AsyncValue<List<Brand>>,
-          List<Brand>,
-          FutureOr<List<Brand>>
-        >
+    extends $FunctionalProvider<AsyncValue<List<Brand>>, List<Brand>, FutureOr<List<Brand>>>
     with $FutureModifier<List<Brand>>, $FutureProvider<List<Brand>> {
   BrandListProvider._()
     : super(
@@ -122,9 +105,8 @@ final class BrandListProvider
 
   @$internal
   @override
-  $FutureProviderElement<List<Brand>> $createElement(
-    $ProviderPointer pointer,
-  ) => $FutureProviderElement(pointer);
+  $FutureProviderElement<List<Brand>> $createElement($ProviderPointer pointer) =>
+      $FutureProviderElement(pointer);
 
   @override
   FutureOr<List<Brand>> create(Ref ref) {
@@ -138,19 +120,16 @@ String _$brandListHash() => r'f133aef9fc9cc3711fedb623deb6b4b5ade91212';
 final tobaccoDetailProvider = TobaccoDetailFamily._();
 
 final class TobaccoDetailProvider
-    extends
-        $FunctionalProvider<AsyncValue<Tobacco?>, Tobacco?, FutureOr<Tobacco?>>
+    extends $FunctionalProvider<AsyncValue<Tobacco?>, Tobacco?, FutureOr<Tobacco?>>
     with $FutureModifier<Tobacco?>, $FutureProvider<Tobacco?> {
-  TobaccoDetailProvider._({
-    required TobaccoDetailFamily super.from,
-    required String super.argument,
-  }) : super(
-         retry: null,
-         name: r'tobaccoDetailProvider',
-         isAutoDispose: true,
-         dependencies: null,
-         $allTransitiveDependencies: null,
-       );
+  TobaccoDetailProvider._({required TobaccoDetailFamily super.from, required String super.argument})
+    : super(
+        retry: null,
+        name: r'tobaccoDetailProvider',
+        isAutoDispose: true,
+        dependencies: null,
+        $allTransitiveDependencies: null,
+      );
 
   @override
   String debugGetCreateSourceHash() => _$tobaccoDetailHash();
@@ -197,8 +176,7 @@ final class TobaccoDetailFamily extends $Family
         isAutoDispose: true,
       );
 
-  TobaccoDetailProvider call(String id) =>
-      TobaccoDetailProvider._(argument: id, from: this);
+  TobaccoDetailProvider call(String id) => TobaccoDetailProvider._(argument: id, from: this);
 
   @override
   String toString() => r'tobaccoDetailProvider';
@@ -208,12 +186,7 @@ final class TobaccoDetailFamily extends $Family
 final filteredTobaccoListProvider = FilteredTobaccoListProvider._();
 
 final class FilteredTobaccoListProvider
-    extends
-        $FunctionalProvider<
-          AsyncValue<List<Tobacco>>,
-          List<Tobacco>,
-          FutureOr<List<Tobacco>>
-        >
+    extends $FunctionalProvider<AsyncValue<List<Tobacco>>, List<Tobacco>, FutureOr<List<Tobacco>>>
     with $FutureModifier<List<Tobacco>>, $FutureProvider<List<Tobacco>> {
   FilteredTobaccoListProvider._()
     : super(
@@ -231,9 +204,8 @@ final class FilteredTobaccoListProvider
 
   @$internal
   @override
-  $FutureProviderElement<List<Tobacco>> $createElement(
-    $ProviderPointer pointer,
-  ) => $FutureProviderElement(pointer);
+  $FutureProviderElement<List<Tobacco>> $createElement($ProviderPointer pointer) =>
+      $FutureProviderElement(pointer);
 
   @override
   FutureOr<List<Tobacco>> create(Ref ref) {
@@ -241,5 +213,4 @@ final class FilteredTobaccoListProvider
   }
 }
 
-String _$filteredTobaccoListHash() =>
-    r'd361c90ea5cf87bac7f35333d013af502fde17ef';
+String _$filteredTobaccoListHash() => r'd361c90ea5cf87bac7f35333d013af502fde17ef';

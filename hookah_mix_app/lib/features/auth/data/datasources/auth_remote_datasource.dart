@@ -14,26 +14,16 @@ class AuthRemoteDataSource {
 
   Future<UserDto> signInWithEmail(String email, String password) async {
     try {
-      final result = await _auth.signInWithEmailAndPassword(
-        email: email,
-        password: password,
-      );
+      final result = await _auth.signInWithEmailAndPassword(email: email, password: password);
       return _toDto(result.user!);
     } on FirebaseAuthException catch (e) {
       throw _mapError(e);
     }
   }
 
-  Future<UserDto> createUserWithEmail(
-    String email,
-    String password,
-    String displayName,
-  ) async {
+  Future<UserDto> createUserWithEmail(String email, String password, String displayName) async {
     try {
-      final result = await _auth.createUserWithEmailAndPassword(
-        email: email,
-        password: password,
-      );
+      final result = await _auth.createUserWithEmailAndPassword(email: email, password: password);
       await result.user!.updateDisplayName(displayName);
       await result.user!.sendEmailVerification();
       return _toDto(result.user!..reload());

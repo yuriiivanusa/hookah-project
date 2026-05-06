@@ -12,6 +12,5 @@ class ThemeMode$ extends _$ThemeMode$ {
   void setLight() => state = ThemeMode.light;
   void setSystem() => state = ThemeMode.system;
 
-  void toggle() =>
-      state = state == ThemeMode.dark ? ThemeMode.light : ThemeMode.dark;
+  void toggle() => state = state == ThemeMode.dark ? ThemeMode.light : ThemeMode.dark;
 }

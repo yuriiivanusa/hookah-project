@@ -11,10 +11,7 @@ class AuthService {
 
   Future<User> signIn({required String email, required String password}) async {
     try {
-      final result = await _auth.signInWithEmailAndPassword(
-        email: email,
-        password: password,
-      );
+      final result = await _auth.signInWithEmailAndPassword(email: email, password: password);
       return result.user!;
     } on FirebaseAuthException catch (e) {
       throw _mapError(e);
@@ -23,10 +20,7 @@ class AuthService {
 
   Future<User> signUp({required String email, required String password}) async {
     try {
-      final result = await _auth.createUserWithEmailAndPassword(
-        email: email,
-        password: password,
-      );
+      final result = await _auth.createUserWithEmailAndPassword(email: email, password: password);
       return result.user!;
     } on FirebaseAuthException catch (e) {
       throw _mapError(e);

@@ -6,18 +6,13 @@ part 'tobacco_dto.g.dart';
 
 @JsonSerializable()
 class TobaccoBrandRef {
-  const TobaccoBrandRef({
-    required this.id,
-    required this.name,
-    required this.country,
-  });
+  const TobaccoBrandRef({required this.id, required this.name, required this.country});
 
   final String id;
   final String name;
   final String country;
 
-  factory TobaccoBrandRef.fromJson(Map<String, dynamic> json) =>
-      _$TobaccoBrandRefFromJson(json);
+  factory TobaccoBrandRef.fromJson(Map<String, dynamic> json) => _$TobaccoBrandRefFromJson(json);
   Map<String, dynamic> toJson() => _$TobaccoBrandRefToJson(this);
 }
 
@@ -29,8 +24,7 @@ class LocalizedString {
   final String uk;
   final String? original;
 
-  factory LocalizedString.fromJson(Map<String, dynamic> json) =>
-      _$LocalizedStringFromJson(json);
+  factory LocalizedString.fromJson(Map<String, dynamic> json) => _$LocalizedStringFromJson(json);
   Map<String, dynamic> toJson() => _$LocalizedStringToJson(this);
 }
 
@@ -58,8 +52,7 @@ class TasteProfileDto {
   @JsonKey(defaultValue: 0)
   final int floral;
 
-  factory TasteProfileDto.fromJson(Map<String, dynamic> json) =>
-      _$TasteProfileDtoFromJson(json);
+  factory TasteProfileDto.fromJson(Map<String, dynamic> json) => _$TasteProfileDtoFromJson(json);
   Map<String, dynamic> toJson() => _$TasteProfileDtoToJson(this);
 
   TasteProfile toDomain() => TasteProfile(
@@ -100,8 +93,7 @@ class TobaccoDto {
   final String? imageUrl;
   final int popularity;
 
-  factory TobaccoDto.fromJson(Map<String, dynamic> json) =>
-      _$TobaccoDtoFromJson(json);
+  factory TobaccoDto.fromJson(Map<String, dynamic> json) => _$TobaccoDtoFromJson(json);
   Map<String, dynamic> toJson() => _$TobaccoDtoToJson(this);
 
   factory TobaccoDto.fromFirestore(String docId, Map<String, dynamic> data) =>

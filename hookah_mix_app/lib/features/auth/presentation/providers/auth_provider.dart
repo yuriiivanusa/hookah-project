@@ -1,3 +1,7 @@
+import 'package:hookah_mix_master/core/services/providers.dart';
+import 'package:hookah_mix_master/features/auth/data/datasources/auth_local_datasource.dart';
+import 'package:hookah_mix_master/features/auth/data/datasources/auth_remote_datasource.dart';
+import 'package:hookah_mix_master/features/auth/data/repositories/auth_repository_impl.dart';
 import 'package:hookah_mix_master/features/auth/domain/entities/app_user.dart';
 import 'package:hookah_mix_master/features/auth/domain/repositories/auth_repository.dart';
 import 'package:hookah_mix_master/features/auth/presentation/providers/auth_state.dart';
@@ -117,10 +121,15 @@ class Auth extends _$Auth {
   };
 }
 
-@riverpod
-AuthRepository authRepository(Ref ref) => throw UnimplementedError(
-  'Override authRepositoryProvider in ProviderScope',
-);
+@Riverpod(keepAlive: true)
+AuthRepository authRepository(Ref ref) {
+  final remote = AuthRemoteDataSource(
+    ref.watch(firebaseAuthProvider),
+    ref.watch(googleSignInProvider),
+  );
+  final local = AuthLocalDataSource(ref.watch(secureStorageProvider));
+  return AuthRepositoryImpl(remote, local);
+}
 
 @riverpod
 AppUser? currentUser(Ref ref) {

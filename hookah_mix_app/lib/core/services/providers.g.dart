@@ -447,3 +447,44 @@ final class SecureStorageProvider
 }
 
 String _$secureStorageHash() => r'9d2b763dd0cf4ad8325bde1db13238bb361e74c3';
+
+@ProviderFor(googleSignIn)
+final googleSignInProvider = GoogleSignInProvider._();
+
+final class GoogleSignInProvider
+    extends $FunctionalProvider<GoogleSignIn, GoogleSignIn, GoogleSignIn>
+    with $Provider<GoogleSignIn> {
+  GoogleSignInProvider._()
+    : super(
+        from: null,
+        argument: null,
+        retry: null,
+        name: r'googleSignInProvider',
+        isAutoDispose: false,
+        dependencies: null,
+        $allTransitiveDependencies: null,
+      );
+
+  @override
+  String debugGetCreateSourceHash() => _$googleSignInHash();
+
+  @$internal
+  @override
+  $ProviderElement<GoogleSignIn> $createElement($ProviderPointer pointer) =>
+      $ProviderElement(pointer);
+
+  @override
+  GoogleSignIn create(Ref ref) {
+    return googleSignIn(ref);
+  }
+
+  /// {@macro riverpod.override_with_value}
+  Override overrideWithValue(GoogleSignIn value) {
+    return $ProviderOverride(
+      origin: this,
+      providerOverride: $SyncValueProvider<GoogleSignIn>(value),
+    );
+  }
+}
+
+String _$googleSignInHash() => r'4df13ef226b172967e2ad6fef31c4648f6d52fd9';

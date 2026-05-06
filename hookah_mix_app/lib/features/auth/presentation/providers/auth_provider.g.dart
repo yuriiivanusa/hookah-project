@@ -72,7 +72,7 @@ final class AuthRepositoryProvider
         argument: null,
         retry: null,
         name: r'authRepositoryProvider',
-        isAutoDispose: true,
+        isAutoDispose: false,
         dependencies: null,
         $allTransitiveDependencies: null,
       );
@@ -99,7 +99,7 @@ final class AuthRepositoryProvider
   }
 }
 
-String _$authRepositoryHash() => r'b92e91254859f644c9d47b26cedaed68c1238d60';
+String _$authRepositoryHash() => r'86743b1b804ff8b40651aa3835e8c9e41f7663d7';
 
 @ProviderFor(currentUser)
 final currentUserProvider = CurrentUserProvider._();

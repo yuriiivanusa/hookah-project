@@ -3,6 +3,7 @@ import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
+import 'package:google_sign_in/google_sign_in.dart';
 import 'package:hookah_mix_master/core/services/analytics/analytics_service.dart';
 import 'package:hookah_mix_master/core/services/firebase/auth_service.dart';
 import 'package:hookah_mix_master/core/services/firebase/firestore_service.dart';
@@ -47,3 +48,6 @@ HiveService hiveService(Ref ref) => HiveService();
 @Riverpod(keepAlive: true)
 SecureStorageService secureStorage(Ref ref) =>
     SecureStorageService(const FlutterSecureStorage());
+
+@Riverpod(keepAlive: true)
+GoogleSignIn googleSignIn(Ref ref) => GoogleSignIn();

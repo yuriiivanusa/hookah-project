@@ -3,17 +3,16 @@
 .claude/
 
 # Flutter / Dart
-build/
-.dart_tool/
-.flutter-plugins
-.flutter-plugins-dependencies
-.packages
-*.lock
-coverage/
-.generated/
+hookah_mix_app/build/
+hookah_mix_app/.dart_tool/
+hookah_mix_app/.flutter-plugins
+hookah_mix_app/.flutter-plugins-dependencies
+hookah_mix_app/.packages
+hookah_mix_app/coverage/
+hookah_mix_app/.generated/
 
 # Firebase
-lib/firebase_options.dart
+hookah_mix_app/lib/firebase_options.dart
 google-services.json
 GoogleService-Info.plist
 
@@ -47,8 +46,8 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
-lib64/
+hookah-data-pipeline/lib/
+hookah-data-pipeline/lib64/
 parts/
 sdist/
 var/

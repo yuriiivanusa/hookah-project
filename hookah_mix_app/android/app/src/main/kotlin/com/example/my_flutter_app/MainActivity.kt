@@ -1,4 +1,4 @@
-package com.example.my_flutter_app
+package com.hoohah.mix.master
 
 import io.flutter.embedding.android.FlutterActivity
 

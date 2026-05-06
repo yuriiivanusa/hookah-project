@@ -108,15 +108,13 @@ class AppLocalizationsEn extends AppLocalizations {
   String get authForgotPasswordTitle => 'Reset password';
 
   @override
-  String get authForgotPasswordHint =>
-      'Enter your email to receive a reset link';
+  String get authForgotPasswordHint => 'Enter your email to receive a reset link';
 
   @override
   String get authForgotPasswordButton => 'Send reset link';
 
   @override
-  String get authForgotPasswordSuccess =>
-      'Check your email for reset instructions';
+  String get authForgotPasswordSuccess => 'Check your email for reset instructions';
 
   @override
   String get authErrorInvalidEmail => 'Invalid email address';
@@ -140,8 +138,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get authGuestModeTitle => 'Guest Mode';
 
   @override
-  String get authGuestModeBody =>
-      'Sign in to save favorites and create custom mixes.';
+  String get authGuestModeBody => 'Sign in to save favorites and create custom mixes.';
 
   @override
   String get authGuestSignIn => 'Sign in';
@@ -250,6 +247,42 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get recommenderFlavorEarthy => 'Earthy';
+
+  @override
+  String get recommenderFlavorFloral => 'Floral';
+
+  @override
+  String get recommenderFlavorBitter => 'Bitter';
+
+  @override
+  String get recommenderFlavorSour => 'Sour';
+
+  @override
+  String get recommenderNext => 'Next';
+
+  @override
+  String get recommenderGetMixes => 'Find mixes';
+
+  @override
+  String get recommenderMatchExcellent => 'Excellent match';
+
+  @override
+  String get recommenderMatchGood => 'Good match';
+
+  @override
+  String get recommenderMatchFair => 'Fair match';
+
+  @override
+  String get recommenderDifficultyEasy => 'Easy';
+
+  @override
+  String get recommenderDifficultyMedium => 'Medium';
+
+  @override
+  String get recommenderDifficultyHard => 'Hard';
+
+  @override
+  String get recommenderComponentsLabel => 'Components';
 
   @override
   String get recommenderStrengthLight => 'Light';
@@ -400,4 +433,90 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get errorUnknown => 'An unexpected error occurred';
+
+  @override
+  String get mixBuilderTitle => 'Mix Builder';
+
+  @override
+  String get mixBuilderEditTitle => 'Edit Mix';
+
+  @override
+  String get mixBuilderAddTobacco => 'Add tobacco';
+
+  @override
+  String get mixBuilderNoComponents => 'Add at least 2 tobaccos to create a mix';
+
+  @override
+  String get mixBuilderTastePreview => 'Taste preview';
+
+  @override
+  String mixBuilderPercentageTotal(int total) {
+    return 'Total: $total%';
+  }
+
+  @override
+  String get mixBuilderPercentageWarning => 'Percentages must add up to 100%';
+
+  @override
+  String get mixBuilderSave => 'Save mix';
+
+  @override
+  String get mixBuilderUpdate => 'Update mix';
+
+  @override
+  String get mixBuilderSaving => 'Saving…';
+
+  @override
+  String get mixBuilderSaved => 'Mix saved!';
+
+  @override
+  String get mixBuilderSaveError => 'Failed to save mix';
+
+  @override
+  String get mixBuilderDeleteConfirmTitle => 'Delete mix?';
+
+  @override
+  String get mixBuilderDeleteConfirmBody => 'This action cannot be undone.';
+
+  @override
+  String get mixBuilderDelete => 'Delete';
+
+  @override
+  String get mixBuilderCancel => 'Cancel';
+
+  @override
+  String get mixBuilderNameLabel => 'Mix name';
+
+  @override
+  String get mixBuilderNameHint => 'e.g. Summer evening';
+
+  @override
+  String get mixBuilderDescriptionLabel => 'Description (optional)';
+
+  @override
+  String get mixBuilderRatingLabel => 'Your rating';
+
+  @override
+  String get mixBuilderPickerTitle => 'Choose tobacco';
+
+  @override
+  String get mixBuilderPickerSearch => 'Search by name or brand…';
+
+  @override
+  String get mixBuilderMaxComponents => 'Maximum 5 tobaccos per mix';
+
+  @override
+  String get mixBuilderAlreadyAdded => 'Already added';
+
+  @override
+  String get mixBuilderComponentsLabel => 'Components';
+
+  @override
+  String get mixBuilderMyMixes => 'My Mixes';
+
+  @override
+  String get mixBuilderEmptyMixes => 'No saved mixes yet';
+
+  @override
+  String get mixBuilderCreateFirst => 'Create your first mix';
 }

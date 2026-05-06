@@ -54,8 +54,7 @@ class AppLocalizationsUk extends AppLocalizations {
   String get authAgeGateTitle => 'Підтвердіть вік';
 
   @override
-  String get authAgeGateBody =>
-      'Вам має бути не менше 18 років для використання цього додатку';
+  String get authAgeGateBody => 'Вам має бути не менше 18 років для використання цього додатку';
 
   @override
   String get authAgeGateConfirm => 'Мені є 18 або більше';
@@ -139,8 +138,7 @@ class AppLocalizationsUk extends AppLocalizations {
   String get authGuestModeTitle => 'Гостьовий режим';
 
   @override
-  String get authGuestModeBody =>
-      'Увійдіть, щоб зберігати улюблені та створювати мікси.';
+  String get authGuestModeBody => 'Увійдіть, щоб зберігати улюблені та створювати мікси.';
 
   @override
   String get authGuestSignIn => 'Увійти';
@@ -251,6 +249,42 @@ class AppLocalizationsUk extends AppLocalizations {
   String get recommenderFlavorEarthy => 'Земляний';
 
   @override
+  String get recommenderFlavorFloral => 'Квітковий';
+
+  @override
+  String get recommenderFlavorBitter => 'Гіркуватий';
+
+  @override
+  String get recommenderFlavorSour => 'Кислуватий';
+
+  @override
+  String get recommenderNext => 'Далі';
+
+  @override
+  String get recommenderGetMixes => 'Знайти мікси';
+
+  @override
+  String get recommenderMatchExcellent => 'Ідеальний збіг';
+
+  @override
+  String get recommenderMatchGood => 'Добрий збіг';
+
+  @override
+  String get recommenderMatchFair => 'Непоганий збіг';
+
+  @override
+  String get recommenderDifficultyEasy => 'Легко';
+
+  @override
+  String get recommenderDifficultyMedium => 'Середньо';
+
+  @override
+  String get recommenderDifficultyHard => 'Складно';
+
+  @override
+  String get recommenderComponentsLabel => 'Компоненти';
+
+  @override
   String get recommenderStrengthLight => 'Легкий';
 
   @override
@@ -305,8 +339,7 @@ class AppLocalizationsUk extends AppLocalizations {
   String get builderEmptyState => 'Додайте тютюн щоб почати створювати мікс';
 
   @override
-  String get builderErrorExceeds100 =>
-      'Сума відсотків не може перевищувати 100%';
+  String get builderErrorExceeds100 => 'Сума відсотків не може перевищувати 100%';
 
   @override
   String get builderErrorMaxComponents => 'Максимум 5 компонентів у міксі';
@@ -393,12 +426,97 @@ class AppLocalizationsUk extends AppLocalizations {
   String get errorNetworkTitle => 'Помилка з\'єднання';
 
   @override
-  String get errorNetworkBody =>
-      'Перевірте підключення до інтернету та спробуйте знову';
+  String get errorNetworkBody => 'Перевірте підключення до інтернету та спробуйте знову';
 
   @override
   String get errorPermissionDenied => 'Доступ заборонено';
 
   @override
   String get errorUnknown => 'Сталася непередбачена помилка';
+
+  @override
+  String get mixBuilderTitle => 'Конструктор міксів';
+
+  @override
+  String get mixBuilderEditTitle => 'Редагувати мікс';
+
+  @override
+  String get mixBuilderAddTobacco => 'Додати табак';
+
+  @override
+  String get mixBuilderNoComponents => 'Додайте щонайменше 2 табаки для створення міксу';
+
+  @override
+  String get mixBuilderTastePreview => 'Смаковий профіль';
+
+  @override
+  String mixBuilderPercentageTotal(int total) {
+    return 'Разом: $total%';
+  }
+
+  @override
+  String get mixBuilderPercentageWarning => 'Відсотки мають бути рівні 100%';
+
+  @override
+  String get mixBuilderSave => 'Зберегти мікс';
+
+  @override
+  String get mixBuilderUpdate => 'Оновити мікс';
+
+  @override
+  String get mixBuilderSaving => 'Збереження…';
+
+  @override
+  String get mixBuilderSaved => 'Мікс збережено!';
+
+  @override
+  String get mixBuilderSaveError => 'Не вдалося зберегти мікс';
+
+  @override
+  String get mixBuilderDeleteConfirmTitle => 'Видалити мікс?';
+
+  @override
+  String get mixBuilderDeleteConfirmBody => 'Цю дію неможливо скасувати.';
+
+  @override
+  String get mixBuilderDelete => 'Видалити';
+
+  @override
+  String get mixBuilderCancel => 'Скасувати';
+
+  @override
+  String get mixBuilderNameLabel => 'Назва міксу';
+
+  @override
+  String get mixBuilderNameHint => 'напр. Літній вечір';
+
+  @override
+  String get mixBuilderDescriptionLabel => 'Опис (необов\'язково)';
+
+  @override
+  String get mixBuilderRatingLabel => 'Ваша оцінка';
+
+  @override
+  String get mixBuilderPickerTitle => 'Оберіть табак';
+
+  @override
+  String get mixBuilderPickerSearch => 'Пошук за назвою або брендом…';
+
+  @override
+  String get mixBuilderMaxComponents => 'Максимум 5 табаків у міксі';
+
+  @override
+  String get mixBuilderAlreadyAdded => 'Вже додано';
+
+  @override
+  String get mixBuilderComponentsLabel => 'Компоненти';
+
+  @override
+  String get mixBuilderMyMixes => 'Мої мікси';
+
+  @override
+  String get mixBuilderEmptyMixes => 'Збережених міксів ще немає';
+
+  @override
+  String get mixBuilderCreateFirst => 'Створіть свій перший мікс';
 }

@@ -62,8 +62,7 @@ import 'app_localizations_uk.dart';
 /// be consistent with the languages listed in the AppLocalizations.supportedLocales
 /// property.
 abstract class AppLocalizations {
-  AppLocalizations(String locale)
-    : localeName = intl.Intl.canonicalizedLocale(locale.toString());
+  AppLocalizations(String locale) : localeName = intl.Intl.canonicalizedLocale(locale.toString());
 
   final String localeName;
 
@@ -71,8 +70,7 @@ abstract class AppLocalizations {
     return Localizations.of<AppLocalizations>(context, AppLocalizations);
   }
 
-  static const LocalizationsDelegate<AppLocalizations> delegate =
-      _AppLocalizationsDelegate();
+  static const LocalizationsDelegate<AppLocalizations> delegate = _AppLocalizationsDelegate();
 
   /// A list of this localizations delegate along with the default localizations
   /// delegates.
@@ -93,10 +91,7 @@ abstract class AppLocalizations {
       ];
 
   /// A list of this localizations delegate's supported locales.
-  static const List<Locale> supportedLocales = <Locale>[
-    Locale('en'),
-    Locale('uk'),
-  ];
+  static const List<Locale> supportedLocales = <Locale>[Locale('en'), Locale('uk')];
 
   /// No description provided for @appName.
   ///
@@ -578,6 +573,78 @@ abstract class AppLocalizations {
   /// **'Earthy'**
   String get recommenderFlavorEarthy;
 
+  /// No description provided for @recommenderFlavorFloral.
+  ///
+  /// In en, this message translates to:
+  /// **'Floral'**
+  String get recommenderFlavorFloral;
+
+  /// No description provided for @recommenderFlavorBitter.
+  ///
+  /// In en, this message translates to:
+  /// **'Bitter'**
+  String get recommenderFlavorBitter;
+
+  /// No description provided for @recommenderFlavorSour.
+  ///
+  /// In en, this message translates to:
+  /// **'Sour'**
+  String get recommenderFlavorSour;
+
+  /// No description provided for @recommenderNext.
+  ///
+  /// In en, this message translates to:
+  /// **'Next'**
+  String get recommenderNext;
+
+  /// No description provided for @recommenderGetMixes.
+  ///
+  /// In en, this message translates to:
+  /// **'Find mixes'**
+  String get recommenderGetMixes;
+
+  /// No description provided for @recommenderMatchExcellent.
+  ///
+  /// In en, this message translates to:
+  /// **'Excellent match'**
+  String get recommenderMatchExcellent;
+
+  /// No description provided for @recommenderMatchGood.
+  ///
+  /// In en, this message translates to:
+  /// **'Good match'**
+  String get recommenderMatchGood;
+
+  /// No description provided for @recommenderMatchFair.
+  ///
+  /// In en, this message translates to:
+  /// **'Fair match'**
+  String get recommenderMatchFair;
+
+  /// No description provided for @recommenderDifficultyEasy.
+  ///
+  /// In en, this message translates to:
+  /// **'Easy'**
+  String get recommenderDifficultyEasy;
+
+  /// No description provided for @recommenderDifficultyMedium.
+  ///
+  /// In en, this message translates to:
+  /// **'Medium'**
+  String get recommenderDifficultyMedium;
+
+  /// No description provided for @recommenderDifficultyHard.
+  ///
+  /// In en, this message translates to:
+  /// **'Hard'**
+  String get recommenderDifficultyHard;
+
+  /// No description provided for @recommenderComponentsLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Components'**
+  String get recommenderComponentsLabel;
+
   /// No description provided for @recommenderStrengthLight.
   ///
   /// In en, this message translates to:
@@ -877,10 +944,177 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'An unexpected error occurred'**
   String get errorUnknown;
+
+  /// No description provided for @mixBuilderTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Mix Builder'**
+  String get mixBuilderTitle;
+
+  /// No description provided for @mixBuilderEditTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Edit Mix'**
+  String get mixBuilderEditTitle;
+
+  /// No description provided for @mixBuilderAddTobacco.
+  ///
+  /// In en, this message translates to:
+  /// **'Add tobacco'**
+  String get mixBuilderAddTobacco;
+
+  /// No description provided for @mixBuilderNoComponents.
+  ///
+  /// In en, this message translates to:
+  /// **'Add at least 2 tobaccos to create a mix'**
+  String get mixBuilderNoComponents;
+
+  /// No description provided for @mixBuilderTastePreview.
+  ///
+  /// In en, this message translates to:
+  /// **'Taste preview'**
+  String get mixBuilderTastePreview;
+
+  /// No description provided for @mixBuilderPercentageTotal.
+  ///
+  /// In en, this message translates to:
+  /// **'Total: {total}%'**
+  String mixBuilderPercentageTotal(int total);
+
+  /// No description provided for @mixBuilderPercentageWarning.
+  ///
+  /// In en, this message translates to:
+  /// **'Percentages must add up to 100%'**
+  String get mixBuilderPercentageWarning;
+
+  /// No description provided for @mixBuilderSave.
+  ///
+  /// In en, this message translates to:
+  /// **'Save mix'**
+  String get mixBuilderSave;
+
+  /// No description provided for @mixBuilderUpdate.
+  ///
+  /// In en, this message translates to:
+  /// **'Update mix'**
+  String get mixBuilderUpdate;
+
+  /// No description provided for @mixBuilderSaving.
+  ///
+  /// In en, this message translates to:
+  /// **'Saving…'**
+  String get mixBuilderSaving;
+
+  /// No description provided for @mixBuilderSaved.
+  ///
+  /// In en, this message translates to:
+  /// **'Mix saved!'**
+  String get mixBuilderSaved;
+
+  /// No description provided for @mixBuilderSaveError.
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to save mix'**
+  String get mixBuilderSaveError;
+
+  /// No description provided for @mixBuilderDeleteConfirmTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete mix?'**
+  String get mixBuilderDeleteConfirmTitle;
+
+  /// No description provided for @mixBuilderDeleteConfirmBody.
+  ///
+  /// In en, this message translates to:
+  /// **'This action cannot be undone.'**
+  String get mixBuilderDeleteConfirmBody;
+
+  /// No description provided for @mixBuilderDelete.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete'**
+  String get mixBuilderDelete;
+
+  /// No description provided for @mixBuilderCancel.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel'**
+  String get mixBuilderCancel;
+
+  /// No description provided for @mixBuilderNameLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Mix name'**
+  String get mixBuilderNameLabel;
+
+  /// No description provided for @mixBuilderNameHint.
+  ///
+  /// In en, this message translates to:
+  /// **'e.g. Summer evening'**
+  String get mixBuilderNameHint;
+
+  /// No description provided for @mixBuilderDescriptionLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Description (optional)'**
+  String get mixBuilderDescriptionLabel;
+
+  /// No description provided for @mixBuilderRatingLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Your rating'**
+  String get mixBuilderRatingLabel;
+
+  /// No description provided for @mixBuilderPickerTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose tobacco'**
+  String get mixBuilderPickerTitle;
+
+  /// No description provided for @mixBuilderPickerSearch.
+  ///
+  /// In en, this message translates to:
+  /// **'Search by name or brand…'**
+  String get mixBuilderPickerSearch;
+
+  /// No description provided for @mixBuilderMaxComponents.
+  ///
+  /// In en, this message translates to:
+  /// **'Maximum 5 tobaccos per mix'**
+  String get mixBuilderMaxComponents;
+
+  /// No description provided for @mixBuilderAlreadyAdded.
+  ///
+  /// In en, this message translates to:
+  /// **'Already added'**
+  String get mixBuilderAlreadyAdded;
+
+  /// No description provided for @mixBuilderComponentsLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Components'**
+  String get mixBuilderComponentsLabel;
+
+  /// No description provided for @mixBuilderMyMixes.
+  ///
+  /// In en, this message translates to:
+  /// **'My Mixes'**
+  String get mixBuilderMyMixes;
+
+  /// No description provided for @mixBuilderEmptyMixes.
+  ///
+  /// In en, this message translates to:
+  /// **'No saved mixes yet'**
+  String get mixBuilderEmptyMixes;
+
+  /// No description provided for @mixBuilderCreateFirst.
+  ///
+  /// In en, this message translates to:
+  /// **'Create your first mix'**
+  String get mixBuilderCreateFirst;
 }
 
-class _AppLocalizationsDelegate
-    extends LocalizationsDelegate<AppLocalizations> {
+class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {
   const _AppLocalizationsDelegate();
 
   @override
@@ -889,8 +1123,7 @@ class _AppLocalizationsDelegate
   }
 
   @override
-  bool isSupported(Locale locale) =>
-      <String>['en', 'uk'].contains(locale.languageCode);
+  bool isSupported(Locale locale) => <String>['en', 'uk'].contains(locale.languageCode);
 
   @override
   bool shouldReload(_AppLocalizationsDelegate old) => false;

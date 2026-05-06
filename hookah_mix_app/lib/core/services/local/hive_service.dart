@@ -8,14 +8,14 @@ class HiveService {
     if (_initialized) return;
     await Hive.initFlutter();
     await Hive.openBox<String>(StringConstants.tobaccoBoxName);
+    await Hive.openBox<String>(StringConstants.mixesBoxName);
     await Hive.openBox<String>(StringConstants.userPrefsBoxName);
+    await Hive.openBox<String>(StringConstants.userMixesBoxName);
     _initialized = true;
   }
 
-  Box<String> get tobaccoBox =>
-      Hive.box<String>(StringConstants.tobaccoBoxName);
-  Box<String> get userPrefsBox =>
-      Hive.box<String>(StringConstants.userPrefsBoxName);
+  Box<String> get tobaccoBox => Hive.box<String>(StringConstants.tobaccoBoxName);
+  Box<String> get userPrefsBox => Hive.box<String>(StringConstants.userPrefsBoxName);
 
   Future<void> put(String boxName, String key, String value) async {
     await Hive.box<String>(boxName).put(key, value);

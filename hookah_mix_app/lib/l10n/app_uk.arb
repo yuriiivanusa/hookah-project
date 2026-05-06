@@ -60,6 +60,8 @@
   "catalogSortNameDesc": "Назва Я–А",
   "catalogSortStrengthAsc": "Міцність: від легкого",
   "catalogSortStrengthDesc": "Міцність: від міцного",
+  "catalogSortPopularityDesc": "Найпопулярніші",
+  "catalogFilterLeafType": "Тип листя",
   "catalogStrengthLight": "Легкий",
   "catalogStrengthMedium": "Середній",
   "catalogStrengthStrong": "Міцний",

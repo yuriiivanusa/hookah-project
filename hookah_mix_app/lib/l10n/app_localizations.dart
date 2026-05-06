@@ -434,6 +434,18 @@ abstract class AppLocalizations {
   /// **'Strength: high to low'**
   String get catalogSortStrengthDesc;
 
+  /// No description provided for @catalogSortPopularityDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Most popular'**
+  String get catalogSortPopularityDesc;
+
+  /// No description provided for @catalogFilterLeafType.
+  ///
+  /// In en, this message translates to:
+  /// **'Leaf type'**
+  String get catalogFilterLeafType;
+
   /// No description provided for @catalogStrengthLight.
   ///
   /// In en, this message translates to:

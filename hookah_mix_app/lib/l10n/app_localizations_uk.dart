@@ -179,6 +179,12 @@ class AppLocalizationsUk extends AppLocalizations {
   String get catalogSortStrengthDesc => 'Міцність: від міцного';
 
   @override
+  String get catalogSortPopularityDesc => 'Найпопулярніші';
+
+  @override
+  String get catalogFilterLeafType => 'Тип листя';
+
+  @override
   String get catalogStrengthLight => 'Легкий';
 
   @override

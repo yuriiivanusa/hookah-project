@@ -180,6 +180,12 @@ class AppLocalizationsEn extends AppLocalizations {
   String get catalogSortStrengthDesc => 'Strength: high to low';
 
   @override
+  String get catalogSortPopularityDesc => 'Most popular';
+
+  @override
+  String get catalogFilterLeafType => 'Leaf type';
+
+  @override
   String get catalogStrengthLight => 'Light';
 
   @override

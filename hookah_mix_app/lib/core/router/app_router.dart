@@ -10,6 +10,8 @@ import 'package:hookah_mix_master/features/auth/presentation/screens/forgot_pass
 import 'package:hookah_mix_master/features/auth/presentation/screens/login_screen.dart';
 import 'package:hookah_mix_master/features/auth/presentation/screens/signup_screen.dart';
 import 'package:hookah_mix_master/features/auth/presentation/screens/splash_screen.dart';
+import 'package:hookah_mix_master/features/tobacco_catalog/presentation/screens/catalog_screen.dart';
+import 'package:hookah_mix_master/features/tobacco_catalog/presentation/screens/tobacco_detail_screen.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 part 'app_router.g.dart';
@@ -48,8 +50,15 @@ GoRouter appRouter(Ref ref) {
         routes: [
           GoRoute(
             path: Routes.catalog,
-            builder: (context, state) =>
-                const _PlaceholderScreen(label: 'Catalog'),
+            builder: (context, state) => const CatalogScreen(),
+            routes: [
+              GoRoute(
+                path: ':id',
+                builder: (context, state) => TobaccoDetailScreen(
+                  tobaccoId: state.pathParameters['id']!,
+                ),
+              ),
+            ],
           ),
           GoRoute(
             path: Routes.recommender,

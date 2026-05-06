@@ -60,6 +60,8 @@
   "catalogSortNameDesc": "Name Z–A",
   "catalogSortStrengthAsc": "Strength: low to high",
   "catalogSortStrengthDesc": "Strength: high to low",
+  "catalogSortPopularityDesc": "Most popular",
+  "catalogFilterLeafType": "Leaf type",
   "catalogStrengthLight": "Light",
   "catalogStrengthMedium": "Medium",
   "catalogStrengthStrong": "Strong",

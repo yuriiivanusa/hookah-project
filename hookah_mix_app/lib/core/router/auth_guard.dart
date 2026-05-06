@@ -2,6 +2,7 @@ import 'package:hookah_mix_master/core/router/routes.dart';
 
 String? authGuard({required bool isLoggedIn, required String matchedLocation}) {
   const publicRoutes = {
+    Routes.splash,
     Routes.login,
     Routes.signup,
     Routes.forgotPassword,

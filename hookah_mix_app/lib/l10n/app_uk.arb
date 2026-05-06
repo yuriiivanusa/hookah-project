@@ -45,6 +45,9 @@
   "authErrorUserNotFound": "Акаунт з таким email не знайдено",
   "authErrorWrongPassword": "Невірний пароль",
   "authErrorTooManyRequests": "Забагато спроб. Спробуйте пізніше",
+  "authGuestModeTitle": "Гостьовий режим",
+  "authGuestModeBody": "Увійдіть, щоб зберігати улюблені та створювати мікси.",
+  "authGuestSignIn": "Увійти",
 
   "catalogTitle": "Каталог тютюну",
   "catalogSearchHint": "Пошук тютюну…",

@@ -350,6 +350,24 @@ abstract class AppLocalizations {
   /// **'Too many attempts. Try again later'**
   String get authErrorTooManyRequests;
 
+  /// No description provided for @authGuestModeTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Guest Mode'**
+  String get authGuestModeTitle;
+
+  /// No description provided for @authGuestModeBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign in to save favorites and create custom mixes.'**
+  String get authGuestModeBody;
+
+  /// No description provided for @authGuestSignIn.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign in'**
+  String get authGuestSignIn;
+
   /// No description provided for @catalogTitle.
   ///
   /// In en, this message translates to:

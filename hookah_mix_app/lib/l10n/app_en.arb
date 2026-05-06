@@ -45,6 +45,9 @@
   "authErrorUserNotFound": "No account found with this email",
   "authErrorWrongPassword": "Incorrect password",
   "authErrorTooManyRequests": "Too many attempts. Try again later",
+  "authGuestModeTitle": "Guest Mode",
+  "authGuestModeBody": "Sign in to save favorites and create custom mixes.",
+  "authGuestSignIn": "Sign in",
 
   "catalogTitle": "Tobacco Catalog",
   "catalogSearchHint": "Search tobacco…",

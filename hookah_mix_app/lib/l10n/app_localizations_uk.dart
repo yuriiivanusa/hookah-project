@@ -136,6 +136,16 @@ class AppLocalizationsUk extends AppLocalizations {
   String get authErrorTooManyRequests => 'Забагато спроб. Спробуйте пізніше';
 
   @override
+  String get authGuestModeTitle => 'Гостьовий режим';
+
+  @override
+  String get authGuestModeBody =>
+      'Увійдіть, щоб зберігати улюблені та створювати мікси.';
+
+  @override
+  String get authGuestSignIn => 'Увійти';
+
+  @override
   String get catalogTitle => 'Каталог тютюну';
 
   @override

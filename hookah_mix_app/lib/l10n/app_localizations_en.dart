@@ -137,6 +137,16 @@ class AppLocalizationsEn extends AppLocalizations {
   String get authErrorTooManyRequests => 'Too many attempts. Try again later';
 
   @override
+  String get authGuestModeTitle => 'Guest Mode';
+
+  @override
+  String get authGuestModeBody =>
+      'Sign in to save favorites and create custom mixes.';
+
+  @override
+  String get authGuestSignIn => 'Sign in';
+
+  @override
   String get catalogTitle => 'Tobacco Catalog';
 
   @override

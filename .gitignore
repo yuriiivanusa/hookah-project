@@ -1,0 +1,81 @@
+# Spec Kit & Claude AI tooling (auto-generated, not tracked)
+.specify/
+.claude/
+
+# Flutter / Dart
+build/
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+*.lock
+coverage/
+.generated/
+
+# Firebase
+lib/firebase_options.dart
+google-services.json
+GoogleService-Info.plist
+
+# Environment & Secrets
+.env
+.env.local
+.env.*.local
+serviceAccountKey.json
+*.keystore
+*.jks
+
+# IDE & Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*.iml
+*.sublime-workspace
+.DS_Store
+
+# Python (data-pipeline)
+hookah-data-pipeline/venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# OS
+Thumbs.db
+.AppleDouble
+.LSOverride
+*.tmp
+
+# Temporary files
+*.bak
+*.swp
+*~
+.#*
+
+# iOS build artifacts
+ios/Pods/
+ios/Podfile.lock
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+
+# Android build artifacts
+android/.gradle/
+android/local.properties
+android/build/

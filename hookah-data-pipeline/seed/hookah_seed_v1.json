@@ -1,0 +1,5749 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-05-06T07:22:53.971344+00:00",
+  "stats": {
+    "brands": 8,
+    "tobaccos": 100,
+    "mixes": 10
+  },
+  "brands": [
+    {
+      "id": "al_fakher",
+      "name": "Al Fakher",
+      "country": "AE",
+      "countryName": {
+        "en": "United Arab Emirates",
+        "uk": "ОАЕ"
+      },
+      "leafType": "blonde",
+      "foundedYear": 1999,
+      "description": {
+        "en": "Premium UAE-based brand, world's #1 shisha. Mild Virginia blonde leaf, ~0.05% nicotine. Ideal for beginners and intermediate smokers.",
+        "uk": "Преміальний бренд з ОАЕ, №1 у світі. М'який Virginia blonde, ~0.05% нікотину. Ідеально для початківців та середнього рівня."
+      },
+      "popularity": 100
+    },
+    {
+      "id": "adalya",
+      "name": "Adalya",
+      "country": "TR",
+      "countryName": {
+        "en": "Turkey",
+        "uk": "Туреччина"
+      },
+      "leafType": "blonde",
+      "foundedYear": 2003,
+      "description": {
+        "en": "Largest Turkish shisha producer, second largest globally. Golden Virginia blonde leaf with rich, juicy flavors. EU-compliant standards.",
+        "uk": "Найбільший турецький виробник, другий у світі. Золотий Virginia blonde з насиченими соковитими смаками. Стандарти EU."
+      },
+      "popularity": 95
+    },
+    {
+      "id": "fumari",
+      "name": "Fumari",
+      "country": "US",
+      "countryName": {
+        "en": "USA",
+        "uk": "США"
+      },
+      "leafType": "blonde",
+      "foundedYear": 1997,
+      "description": {
+        "en": "California-based premium brand, blonde Virginia leaf. Known for resealable packaging, true-to-taste flavors and small-batch quality.",
+        "uk": "Каліфорнійський преміум-бренд, blonde Virginia. Відомий упаковкою з застібкою, точними смаками та малими партіями."
+      },
+      "popularity": 88
+    },
+    {
+      "id": "tangiers",
+      "name": "Tangiers",
+      "country": "US",
+      "countryName": {
+        "en": "USA",
+        "uk": "США"
+      },
+      "leafType": "dark",
+      "foundedYear": 2005,
+      "description": {
+        "en": "Cult dark-leaf brand with intense flavors and high nicotine. Requires experienced packing technique. Long sessions, deep clouds.",
+        "uk": "Культовий бренд темного листа, інтенсивні смаки та високий нікотин. Потребує досвідченого пакування. Довгі сесії, густі хмари."
+      },
+      "popularity": 75
+    },
+    {
+      "id": "starbuzz",
+      "name": "Starbuzz",
+      "country": "US",
+      "countryName": {
+        "en": "USA",
+        "uk": "США"
+      },
+      "leafType": "blonde",
+      "foundedYear": 2005,
+      "description": {
+        "en": "California premium brand, famous for Blue Mist. Sweet, candy-forward flavor profiles, blonde leaf with smooth burn.",
+        "uk": "Каліфорнійський преміум-бренд, славиться Blue Mist. Солодкі, цукеркові профілі смаків, blonde leaf з рівним нагрівом."
+      },
+      "popularity": 80
+    },
+    {
+      "id": "mazaya",
+      "name": "Mazaya",
+      "country": "JO",
+      "countryName": {
+        "en": "Jordan",
+        "uk": "Йорданія"
+      },
+      "leafType": "blonde",
+      "foundedYear": 2006,
+      "description": {
+        "en": "Jordanian brand offering excellent quality at affordable price. Fine-cut blonde leaf, juicy and beginner-friendly.",
+        "uk": "Йорданський бренд з хорошою якістю за доступною ціною. Дрібно нарізаний blonde leaf, соковитий, для початківців."
+      },
+      "popularity": 70
+    },
+    {
+      "id": "nakhla",
+      "name": "Nakhla",
+      "country": "EG",
+      "countryName": {
+        "en": "Egypt",
+        "uk": "Єгипет"
+      },
+      "leafType": "dark",
+      "foundedYear": 1913,
+      "description": {
+        "en": "Oldest hookah tobacco brand in the world. Classic Egyptian dark leaf with traditional flavors. Higher nicotine, authentic experience.",
+        "uk": "Найстаріший бренд у світі. Класичний єгипетський темний лист з традиційними смаками. Вищий нікотин, автентичний досвід."
+      },
+      "popularity": 78
+    },
+    {
+      "id": "trifecta",
+      "name": "Trifecta",
+      "country": "US",
+      "countryName": {
+        "en": "USA",
+        "uk": "США"
+      },
+      "leafType": "blonde",
+      "foundedYear": 2017,
+      "description": {
+        "en": "Modern US brand offering both blonde and dark leaf. Innovative flavor profiles including dessert and complex blends.",
+        "uk": "Сучасний американський бренд з blonde та dark leaf. Інноваційні профілі смаків включаючи десертні та складні блєнди."
+      },
+      "popularity": 72
+    }
+  ],
+  "tobaccos": [
+    {
+      "id": "al_fakher__double_apple",
+      "brand": {
+        "id": "al_fakher",
+        "name": "Al Fakher",
+        "country": "AE"
+      },
+      "name": {
+        "en": "Double Apple",
+        "uk": "Подвійне яблуко",
+        "original": "Double Apple"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "fruity",
+        "spice"
+      ],
+      "tasteNotes": [
+        "apple",
+        "anise",
+        "licorice"
+      ],
+      "tasteProfile": {
+        "sweet": 4,
+        "sour": 1,
+        "fresh": 0,
+        "spicy": 2,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Classic anise-infused apple flavor. The flagship of hookah world — sweet apple with herbal licorice undertone.",
+        "uk": "Класичний смак яблука з анісом. Флагман кальянного світу — солодке яблуко з нотами лакриці."
+      },
+      "imageUrl": null,
+      "popularity": 98,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.968491+00:00",
+      "updatedAt": "2026-05-06T07:22:53.968617+00:00"
+    },
+    {
+      "id": "al_fakher__mint",
+      "brand": {
+        "id": "al_fakher",
+        "name": "Al Fakher",
+        "country": "AE"
+      },
+      "name": {
+        "en": "Mint",
+        "uk": "М'ята",
+        "original": "Mint"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "mint"
+      ],
+      "tasteNotes": [
+        "mint",
+        "menthol"
+      ],
+      "tasteProfile": {
+        "sweet": 0,
+        "sour": 0,
+        "fresh": 5,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Pure intense mint, the universal mixer. Cool, refreshing, pairs with everything.",
+        "uk": "Чиста інтенсивна м'ята, універсальний міксер. Прохолодна, свіжа, поєднується з усім."
+      },
+      "imageUrl": null,
+      "popularity": 95,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.968629+00:00",
+      "updatedAt": "2026-05-06T07:22:53.968632+00:00"
+    },
+    {
+      "id": "al_fakher__two_apples",
+      "brand": {
+        "id": "al_fakher",
+        "name": "Al Fakher",
+        "country": "AE"
+      },
+      "name": {
+        "en": "Two Apples",
+        "uk": "Два яблука",
+        "original": "Two Apples"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "fruity"
+      ],
+      "tasteNotes": [
+        "apple",
+        "green_apple"
+      ],
+      "tasteProfile": {
+        "sweet": 3,
+        "sour": 2,
+        "fresh": 0,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Sweet red and tart green apples blend without anise. Cleaner apple profile than Double Apple.",
+        "uk": "Суміш солодкого червоного та кислого зеленого яблук без анісу. Чистіший яблучний профіль ніж Double Apple."
+      },
+      "imageUrl": null,
+      "popularity": 85,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.968637+00:00",
+      "updatedAt": "2026-05-06T07:22:53.968639+00:00"
+    },
+    {
+      "id": "al_fakher__peach",
+      "brand": {
+        "id": "al_fakher",
+        "name": "Al Fakher",
+        "country": "AE"
+      },
+      "name": {
+        "en": "Peach",
+        "uk": "Персик",
+        "original": "Peach"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "fruity"
+      ],
+      "tasteNotes": [
+        "peach"
+      ],
+      "tasteProfile": {
+        "sweet": 4,
+        "sour": 1,
+        "fresh": 0,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Authentic ripe peach with smooth juicy finish. One of best-selling fruit flavors.",
+        "uk": "Автентичний стиглий персик з соковитим післясмаком. Один з топ-продажів фруктових смаків."
+      },
+      "imageUrl": null,
+      "popularity": 92,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.968667+00:00",
+      "updatedAt": "2026-05-06T07:22:53.968671+00:00"
+    },
+    {
+      "id": "al_fakher__grape_with_mint",
+      "brand": {
+        "id": "al_fakher",
+        "name": "Al Fakher",
+        "country": "AE"
+      },
+      "name": {
+        "en": "Grape with Mint",
+        "uk": "Виноград з м'ятою",
+        "original": "Grape with Mint"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "fruity",
+        "mint"
+      ],
+      "tasteNotes": [
+        "grape",
+        "mint"
+      ],
+      "tasteProfile": {
+        "sweet": 3,
+        "sour": 0,
+        "fresh": 3,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Sweet grape balanced with cool mint — perfect summer session.",
+        "uk": "Солодкий виноград з прохолодною м'ятою — ідеальна літня сесія."
+      },
+      "imageUrl": null,
+      "popularity": 88,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.968678+00:00",
+      "updatedAt": "2026-05-06T07:22:53.968680+00:00"
+    },
+    {
+      "id": "al_fakher__lemon_with_mint",
+      "brand": {
+        "id": "al_fakher",
+        "name": "Al Fakher",
+        "country": "AE"
+      },
+      "name": {
+        "en": "Lemon with Mint",
+        "uk": "Лимон з м'ятою",
+        "original": "Lemon with Mint"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "citrus",
+        "mint"
+      ],
+      "tasteNotes": [
+        "lemon",
+        "mint"
+      ],
+      "tasteProfile": {
+        "sweet": 0,
+        "sour": 4,
+        "fresh": 3,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Zesty lemon with cooling mint finish. Crisp and refreshing.",
+        "uk": "Цитрусовий лимон з прохолодним фінішем м'яти. Свіжий та бадьорий."
+      },
+      "imageUrl": null,
+      "popularity": 86,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.968734+00:00",
+      "updatedAt": "2026-05-06T07:22:53.968738+00:00"
+    },
+    {
+      "id": "al_fakher__watermelon_with_mint",
+      "brand": {
+        "id": "al_fakher",
+        "name": "Al Fakher",
+        "country": "AE"
+      },
+      "name": {
+        "en": "Watermelon with Mint",
+        "uk": "Кавун з м'ятою",
+        "original": "Watermelon with Mint"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "fruity",
+        "mint"
+      ],
+      "tasteNotes": [
+        "watermelon",
+        "mint"
+      ],
+      "tasteProfile": {
+        "sweet": 3,
+        "sour": 0,
+        "fresh": 3,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Juicy summer watermelon with refreshing cool finish.",
+        "uk": "Соковитий літній кавун з прохолодним фінішем."
+      },
+      "imageUrl": null,
+      "popularity": 84,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.968745+00:00",
+      "updatedAt": "2026-05-06T07:22:53.968747+00:00"
+    },
+    {
+      "id": "al_fakher__blueberry_with_mint",
+      "brand": {
+        "id": "al_fakher",
+        "name": "Al Fakher",
+        "country": "AE"
+      },
+      "name": {
+        "en": "Blueberry with Mint",
+        "uk": "Чорниця з м'ятою",
+        "original": "Blueberry with Mint"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "fruity",
+        "mint"
+      ],
+      "tasteNotes": [
+        "blueberry",
+        "mint"
+      ],
+      "tasteProfile": {
+        "sweet": 3,
+        "sour": 0,
+        "fresh": 3,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Sweet blueberries with cool mint and a slight citrus brightness.",
+        "uk": "Солодка чорниця з холодною м'ятою та легкою цитрусовою свіжістю."
+      },
+      "imageUrl": null,
+      "popularity": 80,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.968751+00:00",
+      "updatedAt": "2026-05-06T07:22:53.968752+00:00"
+    },
+    {
+      "id": "al_fakher__magic_love",
+      "brand": {
+        "id": "al_fakher",
+        "name": "Al Fakher",
+        "country": "AE"
+      },
+      "name": {
+        "en": "Magic Love",
+        "uk": "Меджик Лав",
+        "original": "Magic Love"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "fruity",
+        "mint"
+      ],
+      "tasteNotes": [
+        "melon",
+        "passionfruit",
+        "mint",
+        "spice"
+      ],
+      "tasteProfile": {
+        "sweet": 4,
+        "sour": 1,
+        "fresh": 2,
+        "spicy": 1,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Sweet melon, fresh mint, tangy passionfruit and a hint of secret spices. Iconic.",
+        "uk": "Солодка диня, свіжа м'ята, кислий маракуйя та натяк секретних спецій. Легендарний."
+      },
+      "imageUrl": null,
+      "popularity": 90,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.968782+00:00",
+      "updatedAt": "2026-05-06T07:22:53.968785+00:00"
+    },
+    {
+      "id": "al_fakher__diamond_dust",
+      "brand": {
+        "id": "al_fakher",
+        "name": "Al Fakher",
+        "country": "AE"
+      },
+      "name": {
+        "en": "Diamond Dust",
+        "uk": "Даймонд Даст",
+        "original": "Diamond Dust"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "fruity",
+        "citrus"
+      ],
+      "tasteNotes": [
+        "orange",
+        "raspberry",
+        "pineapple",
+        "lime"
+      ],
+      "tasteProfile": {
+        "sweet": 3,
+        "sour": 3,
+        "fresh": 0,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Sparkling exotic blend of orange, raspberry, pineapple and lime.",
+        "uk": "Іскристий екзотичний бленд апельсина, малини, ананаса та лайма."
+      },
+      "imageUrl": null,
+      "popularity": 82,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.968789+00:00",
+      "updatedAt": "2026-05-06T07:22:53.968791+00:00"
+    },
+    {
+      "id": "al_fakher__cappuccino",
+      "brand": {
+        "id": "al_fakher",
+        "name": "Al Fakher",
+        "country": "AE"
+      },
+      "name": {
+        "en": "Cappuccino",
+        "uk": "Капучино",
+        "original": "Cappuccino"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "dessert",
+        "beverage"
+      ],
+      "tasteNotes": [
+        "coffee",
+        "cream"
+      ],
+      "tasteProfile": {
+        "sweet": 3,
+        "sour": 0,
+        "fresh": 0,
+        "spicy": 0,
+        "bitter": 2,
+        "floral": 0
+      },
+      "description": {
+        "en": "Refined coffee blend with creamy aromatic notes. Perfect for evening sessions.",
+        "uk": "Витончений кавовий бленд з вершково-ароматичними нотами. Ідеально для вечірніх сесій."
+      },
+      "imageUrl": null,
+      "popularity": 70,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.968817+00:00",
+      "updatedAt": "2026-05-06T07:22:53.968821+00:00"
+    },
+    {
+      "id": "al_fakher__mango",
+      "brand": {
+        "id": "al_fakher",
+        "name": "Al Fakher",
+        "country": "AE"
+      },
+      "name": {
+        "en": "Mango",
+        "uk": "Манго",
+        "original": "Mango"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "fruity"
+      ],
+      "tasteNotes": [
+        "mango"
+      ],
+      "tasteProfile": {
+        "sweet": 4,
+        "sour": 0,
+        "fresh": 0,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Rich, ripe mango with a creamy tropical finish.",
+        "uk": "Насичене стигле манго з кремовим тропічним післясмаком."
+      },
+      "imageUrl": null,
+      "popularity": 78,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.968828+00:00",
+      "updatedAt": "2026-05-06T07:22:53.968830+00:00"
+    },
+    {
+      "id": "al_fakher__guava",
+      "brand": {
+        "id": "al_fakher",
+        "name": "Al Fakher",
+        "country": "AE"
+      },
+      "name": {
+        "en": "Guava",
+        "uk": "Гуава",
+        "original": "Guava"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "fruity"
+      ],
+      "tasteNotes": [
+        "guava"
+      ],
+      "tasteProfile": {
+        "sweet": 3,
+        "sour": 1,
+        "fresh": 0,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Tropical guava blend with earthy and woody undertones.",
+        "uk": "Тропічна гуава з земляними та деревними нотами."
+      },
+      "imageUrl": null,
+      "popularity": 68,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.968881+00:00",
+      "updatedAt": "2026-05-06T07:22:53.968885+00:00"
+    },
+    {
+      "id": "al_fakher__hubbly_bubble_gum",
+      "brand": {
+        "id": "al_fakher",
+        "name": "Al Fakher",
+        "country": "AE"
+      },
+      "name": {
+        "en": "Hubbly Bubble Gum",
+        "uk": "Бабл Гам",
+        "original": "Hubbly Bubble Gum"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "sweet"
+      ],
+      "tasteNotes": [
+        "bubblegum"
+      ],
+      "tasteProfile": {
+        "sweet": 5,
+        "sour": 0,
+        "fresh": 0,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Classic sweet bubble gum flavor — childhood nostalgia in clouds.",
+        "uk": "Класична жуйка — дитяча ностальгія у хмарах."
+      },
+      "imageUrl": null,
+      "popularity": 72,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.968914+00:00",
+      "updatedAt": "2026-05-06T07:22:53.968918+00:00"
+    },
+    {
+      "id": "al_fakher__cherry_with_mint",
+      "brand": {
+        "id": "al_fakher",
+        "name": "Al Fakher",
+        "country": "AE"
+      },
+      "name": {
+        "en": "Cherry with Mint",
+        "uk": "Вишня з м'ятою",
+        "original": "Cherry with Mint"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "fruity",
+        "mint"
+      ],
+      "tasteNotes": [
+        "cherry",
+        "mint"
+      ],
+      "tasteProfile": {
+        "sweet": 3,
+        "sour": 1,
+        "fresh": 3,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Bold cherry flavor with subtle refreshing mint coolness.",
+        "uk": "Соковита вишня з прохолодою м'яти."
+      },
+      "imageUrl": null,
+      "popularity": 75,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.968925+00:00",
+      "updatedAt": "2026-05-06T07:22:53.968926+00:00"
+    },
+    {
+      "id": "al_fakher__orange_with_mint",
+      "brand": {
+        "id": "al_fakher",
+        "name": "Al Fakher",
+        "country": "AE"
+      },
+      "name": {
+        "en": "Orange with Mint",
+        "uk": "Апельсин з м'ятою",
+        "original": "Orange with Mint"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "citrus",
+        "mint"
+      ],
+      "tasteNotes": [
+        "orange",
+        "mint"
+      ],
+      "tasteProfile": {
+        "sweet": 2,
+        "sour": 2,
+        "fresh": 3,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Zesty orange paired with cooling mint for a refreshing citrus session.",
+        "uk": "Цитрусовий апельсин з прохолодною м'ятою для свіжої сесії."
+      },
+      "imageUrl": null,
+      "popularity": 76,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.968956+00:00",
+      "updatedAt": "2026-05-06T07:22:53.968960+00:00"
+    },
+    {
+      "id": "al_fakher__grapefruit_with_mint",
+      "brand": {
+        "id": "al_fakher",
+        "name": "Al Fakher",
+        "country": "AE"
+      },
+      "name": {
+        "en": "Grapefruit with Mint",
+        "uk": "Грейпфрут з м'ятою",
+        "original": "Grapefruit with Mint"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "citrus",
+        "mint"
+      ],
+      "tasteNotes": [
+        "grapefruit",
+        "mint"
+      ],
+      "tasteProfile": {
+        "sweet": 0,
+        "sour": 4,
+        "fresh": 3,
+        "spicy": 0,
+        "bitter": 1,
+        "floral": 0
+      },
+      "description": {
+        "en": "Tart grapefruit with sharp refreshing mint. Energizing and crisp.",
+        "uk": "Терпкий грейпфрут з гострою м'ятою. Бадьорить та освіжає."
+      },
+      "imageUrl": null,
+      "popularity": 74,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.969010+00:00",
+      "updatedAt": "2026-05-06T07:22:53.969014+00:00"
+    },
+    {
+      "id": "al_fakher__mint_with_cream",
+      "brand": {
+        "id": "al_fakher",
+        "name": "Al Fakher",
+        "country": "AE"
+      },
+      "name": {
+        "en": "Mint with Cream",
+        "uk": "М'ята з вершками",
+        "original": "Mint with Cream"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "mint",
+        "dessert"
+      ],
+      "tasteNotes": [
+        "mint",
+        "cream"
+      ],
+      "tasteProfile": {
+        "sweet": 2,
+        "sour": 0,
+        "fresh": 4,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Cool mint blended with rich cream for a unique dessert-like minty session.",
+        "uk": "Прохолодна м'ята з насиченими вершками — десертна м'ятна сесія."
+      },
+      "imageUrl": null,
+      "popularity": 68,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.969021+00:00",
+      "updatedAt": "2026-05-06T07:22:53.969022+00:00"
+    },
+    {
+      "id": "al_fakher__cinnamon",
+      "brand": {
+        "id": "al_fakher",
+        "name": "Al Fakher",
+        "country": "AE"
+      },
+      "name": {
+        "en": "Cinnamon",
+        "uk": "Кориця",
+        "original": "Cinnamon"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "spice"
+      ],
+      "tasteNotes": [
+        "cinnamon"
+      ],
+      "tasteProfile": {
+        "sweet": 2,
+        "sour": 0,
+        "fresh": 0,
+        "spicy": 4,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Sweet warming cinnamon, perfect for autumn-winter mixing.",
+        "uk": "Солодка зігріваюча кориця, ідеальна для осінньо-зимових міксів."
+      },
+      "imageUrl": null,
+      "popularity": 60,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.969027+00:00",
+      "updatedAt": "2026-05-06T07:22:53.969028+00:00"
+    },
+    {
+      "id": "al_fakher__vanilla",
+      "brand": {
+        "id": "al_fakher",
+        "name": "Al Fakher",
+        "country": "AE"
+      },
+      "name": {
+        "en": "Vanilla",
+        "uk": "Ваніль",
+        "original": "Vanilla"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "dessert"
+      ],
+      "tasteNotes": [
+        "vanilla"
+      ],
+      "tasteProfile": {
+        "sweet": 4,
+        "sour": 0,
+        "fresh": 0,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Smooth, creamy vanilla — versatile mixer for dessert blends.",
+        "uk": "М'яка кремова ваніль — універсальний міксер для десертних блендів."
+      },
+      "imageUrl": null,
+      "popularity": 65,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.969032+00:00",
+      "updatedAt": "2026-05-06T07:22:53.969033+00:00"
+    },
+    {
+      "id": "al_fakher__berry",
+      "brand": {
+        "id": "al_fakher",
+        "name": "Al Fakher",
+        "country": "AE"
+      },
+      "name": {
+        "en": "Berry",
+        "uk": "Ягоди",
+        "original": "Berry"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "fruity"
+      ],
+      "tasteNotes": [
+        "berry",
+        "raspberry",
+        "blackberry"
+      ],
+      "tasteProfile": {
+        "sweet": 3,
+        "sour": 2,
+        "fresh": 0,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Rich intense flavors of mixed berries with tart aftertaste.",
+        "uk": "Насичений смак суміші ягід з терпким післясмаком."
+      },
+      "imageUrl": null,
+      "popularity": 70,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.969037+00:00",
+      "updatedAt": "2026-05-06T07:22:53.969038+00:00"
+    },
+    {
+      "id": "al_fakher__coconut",
+      "brand": {
+        "id": "al_fakher",
+        "name": "Al Fakher",
+        "country": "AE"
+      },
+      "name": {
+        "en": "Coconut",
+        "uk": "Кокос",
+        "original": "Coconut"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "dessert"
+      ],
+      "tasteNotes": [
+        "coconut"
+      ],
+      "tasteProfile": {
+        "sweet": 3,
+        "sour": 0,
+        "fresh": 0,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Cool creamy coconut, a tropical mixer for fruit blends.",
+        "uk": "Прохолодний кремовий кокос, тропічний міксер для фруктів."
+      },
+      "imageUrl": null,
+      "popularity": 58,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.969089+00:00",
+      "updatedAt": "2026-05-06T07:22:53.969093+00:00"
+    },
+    {
+      "id": "al_fakher__pineapple",
+      "brand": {
+        "id": "al_fakher",
+        "name": "Al Fakher",
+        "country": "AE"
+      },
+      "name": {
+        "en": "Pineapple",
+        "uk": "Ананас",
+        "original": "Pineapple"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "fruity"
+      ],
+      "tasteNotes": [
+        "pineapple"
+      ],
+      "tasteProfile": {
+        "sweet": 3,
+        "sour": 2,
+        "fresh": 0,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Bright juicy pineapple with tropical sweetness.",
+        "uk": "Яскравий соковитий ананас з тропічною солодкістю."
+      },
+      "imageUrl": null,
+      "popularity": 72,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.969100+00:00",
+      "updatedAt": "2026-05-06T07:22:53.969101+00:00"
+    },
+    {
+      "id": "al_fakher__lucid_dream",
+      "brand": {
+        "id": "al_fakher",
+        "name": "Al Fakher",
+        "country": "AE"
+      },
+      "name": {
+        "en": "Lucid Dream",
+        "uk": "Lucid Dream",
+        "original": "Lucid Dream"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "fruity",
+        "mint"
+      ],
+      "tasteNotes": [
+        "blueberry",
+        "lemon",
+        "mint"
+      ],
+      "tasteProfile": {
+        "sweet": 3,
+        "sour": 2,
+        "fresh": 3,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Sweet blueberry with minty lemon — vivid and refreshing.",
+        "uk": "Солодка чорниця з м'ятним лимоном — яскравий та свіжий."
+      },
+      "imageUrl": null,
+      "popularity": 74,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.969106+00:00",
+      "updatedAt": "2026-05-06T07:22:53.969107+00:00"
+    },
+    {
+      "id": "al_fakher__harvest_moon",
+      "brand": {
+        "id": "al_fakher",
+        "name": "Al Fakher",
+        "country": "AE"
+      },
+      "name": {
+        "en": "Harvest Moon",
+        "uk": "Harvest Moon",
+        "original": "Harvest Moon"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "herbal",
+        "citrus"
+      ],
+      "tasteNotes": [
+        "green_tea",
+        "lemon",
+        "lime"
+      ],
+      "tasteProfile": {
+        "sweet": 2,
+        "sour": 3,
+        "fresh": 0,
+        "spicy": 0,
+        "bitter": 1,
+        "floral": 0
+      },
+      "description": {
+        "en": "Mesmerizing green tea with hints of lemon and lime. Unique and elegant.",
+        "uk": "Магнетичний зелений чай з лимоном та лаймом. Унікально та елегантно."
+      },
+      "imageUrl": null,
+      "popularity": 66,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.969111+00:00",
+      "updatedAt": "2026-05-06T07:22:53.969112+00:00"
+    },
+    {
+      "id": "adalya__love_66",
+      "brand": {
+        "id": "adalya",
+        "name": "Adalya",
+        "country": "TR"
+      },
+      "name": {
+        "en": "Love 66",
+        "uk": "Лав 66",
+        "original": "Love 66"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "fruity",
+        "mint",
+        "floral"
+      ],
+      "tasteNotes": [
+        "watermelon",
+        "passionfruit",
+        "honeydew",
+        "mint"
+      ],
+      "tasteProfile": {
+        "sweet": 4,
+        "sour": 1,
+        "fresh": 2,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 2
+      },
+      "description": {
+        "en": "Iconic blend of passion fruit, honeydew melon, watermelon and mint with a floral undertone. Adalya's flagship.",
+        "uk": "Легендарний бленд маракуйї, медової дині, кавуна та м'яти з квітковими нотами. Флагман Adalya."
+      },
+      "imageUrl": null,
+      "popularity": 98,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.969162+00:00",
+      "updatedAt": "2026-05-06T07:22:53.969166+00:00"
+    },
+    {
+      "id": "adalya__lady_killer",
+      "brand": {
+        "id": "adalya",
+        "name": "Adalya",
+        "country": "TR"
+      },
+      "name": {
+        "en": "Lady Killer",
+        "uk": "Lady Killer",
+        "original": "Lady Killer"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "fruity",
+        "mint"
+      ],
+      "tasteNotes": [
+        "melon",
+        "mango",
+        "berry",
+        "mint"
+      ],
+      "tasteProfile": {
+        "sweet": 4,
+        "sour": 0,
+        "fresh": 2,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Tropical-berry layered profile with melon, mango, forest berries and clean mint finish.",
+        "uk": "Тропічно-ягідний профіль з динею, манго, лісовими ягодами та чистим фінішем м'яти."
+      },
+      "imageUrl": null,
+      "popularity": 85,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.969195+00:00",
+      "updatedAt": "2026-05-06T07:22:53.969226+00:00"
+    },
+    {
+      "id": "adalya__skyfall",
+      "brand": {
+        "id": "adalya",
+        "name": "Adalya",
+        "country": "TR"
+      },
+      "name": {
+        "en": "Skyfall",
+        "uk": "Скайфолл",
+        "original": "Skyfall"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "fruity",
+        "mint"
+      ],
+      "tasteNotes": [
+        "watermelon",
+        "peach",
+        "mint"
+      ],
+      "tasteProfile": {
+        "sweet": 4,
+        "sour": 0,
+        "fresh": 2,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Watermelon, peach and mint — mellow fruit sweetness with cooling finish.",
+        "uk": "Кавун, персик та м'ята — м'яка фруктова солодкість з прохолодою."
+      },
+      "imageUrl": null,
+      "popularity": 83,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.969236+00:00",
+      "updatedAt": "2026-05-06T07:22:53.969238+00:00"
+    },
+    {
+      "id": "adalya__mi_amor",
+      "brand": {
+        "id": "adalya",
+        "name": "Adalya",
+        "country": "TR"
+      },
+      "name": {
+        "en": "Mi Amor",
+        "uk": "Мі Амор",
+        "original": "Mi Amor"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "fruity",
+        "mint"
+      ],
+      "tasteNotes": [
+        "pineapple",
+        "banana",
+        "mint"
+      ],
+      "tasteProfile": {
+        "sweet": 4,
+        "sour": 1,
+        "fresh": 2,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Tropical pineapple and ripe banana balanced with cool mint.",
+        "uk": "Тропічний ананас та стиглий банан з прохолодною м'ятою."
+      },
+      "imageUrl": null,
+      "popularity": 78,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.969242+00:00",
+      "updatedAt": "2026-05-06T07:22:53.969243+00:00"
+    },
+    {
+      "id": "adalya__ice_bonbon",
+      "brand": {
+        "id": "adalya",
+        "name": "Adalya",
+        "country": "TR"
+      },
+      "name": {
+        "en": "Ice Bonbon",
+        "uk": "Айс Бонбон",
+        "original": "Ice Bonbon"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "mint",
+        "citrus",
+        "sweet"
+      ],
+      "tasteNotes": [
+        "menthol",
+        "lemon",
+        "candy"
+      ],
+      "tasteProfile": {
+        "sweet": 3,
+        "sour": 2,
+        "fresh": 4,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Refreshing menthol candy with citrus undertones. Energizing and crisp.",
+        "uk": "Освіжаюча ментолова цукерка з цитрусом. Бадьорить."
+      },
+      "imageUrl": null,
+      "popularity": 80,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.969271+00:00",
+      "updatedAt": "2026-05-06T07:22:53.969275+00:00"
+    },
+    {
+      "id": "adalya__berlin_nights",
+      "brand": {
+        "id": "adalya",
+        "name": "Adalya",
+        "country": "TR"
+      },
+      "name": {
+        "en": "Berlin Nights",
+        "uk": "Берлін Найтс",
+        "original": "Berlin Nights"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "fruity",
+        "mint"
+      ],
+      "tasteNotes": [
+        "peach",
+        "mint"
+      ],
+      "tasteProfile": {
+        "sweet": 4,
+        "sour": 0,
+        "fresh": 3,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Juicy peach paired with fresh mint — clean stone-fruit cool.",
+        "uk": "Соковитий персик зі свіжою м'ятою — чиста кістянка з прохолодою."
+      },
+      "imageUrl": null,
+      "popularity": 76,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.969303+00:00",
+      "updatedAt": "2026-05-06T07:22:53.969307+00:00"
+    },
+    {
+      "id": "adalya__hawaii",
+      "brand": {
+        "id": "adalya",
+        "name": "Adalya",
+        "country": "TR"
+      },
+      "name": {
+        "en": "Hawaii",
+        "uk": "Гаваї",
+        "original": "Hawaii"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "fruity",
+        "citrus"
+      ],
+      "tasteNotes": [
+        "lemon",
+        "lime",
+        "green_tea"
+      ],
+      "tasteProfile": {
+        "sweet": 0,
+        "sour": 3,
+        "fresh": 2,
+        "spicy": 0,
+        "bitter": 1,
+        "floral": 0
+      },
+      "description": {
+        "en": "Citrus blend of lemon and lime with green tea base.",
+        "uk": "Цитрусовий бленд лимона і лайма з основою зеленого чаю."
+      },
+      "imageUrl": null,
+      "popularity": 72,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.969313+00:00",
+      "updatedAt": "2026-05-06T07:22:53.969314+00:00"
+    },
+    {
+      "id": "adalya__angel_lips",
+      "brand": {
+        "id": "adalya",
+        "name": "Adalya",
+        "country": "TR"
+      },
+      "name": {
+        "en": "Angel Lips",
+        "uk": "Енджел Ліпс",
+        "original": "Angel Lips"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "fruity",
+        "mint",
+        "floral"
+      ],
+      "tasteNotes": [
+        "melon",
+        "raspberry",
+        "mint"
+      ],
+      "tasteProfile": {
+        "sweet": 3,
+        "sour": 0,
+        "fresh": 2,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 2
+      },
+      "description": {
+        "en": "Melon and raspberry with mint and a floral undertone.",
+        "uk": "Диня та малина з м'ятою та квітковими нотами."
+      },
+      "imageUrl": null,
+      "popularity": 74,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.969347+00:00",
+      "updatedAt": "2026-05-06T07:22:53.969351+00:00"
+    },
+    {
+      "id": "adalya__cactus",
+      "brand": {
+        "id": "adalya",
+        "name": "Adalya",
+        "country": "TR"
+      },
+      "name": {
+        "en": "Cactus",
+        "uk": "Кактус",
+        "original": "Cactus"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "herbal",
+        "fruity"
+      ],
+      "tasteNotes": [
+        "cactus",
+        "tropical"
+      ],
+      "tasteProfile": {
+        "sweet": 2,
+        "sour": 2,
+        "fresh": 0,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 1
+      },
+      "description": {
+        "en": "Unique grassy cactus notes with smooth sweet-sour transition.",
+        "uk": "Унікальні трав'янисті ноти кактуса з м'яким переходом солодко-кисле."
+      },
+      "imageUrl": null,
+      "popularity": 65,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.969357+00:00",
+      "updatedAt": "2026-05-06T07:22:53.969359+00:00"
+    },
+    {
+      "id": "adalya__blue_melon",
+      "brand": {
+        "id": "adalya",
+        "name": "Adalya",
+        "country": "TR"
+      },
+      "name": {
+        "en": "Blue Melon",
+        "uk": "Блю Мелон",
+        "original": "Blue Melon"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "fruity"
+      ],
+      "tasteNotes": [
+        "honeydew",
+        "blueberry"
+      ],
+      "tasteProfile": {
+        "sweet": 4,
+        "sour": 0,
+        "fresh": 0,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Smooth honeydew melon with darker blueberry top notes.",
+        "uk": "М'яка медова диня з ягідними нотами чорниці."
+      },
+      "imageUrl": null,
+      "popularity": 70,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.969397+00:00",
+      "updatedAt": "2026-05-06T07:22:53.969402+00:00"
+    },
+    {
+      "id": "adalya__mint",
+      "brand": {
+        "id": "adalya",
+        "name": "Adalya",
+        "country": "TR"
+      },
+      "name": {
+        "en": "Mint",
+        "uk": "М'ята",
+        "original": "Mint"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "mint"
+      ],
+      "tasteNotes": [
+        "mint"
+      ],
+      "tasteProfile": {
+        "sweet": 0,
+        "sour": 0,
+        "fresh": 5,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Clean straightforward mint with crisp finish. Reliable mixer.",
+        "uk": "Чиста проста м'ята з виразним фінішем. Надійний міксер."
+      },
+      "imageUrl": null,
+      "popularity": 72,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.969435+00:00",
+      "updatedAt": "2026-05-06T07:22:53.969439+00:00"
+    },
+    {
+      "id": "adalya__lemon",
+      "brand": {
+        "id": "adalya",
+        "name": "Adalya",
+        "country": "TR"
+      },
+      "name": {
+        "en": "Lemon",
+        "uk": "Лимон",
+        "original": "Lemon"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "citrus"
+      ],
+      "tasteNotes": [
+        "lemon"
+      ],
+      "tasteProfile": {
+        "sweet": 0,
+        "sour": 4,
+        "fresh": 0,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Bright zesty lemon — pure citrus profile.",
+        "uk": "Яскравий цитрусовий лимон — чистий цитрусовий профіль."
+      },
+      "imageUrl": null,
+      "popularity": 66,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.969444+00:00",
+      "updatedAt": "2026-05-06T07:22:53.969446+00:00"
+    },
+    {
+      "id": "adalya__watermelon",
+      "brand": {
+        "id": "adalya",
+        "name": "Adalya",
+        "country": "TR"
+      },
+      "name": {
+        "en": "Watermelon",
+        "uk": "Кавун",
+        "original": "Watermelon"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "fruity"
+      ],
+      "tasteNotes": [
+        "watermelon"
+      ],
+      "tasteProfile": {
+        "sweet": 4,
+        "sour": 0,
+        "fresh": 0,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Sweet juicy watermelon — summer classic.",
+        "uk": "Солодкий соковитий кавун — літня класика."
+      },
+      "imageUrl": null,
+      "popularity": 78,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.969500+00:00",
+      "updatedAt": "2026-05-06T07:22:53.969504+00:00"
+    },
+    {
+      "id": "adalya__acai",
+      "brand": {
+        "id": "adalya",
+        "name": "Adalya",
+        "country": "TR"
+      },
+      "name": {
+        "en": "Acai",
+        "uk": "Асаї",
+        "original": "Acai"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "fruity"
+      ],
+      "tasteNotes": [
+        "acai",
+        "berry"
+      ],
+      "tasteProfile": {
+        "sweet": 3,
+        "sour": 2,
+        "fresh": 0,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Bright sweet-and-sour acai berries.",
+        "uk": "Яскраві солодко-кислі ягоди асаї."
+      },
+      "imageUrl": null,
+      "popularity": 64,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.969533+00:00",
+      "updatedAt": "2026-05-06T07:22:53.969538+00:00"
+    },
+    {
+      "id": "adalya__adalya_power",
+      "brand": {
+        "id": "adalya",
+        "name": "Adalya",
+        "country": "TR"
+      },
+      "name": {
+        "en": "Adalya Power",
+        "uk": "Адалья Пауер",
+        "original": "Adalya Power"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "beverage"
+      ],
+      "tasteNotes": [
+        "energy_drink"
+      ],
+      "tasteProfile": {
+        "sweet": 3,
+        "sour": 3,
+        "fresh": 0,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Sweet and sour energy drink flavor.",
+        "uk": "Солодко-кислий енергетик."
+      },
+      "imageUrl": null,
+      "popularity": 68,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.969544+00:00",
+      "updatedAt": "2026-05-06T07:22:53.969546+00:00"
+    },
+    {
+      "id": "adalya__banana_milk_ice",
+      "brand": {
+        "id": "adalya",
+        "name": "Adalya",
+        "country": "TR"
+      },
+      "name": {
+        "en": "Banana Milk Ice",
+        "uk": "Бананове молоко Айс",
+        "original": "Banana Milk Ice"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "dessert",
+        "mint"
+      ],
+      "tasteNotes": [
+        "banana",
+        "milk",
+        "menthol"
+      ],
+      "tasteProfile": {
+        "sweet": 4,
+        "sour": 0,
+        "fresh": 3,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Sweet banana with creamy milk and icy menthol.",
+        "uk": "Солодкий банан з кремовим молоком та крижаним ментолом."
+      },
+      "imageUrl": null,
+      "popularity": 62,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.969550+00:00",
+      "updatedAt": "2026-05-06T07:22:53.969552+00:00"
+    },
+    {
+      "id": "adalya__berryeis",
+      "brand": {
+        "id": "adalya",
+        "name": "Adalya",
+        "country": "TR"
+      },
+      "name": {
+        "en": "Berryeis",
+        "uk": "Беррайс",
+        "original": "Berryeis"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "fruity",
+        "mint"
+      ],
+      "tasteNotes": [
+        "blackberry",
+        "cranberry",
+        "blueberry",
+        "menthol"
+      ],
+      "tasteProfile": {
+        "sweet": 3,
+        "sour": 2,
+        "fresh": 3,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Mix of blackberries, cranberries, blueberries with icy finish.",
+        "uk": "Суміш ожини, журавлини, чорниці з крижаним фінішем."
+      },
+      "imageUrl": null,
+      "popularity": 70,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.969555+00:00",
+      "updatedAt": "2026-05-06T07:22:53.969557+00:00"
+    },
+    {
+      "id": "adalya__black_cherry",
+      "brand": {
+        "id": "adalya",
+        "name": "Adalya",
+        "country": "TR"
+      },
+      "name": {
+        "en": "Black Cherry",
+        "uk": "Блек Черрі",
+        "original": "Black Cherry"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "fruity",
+        "beverage"
+      ],
+      "tasteNotes": [
+        "cherry",
+        "soda"
+      ],
+      "tasteProfile": {
+        "sweet": 4,
+        "sour": 1,
+        "fresh": 0,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Sweet cherry soda with classic candy notes.",
+        "uk": "Солодка вишнева газована з нотами цукерок."
+      },
+      "imageUrl": null,
+      "popularity": 66,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.969608+00:00",
+      "updatedAt": "2026-05-06T07:22:53.969612+00:00"
+    },
+    {
+      "id": "adalya__lemon_pie",
+      "brand": {
+        "id": "adalya",
+        "name": "Adalya",
+        "country": "TR"
+      },
+      "name": {
+        "en": "Lemon Pie",
+        "uk": "Лемон Пай",
+        "original": "Lemon Pie"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "dessert",
+        "citrus"
+      ],
+      "tasteNotes": [
+        "lemon",
+        "pie",
+        "cream"
+      ],
+      "tasteProfile": {
+        "sweet": 3,
+        "sour": 2,
+        "fresh": 0,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Sweet lemon pie dessert flavor.",
+        "uk": "Солодкий десерт лимонний пиріг."
+      },
+      "imageUrl": null,
+      "popularity": 60,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.969619+00:00",
+      "updatedAt": "2026-05-06T07:22:53.969621+00:00"
+    },
+    {
+      "id": "adalya__horchata",
+      "brand": {
+        "id": "adalya",
+        "name": "Adalya",
+        "country": "TR"
+      },
+      "name": {
+        "en": "Horchata",
+        "uk": "Орчата",
+        "original": "Horchata"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "dessert",
+        "spice"
+      ],
+      "tasteNotes": [
+        "cinnamon",
+        "vanilla",
+        "almond"
+      ],
+      "tasteProfile": {
+        "sweet": 4,
+        "sour": 0,
+        "fresh": 0,
+        "spicy": 2,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Creamy dessert blend with cinnamon, vanilla and almond. Memorable and unique.",
+        "uk": "Кремовий десерт з корицею, ваніллю та мигдалем. Незабутньо."
+      },
+      "imageUrl": null,
+      "popularity": 58,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.969626+00:00",
+      "updatedAt": "2026-05-06T07:22:53.969627+00:00"
+    },
+    {
+      "id": "fumari__white_gummi_bear",
+      "brand": {
+        "id": "fumari",
+        "name": "Fumari",
+        "country": "US"
+      },
+      "name": {
+        "en": "White Gummi Bear",
+        "uk": "Білий ведмедик",
+        "original": "White Gummi Bear"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "sweet"
+      ],
+      "tasteNotes": [
+        "candy",
+        "gummy"
+      ],
+      "tasteProfile": {
+        "sweet": 5,
+        "sour": 0,
+        "fresh": 0,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Iconic Fumari classic — sweet white gummy bear candy.",
+        "uk": "Іконічна класика Fumari — солодкий білий ведмедик."
+      },
+      "imageUrl": null,
+      "popularity": 92,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.969657+00:00",
+      "updatedAt": "2026-05-06T07:22:53.969661+00:00"
+    },
+    {
+      "id": "fumari__ambrosia",
+      "brand": {
+        "id": "fumari",
+        "name": "Fumari",
+        "country": "US"
+      },
+      "name": {
+        "en": "Ambrosia",
+        "uk": "Амброзія",
+        "original": "Ambrosia"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "fruity",
+        "sweet"
+      ],
+      "tasteNotes": [
+        "orange",
+        "vanilla",
+        "tropical"
+      ],
+      "tasteProfile": {
+        "sweet": 4,
+        "sour": 1,
+        "fresh": 0,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Tropical orange creamsicle blend — Fumari's beloved signature.",
+        "uk": "Тропічний апельсиновий бленд з вершками — улюблена класика Fumari."
+      },
+      "imageUrl": null,
+      "popularity": 88,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.969704+00:00",
+      "updatedAt": "2026-05-06T07:22:53.969730+00:00"
+    },
+    {
+      "id": "fumari__spiced_chai",
+      "brand": {
+        "id": "fumari",
+        "name": "Fumari",
+        "country": "US"
+      },
+      "name": {
+        "en": "Spiced Chai",
+        "uk": "Чай з прянощами",
+        "original": "Spiced Chai"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "beverage",
+        "spice"
+      ],
+      "tasteNotes": [
+        "chai",
+        "cinnamon",
+        "cardamom"
+      ],
+      "tasteProfile": {
+        "sweet": 2,
+        "sour": 0,
+        "fresh": 0,
+        "spicy": 4,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Aromatic Indian-style spiced chai with cinnamon and cardamom.",
+        "uk": "Ароматний індійський чай з корицею та кардамоном."
+      },
+      "imageUrl": null,
+      "popularity": 72,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.969739+00:00",
+      "updatedAt": "2026-05-06T07:22:53.969740+00:00"
+    },
+    {
+      "id": "fumari__lemon_mint",
+      "brand": {
+        "id": "fumari",
+        "name": "Fumari",
+        "country": "US"
+      },
+      "name": {
+        "en": "Lemon Mint",
+        "uk": "Лимон-м'ята",
+        "original": "Lemon Mint"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "citrus",
+        "mint"
+      ],
+      "tasteNotes": [
+        "lemon",
+        "mint"
+      ],
+      "tasteProfile": {
+        "sweet": 0,
+        "sour": 3,
+        "fresh": 4,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Bright lemon balanced with crisp mint.",
+        "uk": "Яскравий лимон з чистою м'ятою."
+      },
+      "imageUrl": null,
+      "popularity": 80,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.969769+00:00",
+      "updatedAt": "2026-05-06T07:22:53.969773+00:00"
+    },
+    {
+      "id": "fumari__white_peach",
+      "brand": {
+        "id": "fumari",
+        "name": "Fumari",
+        "country": "US"
+      },
+      "name": {
+        "en": "White Peach",
+        "uk": "Білий персик",
+        "original": "White Peach"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "fruity"
+      ],
+      "tasteNotes": [
+        "peach"
+      ],
+      "tasteProfile": {
+        "sweet": 4,
+        "sour": 0,
+        "fresh": 0,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Delicate white peach with smooth juicy texture.",
+        "uk": "Делікатний білий персик з соковитою м'якою текстурою."
+      },
+      "imageUrl": null,
+      "popularity": 78,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.969779+00:00",
+      "updatedAt": "2026-05-06T07:22:53.969781+00:00"
+    },
+    {
+      "id": "fumari__strawberry_jam",
+      "brand": {
+        "id": "fumari",
+        "name": "Fumari",
+        "country": "US"
+      },
+      "name": {
+        "en": "Strawberry Jam",
+        "uk": "Полуничний джем",
+        "original": "Strawberry Jam"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "fruity",
+        "dessert"
+      ],
+      "tasteNotes": [
+        "strawberry",
+        "jam"
+      ],
+      "tasteProfile": {
+        "sweet": 5,
+        "sour": 0,
+        "fresh": 0,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Rich sweet strawberry jam — like grandma's preserves.",
+        "uk": "Насичений солодкий полуничний джем."
+      },
+      "imageUrl": null,
+      "popularity": 82,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.969810+00:00",
+      "updatedAt": "2026-05-06T07:22:53.969814+00:00"
+    },
+    {
+      "id": "fumari__mint_chocolate_chill",
+      "brand": {
+        "id": "fumari",
+        "name": "Fumari",
+        "country": "US"
+      },
+      "name": {
+        "en": "Mint Chocolate Chill",
+        "uk": "Мятно-шоколадний",
+        "original": "Mint Chocolate Chill"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "dessert",
+        "mint"
+      ],
+      "tasteNotes": [
+        "chocolate",
+        "mint"
+      ],
+      "tasteProfile": {
+        "sweet": 3,
+        "sour": 0,
+        "fresh": 3,
+        "spicy": 0,
+        "bitter": 1,
+        "floral": 0
+      },
+      "description": {
+        "en": "Mint chocolate chip ice cream in shisha form.",
+        "uk": "Шоколадно-м'ятне морозиво у вигляді кальяну."
+      },
+      "imageUrl": null,
+      "popularity": 70,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.969845+00:00",
+      "updatedAt": "2026-05-06T07:22:53.969849+00:00"
+    },
+    {
+      "id": "fumari__mint",
+      "brand": {
+        "id": "fumari",
+        "name": "Fumari",
+        "country": "US"
+      },
+      "name": {
+        "en": "Mint",
+        "uk": "М'ята",
+        "original": "Mint"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "mint"
+      ],
+      "tasteNotes": [
+        "mint"
+      ],
+      "tasteProfile": {
+        "sweet": 0,
+        "sour": 0,
+        "fresh": 5,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Pure mint, classic clean profile.",
+        "uk": "Чиста м'ята, класичний чистий профіль."
+      },
+      "imageUrl": null,
+      "popularity": 74,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.969854+00:00",
+      "updatedAt": "2026-05-06T07:22:53.969855+00:00"
+    },
+    {
+      "id": "fumari__red_gummi_bear",
+      "brand": {
+        "id": "fumari",
+        "name": "Fumari",
+        "country": "US"
+      },
+      "name": {
+        "en": "Red Gummi Bear",
+        "uk": "Червоний ведмедик",
+        "original": "Red Gummi Bear"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "fruity",
+        "sweet"
+      ],
+      "tasteNotes": [
+        "candy",
+        "berry"
+      ],
+      "tasteProfile": {
+        "sweet": 5,
+        "sour": 1,
+        "fresh": 0,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Red berry gummy bear — fruity candy classic.",
+        "uk": "Червоний ягідний ведмедик — фруктова цукеркова класика."
+      },
+      "imageUrl": null,
+      "popularity": 78,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.969881+00:00",
+      "updatedAt": "2026-05-06T07:22:53.969885+00:00"
+    },
+    {
+      "id": "fumari__prickly_pear",
+      "brand": {
+        "id": "fumari",
+        "name": "Fumari",
+        "country": "US"
+      },
+      "name": {
+        "en": "Prickly Pear",
+        "uk": "Опунція",
+        "original": "Prickly Pear"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "fruity"
+      ],
+      "tasteNotes": [
+        "cactus_pear",
+        "tropical"
+      ],
+      "tasteProfile": {
+        "sweet": 3,
+        "sour": 2,
+        "fresh": 0,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Exotic prickly pear with sweet-tart tropical notes.",
+        "uk": "Екзотична опунція зі солодко-кислими тропічними нотами."
+      },
+      "imageUrl": null,
+      "popularity": 68,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.969892+00:00",
+      "updatedAt": "2026-05-06T07:22:53.969894+00:00"
+    },
+    {
+      "id": "fumari__cucumber_mint",
+      "brand": {
+        "id": "fumari",
+        "name": "Fumari",
+        "country": "US"
+      },
+      "name": {
+        "en": "Cucumber Mint",
+        "uk": "Огірок-м'ята",
+        "original": "Cucumber Mint"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "herbal",
+        "mint"
+      ],
+      "tasteNotes": [
+        "cucumber",
+        "mint"
+      ],
+      "tasteProfile": {
+        "sweet": 0,
+        "sour": 0,
+        "fresh": 4,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Crisp garden cucumber with cool mint — spa-like fresh.",
+        "uk": "Свіжий городній огірок з прохолодною м'ятою — спа-свіжість."
+      },
+      "imageUrl": null,
+      "popularity": 74,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.969948+00:00",
+      "updatedAt": "2026-05-06T07:22:53.969952+00:00"
+    },
+    {
+      "id": "fumari__citrus_mint",
+      "brand": {
+        "id": "fumari",
+        "name": "Fumari",
+        "country": "US"
+      },
+      "name": {
+        "en": "Citrus Mint",
+        "uk": "Цитрус-м'ята",
+        "original": "Citrus Mint"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "citrus",
+        "mint"
+      ],
+      "tasteNotes": [
+        "lemon",
+        "lime",
+        "mint"
+      ],
+      "tasteProfile": {
+        "sweet": 0,
+        "sour": 3,
+        "fresh": 4,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Mixed citrus zest with refreshing mint.",
+        "uk": "Цитрусова цедра з освіжаючою м'ятою."
+      },
+      "imageUrl": null,
+      "popularity": 70,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.969959+00:00",
+      "updatedAt": "2026-05-06T07:22:53.969961+00:00"
+    },
+    {
+      "id": "tangiers__cane_mint",
+      "brand": {
+        "id": "tangiers",
+        "name": "Tangiers",
+        "country": "US"
+      },
+      "name": {
+        "en": "Cane Mint",
+        "uk": "Кане Мінт",
+        "original": "Cane Mint"
+      },
+      "leafType": "dark",
+      "strength": 4,
+      "flavorCategories": [
+        "mint"
+      ],
+      "tasteNotes": [
+        "mint",
+        "cane_mint"
+      ],
+      "tasteProfile": {
+        "sweet": 0,
+        "sour": 0,
+        "fresh": 5,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Intense long-lasting mint, considered the strongest mint in industry.",
+        "uk": "Інтенсивна довготривала м'ята, вважається найсильнішою на ринку."
+      },
+      "imageUrl": null,
+      "popularity": 90,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.969966+00:00",
+      "updatedAt": "2026-05-06T07:22:53.969967+00:00"
+    },
+    {
+      "id": "tangiers__sour_watermelon",
+      "brand": {
+        "id": "tangiers",
+        "name": "Tangiers",
+        "country": "US"
+      },
+      "name": {
+        "en": "Sour Watermelon",
+        "uk": "Кислий кавун",
+        "original": "Sour Watermelon"
+      },
+      "leafType": "dark",
+      "strength": 4,
+      "flavorCategories": [
+        "fruity"
+      ],
+      "tasteNotes": [
+        "watermelon",
+        "sour_candy"
+      ],
+      "tasteProfile": {
+        "sweet": 2,
+        "sour": 4,
+        "fresh": 0,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Tart sour watermelon with candy-like punch.",
+        "uk": "Кислий кавун з цукерковим присмаком."
+      },
+      "imageUrl": null,
+      "popularity": 85,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.969994+00:00",
+      "updatedAt": "2026-05-06T07:22:53.969998+00:00"
+    },
+    {
+      "id": "tangiers__kashmir_peach",
+      "brand": {
+        "id": "tangiers",
+        "name": "Tangiers",
+        "country": "US"
+      },
+      "name": {
+        "en": "Kashmir Peach",
+        "uk": "Кашмір Персик",
+        "original": "Kashmir Peach"
+      },
+      "leafType": "dark",
+      "strength": 4,
+      "flavorCategories": [
+        "fruity",
+        "spice"
+      ],
+      "tasteNotes": [
+        "peach",
+        "spice"
+      ],
+      "tasteProfile": {
+        "sweet": 3,
+        "sour": 0,
+        "fresh": 0,
+        "spicy": 2,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Spiced peach with exotic Kashmir character.",
+        "uk": "Персик зі спеціями та екзотичним характером."
+      },
+      "imageUrl": null,
+      "popularity": 72,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.970005+00:00",
+      "updatedAt": "2026-05-06T07:22:53.970007+00:00"
+    },
+    {
+      "id": "tangiers__lucid",
+      "brand": {
+        "id": "tangiers",
+        "name": "Tangiers",
+        "country": "US"
+      },
+      "name": {
+        "en": "Lucid",
+        "uk": "Лусід",
+        "original": "Lucid"
+      },
+      "leafType": "dark",
+      "strength": 4,
+      "flavorCategories": [
+        "fruity",
+        "citrus"
+      ],
+      "tasteNotes": [
+        "passionfruit",
+        "lemon"
+      ],
+      "tasteProfile": {
+        "sweet": 3,
+        "sour": 3,
+        "fresh": 0,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Tart passionfruit with bright lemon — Tangiers signature mixer.",
+        "uk": "Кисла маракуйя з яскравим лимоном — фірмовий міксер Tangiers."
+      },
+      "imageUrl": null,
+      "popularity": 78,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.970035+00:00",
+      "updatedAt": "2026-05-06T07:22:53.970061+00:00"
+    },
+    {
+      "id": "tangiers__static",
+      "brand": {
+        "id": "tangiers",
+        "name": "Tangiers",
+        "country": "US"
+      },
+      "name": {
+        "en": "Static",
+        "uk": "Статік",
+        "original": "Static"
+      },
+      "leafType": "dark",
+      "strength": 4,
+      "flavorCategories": [
+        "fruity",
+        "mint"
+      ],
+      "tasteNotes": [
+        "mango",
+        "papaya",
+        "mint"
+      ],
+      "tasteProfile": {
+        "sweet": 3,
+        "sour": 0,
+        "fresh": 3,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Tropical mango-papaya with cooling mint.",
+        "uk": "Тропічне манго-папайя з прохолодною м'ятою."
+      },
+      "imageUrl": null,
+      "popularity": 72,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.970070+00:00",
+      "updatedAt": "2026-05-06T07:22:53.970071+00:00"
+    },
+    {
+      "id": "tangiers__horchata",
+      "brand": {
+        "id": "tangiers",
+        "name": "Tangiers",
+        "country": "US"
+      },
+      "name": {
+        "en": "Horchata",
+        "uk": "Орчата",
+        "original": "Horchata"
+      },
+      "leafType": "dark",
+      "strength": 4,
+      "flavorCategories": [
+        "dessert",
+        "spice"
+      ],
+      "tasteNotes": [
+        "cinnamon",
+        "vanilla",
+        "rice"
+      ],
+      "tasteProfile": {
+        "sweet": 3,
+        "sour": 0,
+        "fresh": 0,
+        "spicy": 2,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Mexican horchata — cinnamon rice milk dessert.",
+        "uk": "Мексиканська орчата — кориця, рисове молоко."
+      },
+      "imageUrl": null,
+      "popularity": 65,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.970075+00:00",
+      "updatedAt": "2026-05-06T07:22:53.970077+00:00"
+    },
+    {
+      "id": "tangiers__cocoa",
+      "brand": {
+        "id": "tangiers",
+        "name": "Tangiers",
+        "country": "US"
+      },
+      "name": {
+        "en": "Cocoa",
+        "uk": "Какао",
+        "original": "Cocoa"
+      },
+      "leafType": "dark",
+      "strength": 4,
+      "flavorCategories": [
+        "dessert"
+      ],
+      "tasteNotes": [
+        "chocolate",
+        "cocoa"
+      ],
+      "tasteProfile": {
+        "sweet": 2,
+        "sour": 0,
+        "fresh": 0,
+        "spicy": 0,
+        "bitter": 2,
+        "floral": 0
+      },
+      "description": {
+        "en": "Pure dark cocoa with rich bittersweet body.",
+        "uk": "Чисте темне какао з насиченим гірко-солодким тілом."
+      },
+      "imageUrl": null,
+      "popularity": 60,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.970104+00:00",
+      "updatedAt": "2026-05-06T07:22:53.970108+00:00"
+    },
+    {
+      "id": "tangiers__blueberry",
+      "brand": {
+        "id": "tangiers",
+        "name": "Tangiers",
+        "country": "US"
+      },
+      "name": {
+        "en": "Blueberry",
+        "uk": "Чорниця",
+        "original": "Blueberry"
+      },
+      "leafType": "dark",
+      "strength": 4,
+      "flavorCategories": [
+        "fruity"
+      ],
+      "tasteNotes": [
+        "blueberry"
+      ],
+      "tasteProfile": {
+        "sweet": 3,
+        "sour": 1,
+        "fresh": 0,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Authentic blueberry, tart and natural.",
+        "uk": "Автентична чорниця, терпка та натуральна."
+      },
+      "imageUrl": null,
+      "popularity": 70,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.970141+00:00",
+      "updatedAt": "2026-05-06T07:22:53.970145+00:00"
+    },
+    {
+      "id": "tangiers__cane_mint_with_coriander",
+      "brand": {
+        "id": "tangiers",
+        "name": "Tangiers",
+        "country": "US"
+      },
+      "name": {
+        "en": "Cane Mint with Coriander",
+        "uk": "М'ята з коріандром",
+        "original": "Cane Mint with Coriander"
+      },
+      "leafType": "dark",
+      "strength": 4,
+      "flavorCategories": [
+        "mint",
+        "spice"
+      ],
+      "tasteNotes": [
+        "mint",
+        "coriander"
+      ],
+      "tasteProfile": {
+        "sweet": 0,
+        "sour": 0,
+        "fresh": 5,
+        "spicy": 1,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Cane mint with herbal coriander twist.",
+        "uk": "Класична м'ята з трав'яною ноткою коріандру."
+      },
+      "imageUrl": null,
+      "popularity": 66,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.970173+00:00",
+      "updatedAt": "2026-05-06T07:22:53.970178+00:00"
+    },
+    {
+      "id": "tangiers__orange_soda",
+      "brand": {
+        "id": "tangiers",
+        "name": "Tangiers",
+        "country": "US"
+      },
+      "name": {
+        "en": "Orange Soda",
+        "uk": "Апельсинова содова",
+        "original": "Orange Soda"
+      },
+      "leafType": "dark",
+      "strength": 4,
+      "flavorCategories": [
+        "citrus",
+        "beverage"
+      ],
+      "tasteNotes": [
+        "orange",
+        "soda"
+      ],
+      "tasteProfile": {
+        "sweet": 3,
+        "sour": 2,
+        "fresh": 0,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Fizzy orange soda candy notes.",
+        "uk": "Газована апельсинова содова з цукерковими нотами."
+      },
+      "imageUrl": null,
+      "popularity": 68,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.970182+00:00",
+      "updatedAt": "2026-05-06T07:22:53.970184+00:00"
+    },
+    {
+      "id": "starbuzz__blue_mist",
+      "brand": {
+        "id": "starbuzz",
+        "name": "Starbuzz",
+        "country": "US"
+      },
+      "name": {
+        "en": "Blue Mist",
+        "uk": "Блю Міст",
+        "original": "Blue Mist"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "fruity",
+        "mint"
+      ],
+      "tasteNotes": [
+        "blueberry",
+        "mint"
+      ],
+      "tasteProfile": {
+        "sweet": 4,
+        "sour": 0,
+        "fresh": 3,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "The legendary Blue Mist — sweet candied blueberries with cool mint.",
+        "uk": "Легендарний Blue Mist — солодка цукеркова чорниця з холодною м'ятою."
+      },
+      "imageUrl": null,
+      "popularity": 95,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.970188+00:00",
+      "updatedAt": "2026-05-06T07:22:53.970189+00:00"
+    },
+    {
+      "id": "starbuzz__pirates_cave",
+      "brand": {
+        "id": "starbuzz",
+        "name": "Starbuzz",
+        "country": "US"
+      },
+      "name": {
+        "en": "Pirates Cave",
+        "uk": "Печера піратів",
+        "original": "Pirates Cave"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "fruity",
+        "mint"
+      ],
+      "tasteNotes": [
+        "citrus",
+        "tropical",
+        "mint"
+      ],
+      "tasteProfile": {
+        "sweet": 3,
+        "sour": 2,
+        "fresh": 3,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Tropical citrus blend with cool mint — exotic adventure.",
+        "uk": "Тропічно-цитрусовий бленд з прохолодною м'ятою."
+      },
+      "imageUrl": null,
+      "popularity": 78,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.970193+00:00",
+      "updatedAt": "2026-05-06T07:22:53.970195+00:00"
+    },
+    {
+      "id": "starbuzz__sex_on_the_beach",
+      "brand": {
+        "id": "starbuzz",
+        "name": "Starbuzz",
+        "country": "US"
+      },
+      "name": {
+        "en": "Sex on the Beach",
+        "uk": "Секс на пляжі",
+        "original": "Sex on the Beach"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "fruity"
+      ],
+      "tasteNotes": [
+        "peach",
+        "orange",
+        "cranberry"
+      ],
+      "tasteProfile": {
+        "sweet": 3,
+        "sour": 2,
+        "fresh": 0,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Cocktail blend of peach, orange and cranberry.",
+        "uk": "Коктейльний бленд персика, апельсина і журавлини."
+      },
+      "imageUrl": null,
+      "popularity": 80,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.970294+00:00",
+      "updatedAt": "2026-05-06T07:22:53.970298+00:00"
+    },
+    {
+      "id": "starbuzz__code_69",
+      "brand": {
+        "id": "starbuzz",
+        "name": "Starbuzz",
+        "country": "US"
+      },
+      "name": {
+        "en": "Code 69",
+        "uk": "Код 69",
+        "original": "Code 69"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "fruity",
+        "mint"
+      ],
+      "tasteNotes": [
+        "mango",
+        "tropical",
+        "mint"
+      ],
+      "tasteProfile": {
+        "sweet": 4,
+        "sour": 0,
+        "fresh": 2,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Mysterious tropical-mango blend with mint hint.",
+        "uk": "Загадковий тропічно-манговий бленд з ноткою м'яти."
+      },
+      "imageUrl": null,
+      "popularity": 75,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.970305+00:00",
+      "updatedAt": "2026-05-06T07:22:53.970307+00:00"
+    },
+    {
+      "id": "starbuzz__mint",
+      "brand": {
+        "id": "starbuzz",
+        "name": "Starbuzz",
+        "country": "US"
+      },
+      "name": {
+        "en": "Mint",
+        "uk": "М'ята",
+        "original": "Mint"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "mint"
+      ],
+      "tasteNotes": [
+        "mint"
+      ],
+      "tasteProfile": {
+        "sweet": 0,
+        "sour": 0,
+        "fresh": 5,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Clean strong mint, mixer-friendly.",
+        "uk": "Чиста сильна м'ята, добра для міксів."
+      },
+      "imageUrl": null,
+      "popularity": 72,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.970311+00:00",
+      "updatedAt": "2026-05-06T07:22:53.970313+00:00"
+    },
+    {
+      "id": "starbuzz__apple",
+      "brand": {
+        "id": "starbuzz",
+        "name": "Starbuzz",
+        "country": "US"
+      },
+      "name": {
+        "en": "Apple",
+        "uk": "Яблуко",
+        "original": "Apple"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "fruity"
+      ],
+      "tasteNotes": [
+        "apple"
+      ],
+      "tasteProfile": {
+        "sweet": 3,
+        "sour": 2,
+        "fresh": 0,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Crisp apple flavor without anise.",
+        "uk": "Хрустке яблуко без анісу."
+      },
+      "imageUrl": null,
+      "popularity": 70,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.970317+00:00",
+      "updatedAt": "2026-05-06T07:22:53.970318+00:00"
+    },
+    {
+      "id": "starbuzz__watermelon",
+      "brand": {
+        "id": "starbuzz",
+        "name": "Starbuzz",
+        "country": "US"
+      },
+      "name": {
+        "en": "Watermelon",
+        "uk": "Кавун",
+        "original": "Watermelon"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "fruity"
+      ],
+      "tasteNotes": [
+        "watermelon"
+      ],
+      "tasteProfile": {
+        "sweet": 4,
+        "sour": 0,
+        "fresh": 0,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Sweet candy-like watermelon.",
+        "uk": "Солодкий цукерковий кавун."
+      },
+      "imageUrl": null,
+      "popularity": 72,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.970379+00:00",
+      "updatedAt": "2026-05-06T07:22:53.970383+00:00"
+    },
+    {
+      "id": "starbuzz__geisha",
+      "brand": {
+        "id": "starbuzz",
+        "name": "Starbuzz",
+        "country": "US"
+      },
+      "name": {
+        "en": "Geisha",
+        "uk": "Гейша",
+        "original": "Geisha"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "fruity",
+        "floral"
+      ],
+      "tasteNotes": [
+        "peach",
+        "orange",
+        "floral"
+      ],
+      "tasteProfile": {
+        "sweet": 3,
+        "sour": 1,
+        "fresh": 0,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 3
+      },
+      "description": {
+        "en": "Floral fruity blend — exotic and elegant.",
+        "uk": "Квітково-фруктовий бленд — екзотика та елегантність."
+      },
+      "imageUrl": null,
+      "popularity": 68,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.970412+00:00",
+      "updatedAt": "2026-05-06T07:22:53.970416+00:00"
+    },
+    {
+      "id": "starbuzz__blueberry",
+      "brand": {
+        "id": "starbuzz",
+        "name": "Starbuzz",
+        "country": "US"
+      },
+      "name": {
+        "en": "Blueberry",
+        "uk": "Чорниця",
+        "original": "Blueberry"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "fruity"
+      ],
+      "tasteNotes": [
+        "blueberry"
+      ],
+      "tasteProfile": {
+        "sweet": 3,
+        "sour": 1,
+        "fresh": 0,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Sweet blueberry without mint — pure berry.",
+        "uk": "Солодка чорниця без м'яти — чиста ягода."
+      },
+      "imageUrl": null,
+      "popularity": 68,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.970443+00:00",
+      "updatedAt": "2026-05-06T07:22:53.970447+00:00"
+    },
+    {
+      "id": "starbuzz__sour_apple",
+      "brand": {
+        "id": "starbuzz",
+        "name": "Starbuzz",
+        "country": "US"
+      },
+      "name": {
+        "en": "Sour Apple",
+        "uk": "Кисле яблуко",
+        "original": "Sour Apple"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "fruity"
+      ],
+      "tasteNotes": [
+        "green_apple"
+      ],
+      "tasteProfile": {
+        "sweet": 2,
+        "sour": 4,
+        "fresh": 0,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Tart green apple, sour candy notes.",
+        "uk": "Терпке зелене яблуко з кислими цукерковими нотами."
+      },
+      "imageUrl": null,
+      "popularity": 66,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.970452+00:00",
+      "updatedAt": "2026-05-06T07:22:53.970454+00:00"
+    },
+    {
+      "id": "mazaya__lemon_mint",
+      "brand": {
+        "id": "mazaya",
+        "name": "Mazaya",
+        "country": "JO"
+      },
+      "name": {
+        "en": "Lemon Mint",
+        "uk": "Лимон-м'ята",
+        "original": "Lemon Mint"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "citrus",
+        "mint"
+      ],
+      "tasteNotes": [
+        "lemon",
+        "mint"
+      ],
+      "tasteProfile": {
+        "sweet": 0,
+        "sour": 3,
+        "fresh": 4,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Refreshing citrus with cool finish — Mazaya bestseller.",
+        "uk": "Освіжаючий цитрус з прохолодним фінішем — бестселер Mazaya."
+      },
+      "imageUrl": null,
+      "popularity": 85,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.970480+00:00",
+      "updatedAt": "2026-05-06T07:22:53.970484+00:00"
+    },
+    {
+      "id": "mazaya__double_apple",
+      "brand": {
+        "id": "mazaya",
+        "name": "Mazaya",
+        "country": "JO"
+      },
+      "name": {
+        "en": "Double Apple",
+        "uk": "Подвійне яблуко",
+        "original": "Double Apple"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "fruity",
+        "spice"
+      ],
+      "tasteNotes": [
+        "apple",
+        "anise"
+      ],
+      "tasteProfile": {
+        "sweet": 3,
+        "sour": 0,
+        "fresh": 0,
+        "spicy": 2,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Classic anise-apple at affordable price.",
+        "uk": "Класичне яблуко з анісом за доступною ціною."
+      },
+      "imageUrl": null,
+      "popularity": 78,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.970491+00:00",
+      "updatedAt": "2026-05-06T07:22:53.970493+00:00"
+    },
+    {
+      "id": "mazaya__double_apples_max",
+      "brand": {
+        "id": "mazaya",
+        "name": "Mazaya",
+        "country": "JO"
+      },
+      "name": {
+        "en": "Double Apples Max",
+        "uk": "Дабл Епплс Макс",
+        "original": "Double Apples Max"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "fruity",
+        "spice"
+      ],
+      "tasteNotes": [
+        "apple",
+        "anise",
+        "licorice"
+      ],
+      "tasteProfile": {
+        "sweet": 3,
+        "sour": 1,
+        "fresh": 0,
+        "spicy": 3,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Bold double apple with anise and licorice — modern edge.",
+        "uk": "Сміливе подвійне яблуко з анісом і лакрицею."
+      },
+      "imageUrl": null,
+      "popularity": 72,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.970519+00:00",
+      "updatedAt": "2026-05-06T07:22:53.970523+00:00"
+    },
+    {
+      "id": "mazaya__watermelon_mint",
+      "brand": {
+        "id": "mazaya",
+        "name": "Mazaya",
+        "country": "JO"
+      },
+      "name": {
+        "en": "Watermelon Mint",
+        "uk": "Кавун-м'ята",
+        "original": "Watermelon Mint"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "fruity",
+        "mint"
+      ],
+      "tasteNotes": [
+        "watermelon",
+        "mint"
+      ],
+      "tasteProfile": {
+        "sweet": 3,
+        "sour": 0,
+        "fresh": 3,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Juicy watermelon with cool mint.",
+        "uk": "Соковитий кавун із прохолодною м'ятою."
+      },
+      "imageUrl": null,
+      "popularity": 72,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.970530+00:00",
+      "updatedAt": "2026-05-06T07:22:53.970532+00:00"
+    },
+    {
+      "id": "mazaya__grape_mint",
+      "brand": {
+        "id": "mazaya",
+        "name": "Mazaya",
+        "country": "JO"
+      },
+      "name": {
+        "en": "Grape Mint",
+        "uk": "Виноград-м'ята",
+        "original": "Grape Mint"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "fruity",
+        "mint"
+      ],
+      "tasteNotes": [
+        "grape",
+        "mint"
+      ],
+      "tasteProfile": {
+        "sweet": 3,
+        "sour": 0,
+        "fresh": 3,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Sweet grape with refreshing mint.",
+        "uk": "Солодкий виноград із свіжою м'ятою."
+      },
+      "imageUrl": null,
+      "popularity": 70,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.970537+00:00",
+      "updatedAt": "2026-05-06T07:22:53.970562+00:00"
+    },
+    {
+      "id": "mazaya__two_apples",
+      "brand": {
+        "id": "mazaya",
+        "name": "Mazaya",
+        "country": "JO"
+      },
+      "name": {
+        "en": "Two Apples",
+        "uk": "Два яблука",
+        "original": "Two Apples"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "fruity"
+      ],
+      "tasteNotes": [
+        "apple",
+        "green_apple"
+      ],
+      "tasteProfile": {
+        "sweet": 3,
+        "sour": 2,
+        "fresh": 0,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Classic two-apples blend without anise.",
+        "uk": "Класичні два яблука без анісу."
+      },
+      "imageUrl": null,
+      "popularity": 68,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.970571+00:00",
+      "updatedAt": "2026-05-06T07:22:53.970574+00:00"
+    },
+    {
+      "id": "mazaya__mint",
+      "brand": {
+        "id": "mazaya",
+        "name": "Mazaya",
+        "country": "JO"
+      },
+      "name": {
+        "en": "Mint",
+        "uk": "М'ята",
+        "original": "Mint"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "mint"
+      ],
+      "tasteNotes": [
+        "mint"
+      ],
+      "tasteProfile": {
+        "sweet": 0,
+        "sour": 0,
+        "fresh": 5,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Affordable clean mint.",
+        "uk": "Доступна чиста м'ята."
+      },
+      "imageUrl": null,
+      "popularity": 66,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.970578+00:00",
+      "updatedAt": "2026-05-06T07:22:53.970604+00:00"
+    },
+    {
+      "id": "mazaya__peach",
+      "brand": {
+        "id": "mazaya",
+        "name": "Mazaya",
+        "country": "JO"
+      },
+      "name": {
+        "en": "Peach",
+        "uk": "Персик",
+        "original": "Peach"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "fruity"
+      ],
+      "tasteNotes": [
+        "peach"
+      ],
+      "tasteProfile": {
+        "sweet": 4,
+        "sour": 0,
+        "fresh": 0,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Sweet juicy peach.",
+        "uk": "Солодкий соковитий персик."
+      },
+      "imageUrl": null,
+      "popularity": 68,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.970612+00:00",
+      "updatedAt": "2026-05-06T07:22:53.970614+00:00"
+    },
+    {
+      "id": "nakhla__two_apples",
+      "brand": {
+        "id": "nakhla",
+        "name": "Nakhla",
+        "country": "EG"
+      },
+      "name": {
+        "en": "Two Apples",
+        "uk": "Два яблука",
+        "original": "Two Apples"
+      },
+      "leafType": "dark",
+      "strength": 3,
+      "flavorCategories": [
+        "fruity",
+        "spice"
+      ],
+      "tasteNotes": [
+        "apple",
+        "anise"
+      ],
+      "tasteProfile": {
+        "sweet": 3,
+        "sour": 1,
+        "fresh": 0,
+        "spicy": 3,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "The original double apple — Egyptian classic since 1913.",
+        "uk": "Оригінальне подвійне яблуко — єгипетська класика з 1913 року."
+      },
+      "imageUrl": null,
+      "popularity": 85,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.970641+00:00",
+      "updatedAt": "2026-05-06T07:22:53.970645+00:00"
+    },
+    {
+      "id": "nakhla__mint",
+      "brand": {
+        "id": "nakhla",
+        "name": "Nakhla",
+        "country": "EG"
+      },
+      "name": {
+        "en": "Mint",
+        "uk": "М'ята",
+        "original": "Mint"
+      },
+      "leafType": "dark",
+      "strength": 3,
+      "flavorCategories": [
+        "mint"
+      ],
+      "tasteNotes": [
+        "mint"
+      ],
+      "tasteProfile": {
+        "sweet": 0,
+        "sour": 0,
+        "fresh": 4,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Classic Egyptian mint with character.",
+        "uk": "Класична єгипетська м'ята з характером."
+      },
+      "imageUrl": null,
+      "popularity": 78,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.970696+00:00",
+      "updatedAt": "2026-05-06T07:22:53.970700+00:00"
+    },
+    {
+      "id": "nakhla__cinnamon",
+      "brand": {
+        "id": "nakhla",
+        "name": "Nakhla",
+        "country": "EG"
+      },
+      "name": {
+        "en": "Cinnamon",
+        "uk": "Кориця",
+        "original": "Cinnamon"
+      },
+      "leafType": "dark",
+      "strength": 3,
+      "flavorCategories": [
+        "spice"
+      ],
+      "tasteNotes": [
+        "cinnamon"
+      ],
+      "tasteProfile": {
+        "sweet": 2,
+        "sour": 0,
+        "fresh": 0,
+        "spicy": 4,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Bold warm cinnamon — traditional spice.",
+        "uk": "Сильна тепла кориця — традиційна спеція."
+      },
+      "imageUrl": null,
+      "popularity": 68,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.970704+00:00",
+      "updatedAt": "2026-05-06T07:22:53.970706+00:00"
+    },
+    {
+      "id": "nakhla__lemon",
+      "brand": {
+        "id": "nakhla",
+        "name": "Nakhla",
+        "country": "EG"
+      },
+      "name": {
+        "en": "Lemon",
+        "uk": "Лимон",
+        "original": "Lemon"
+      },
+      "leafType": "dark",
+      "strength": 3,
+      "flavorCategories": [
+        "citrus"
+      ],
+      "tasteNotes": [
+        "lemon"
+      ],
+      "tasteProfile": {
+        "sweet": 0,
+        "sour": 4,
+        "fresh": 0,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Sharp natural lemon with traditional dark leaf body.",
+        "uk": "Гострий натуральний лимон з тілом темного листа."
+      },
+      "imageUrl": null,
+      "popularity": 66,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.970710+00:00",
+      "updatedAt": "2026-05-06T07:22:53.970712+00:00"
+    },
+    {
+      "id": "nakhla__strawberry",
+      "brand": {
+        "id": "nakhla",
+        "name": "Nakhla",
+        "country": "EG"
+      },
+      "name": {
+        "en": "Strawberry",
+        "uk": "Полуниця",
+        "original": "Strawberry"
+      },
+      "leafType": "dark",
+      "strength": 3,
+      "flavorCategories": [
+        "fruity"
+      ],
+      "tasteNotes": [
+        "strawberry"
+      ],
+      "tasteProfile": {
+        "sweet": 3,
+        "sour": 1,
+        "fresh": 0,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Sweet ripe strawberry, classic profile.",
+        "uk": "Солодка стигла полуниця, класичний профіль."
+      },
+      "imageUrl": null,
+      "popularity": 64,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.970741+00:00",
+      "updatedAt": "2026-05-06T07:22:53.970745+00:00"
+    },
+    {
+      "id": "nakhla__cola",
+      "brand": {
+        "id": "nakhla",
+        "name": "Nakhla",
+        "country": "EG"
+      },
+      "name": {
+        "en": "Cola",
+        "uk": "Кола",
+        "original": "Cola"
+      },
+      "leafType": "dark",
+      "strength": 3,
+      "flavorCategories": [
+        "beverage"
+      ],
+      "tasteNotes": [
+        "cola"
+      ],
+      "tasteProfile": {
+        "sweet": 3,
+        "sour": 1,
+        "fresh": 0,
+        "spicy": 1,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Cola soda flavor — nostalgic and bold.",
+        "uk": "Смак коли — ностальгійно та яскраво."
+      },
+      "imageUrl": null,
+      "popularity": 60,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.970793+00:00",
+      "updatedAt": "2026-05-06T07:22:53.970797+00:00"
+    },
+    {
+      "id": "nakhla__cappuccino",
+      "brand": {
+        "id": "nakhla",
+        "name": "Nakhla",
+        "country": "EG"
+      },
+      "name": {
+        "en": "Cappuccino",
+        "uk": "Капучино",
+        "original": "Cappuccino"
+      },
+      "leafType": "dark",
+      "strength": 3,
+      "flavorCategories": [
+        "dessert",
+        "beverage"
+      ],
+      "tasteNotes": [
+        "coffee",
+        "cream"
+      ],
+      "tasteProfile": {
+        "sweet": 2,
+        "sour": 0,
+        "fresh": 0,
+        "spicy": 0,
+        "bitter": 3,
+        "floral": 0
+      },
+      "description": {
+        "en": "Coffee-cream blend with bold dark-leaf depth.",
+        "uk": "Кавово-вершковий бленд з глибиною темного листа."
+      },
+      "imageUrl": null,
+      "popularity": 58,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.970804+00:00",
+      "updatedAt": "2026-05-06T07:22:53.970806+00:00"
+    },
+    {
+      "id": "nakhla__watermelon",
+      "brand": {
+        "id": "nakhla",
+        "name": "Nakhla",
+        "country": "EG"
+      },
+      "name": {
+        "en": "Watermelon",
+        "uk": "Кавун",
+        "original": "Watermelon"
+      },
+      "leafType": "dark",
+      "strength": 3,
+      "flavorCategories": [
+        "fruity"
+      ],
+      "tasteNotes": [
+        "watermelon"
+      ],
+      "tasteProfile": {
+        "sweet": 3,
+        "sour": 0,
+        "fresh": 0,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Authentic watermelon with stronger tobacco character.",
+        "uk": "Автентичний кавун з сильним тютюновим характером."
+      },
+      "imageUrl": null,
+      "popularity": 64,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.970810+00:00",
+      "updatedAt": "2026-05-06T07:22:53.970812+00:00"
+    },
+    {
+      "id": "trifecta__peppermint_shake",
+      "brand": {
+        "id": "trifecta",
+        "name": "Trifecta",
+        "country": "US"
+      },
+      "name": {
+        "en": "Peppermint Shake",
+        "uk": "Перцева м'ята",
+        "original": "Peppermint Shake"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "mint",
+        "dessert"
+      ],
+      "tasteNotes": [
+        "peppermint",
+        "cream",
+        "vanilla"
+      ],
+      "tasteProfile": {
+        "sweet": 3,
+        "sour": 0,
+        "fresh": 4,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Minty milkshake with creamy undertone.",
+        "uk": "М'ятний коктейль з вершковою основою."
+      },
+      "imageUrl": null,
+      "popularity": 75,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.970816+00:00",
+      "updatedAt": "2026-05-06T07:22:53.970818+00:00"
+    },
+    {
+      "id": "trifecta__blonde_lemon_mint",
+      "brand": {
+        "id": "trifecta",
+        "name": "Trifecta",
+        "country": "US"
+      },
+      "name": {
+        "en": "Blonde Lemon Mint",
+        "uk": "Блонд Лимон-м'ята",
+        "original": "Blonde Lemon Mint"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "citrus",
+        "mint"
+      ],
+      "tasteNotes": [
+        "lemon",
+        "mint"
+      ],
+      "tasteProfile": {
+        "sweet": 0,
+        "sour": 3,
+        "fresh": 4,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Bright lemon with crisp mint, blonde leaf base.",
+        "uk": "Яскравий лимон з чистою м'ятою, blonde основа."
+      },
+      "imageUrl": null,
+      "popularity": 72,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.970822+00:00",
+      "updatedAt": "2026-05-06T07:22:53.970823+00:00"
+    },
+    {
+      "id": "trifecta__blonde_berry_lemonade",
+      "brand": {
+        "id": "trifecta",
+        "name": "Trifecta",
+        "country": "US"
+      },
+      "name": {
+        "en": "Blonde Berry Lemonade",
+        "uk": "Ягідний лимонад",
+        "original": "Blonde Berry Lemonade"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "fruity",
+        "citrus"
+      ],
+      "tasteNotes": [
+        "berry",
+        "lemon"
+      ],
+      "tasteProfile": {
+        "sweet": 3,
+        "sour": 3,
+        "fresh": 0,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Berry lemonade — sweet meets tart.",
+        "uk": "Ягідний лимонад — солодке зустрічає кисле."
+      },
+      "imageUrl": null,
+      "popularity": 70,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.970876+00:00",
+      "updatedAt": "2026-05-06T07:22:53.970879+00:00"
+    },
+    {
+      "id": "trifecta__dark_cool_mango",
+      "brand": {
+        "id": "trifecta",
+        "name": "Trifecta",
+        "country": "US"
+      },
+      "name": {
+        "en": "Dark Cool Mango",
+        "uk": "Дарк Куул Манго",
+        "original": "Dark Cool Mango"
+      },
+      "leafType": "dark",
+      "strength": 4,
+      "flavorCategories": [
+        "fruity",
+        "mint"
+      ],
+      "tasteNotes": [
+        "mango",
+        "menthol"
+      ],
+      "tasteProfile": {
+        "sweet": 3,
+        "sour": 0,
+        "fresh": 4,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Dark leaf mango with icy menthol.",
+        "uk": "Дарк-лиф манго з крижаним ментолом."
+      },
+      "imageUrl": null,
+      "popularity": 72,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.970909+00:00",
+      "updatedAt": "2026-05-06T07:22:53.970913+00:00"
+    },
+    {
+      "id": "trifecta__mango_lassi",
+      "brand": {
+        "id": "trifecta",
+        "name": "Trifecta",
+        "country": "US"
+      },
+      "name": {
+        "en": "Mango Lassi",
+        "uk": "Манго Ласі",
+        "original": "Mango Lassi"
+      },
+      "leafType": "dark",
+      "strength": 4,
+      "flavorCategories": [
+        "dessert",
+        "fruity"
+      ],
+      "tasteNotes": [
+        "mango",
+        "yogurt",
+        "cardamom"
+      ],
+      "tasteProfile": {
+        "sweet": 4,
+        "sour": 0,
+        "fresh": 0,
+        "spicy": 1,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Indian mango lassi — creamy yogurt with cardamom.",
+        "uk": "Індійське манго ласі — кремовий йогурт з кардамоном."
+      },
+      "imageUrl": null,
+      "popularity": 66,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.970918+00:00",
+      "updatedAt": "2026-05-06T07:22:53.970919+00:00"
+    },
+    {
+      "id": "trifecta__dark_apple_mint",
+      "brand": {
+        "id": "trifecta",
+        "name": "Trifecta",
+        "country": "US"
+      },
+      "name": {
+        "en": "Dark Apple Mint",
+        "uk": "Дарк Яблуко-м'ята",
+        "original": "Dark Apple Mint"
+      },
+      "leafType": "dark",
+      "strength": 4,
+      "flavorCategories": [
+        "fruity",
+        "mint"
+      ],
+      "tasteNotes": [
+        "apple",
+        "mint"
+      ],
+      "tasteProfile": {
+        "sweet": 3,
+        "sour": 1,
+        "fresh": 3,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "description": {
+        "en": "Dark leaf apple with refreshing mint.",
+        "uk": "Дарк-лиф яблуко з освіжаючою м'ятою."
+      },
+      "imageUrl": null,
+      "popularity": 68,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.970923+00:00",
+      "updatedAt": "2026-05-06T07:22:53.970925+00:00"
+    },
+    {
+      "id": "trifecta__blonde_rose",
+      "brand": {
+        "id": "trifecta",
+        "name": "Trifecta",
+        "country": "US"
+      },
+      "name": {
+        "en": "Blonde Rose",
+        "uk": "Блонд Троянда",
+        "original": "Blonde Rose"
+      },
+      "leafType": "blonde",
+      "strength": 2,
+      "flavorCategories": [
+        "floral"
+      ],
+      "tasteNotes": [
+        "rose"
+      ],
+      "tasteProfile": {
+        "sweet": 2,
+        "sour": 0,
+        "fresh": 0,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 4
+      },
+      "description": {
+        "en": "Elegant rose floral notes — Middle Eastern classic.",
+        "uk": "Елегантні квіткові ноти троянди — близькосхідна класика."
+      },
+      "imageUrl": null,
+      "popularity": 58,
+      "availability": {
+        "ua": {
+          "available": null,
+          "shops": [],
+          "lastChecked": null
+        }
+      },
+      "sources": [
+        {
+          "name": "manual_seed_v1",
+          "verified": true
+        }
+      ],
+      "createdAt": "2026-05-06T07:22:53.970929+00:00",
+      "updatedAt": "2026-05-06T07:22:53.970930+00:00"
+    }
+  ],
+  "mixes": [
+    {
+      "id": "mix_classic_double_apple_mint",
+      "name": {
+        "en": "Classic Double Apple Mint",
+        "uk": "Класика: подвійне яблуко з м'ятою"
+      },
+      "components": [
+        {
+          "tobaccoId": "al_fakher__double_apple",
+          "percentage": 70
+        },
+        {
+          "tobaccoId": "al_fakher__mint",
+          "percentage": 30
+        }
+      ],
+      "expectedProfile": {
+        "sweet": 3,
+        "sour": 0,
+        "fresh": 3,
+        "spicy": 2,
+        "bitter": 0,
+        "floral": 0
+      },
+      "strengthLevel": 2,
+      "difficulty": "easy",
+      "description": {
+        "en": "The most reliable starter mix — sweet apple with refreshing mint. Foolproof for beginners.",
+        "uk": "Найнадійніший стартовий мікс — солодке яблуко з освіжаючою м'ятою. Безпрограшно для початківців."
+      },
+      "targetPersona": "beginner",
+      "tags": [
+        "sweet",
+        "fresh",
+        "classic",
+        "easy"
+      ],
+      "popularity": 95,
+      "isCurated": true,
+      "authorId": null,
+      "createdAt": "2026-05-06T07:22:53.970956+00:00",
+      "updatedAt": "2026-05-06T07:22:53.970960+00:00"
+    },
+    {
+      "id": "mix_blue_mist_solo",
+      "name": {
+        "en": "Pure Blue Mist",
+        "uk": "Чистий Блю Міст"
+      },
+      "components": [
+        {
+          "tobaccoId": "starbuzz__blue_mist",
+          "percentage": 100
+        }
+      ],
+      "expectedProfile": {
+        "sweet": 4,
+        "sour": 0,
+        "fresh": 3,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "strengthLevel": 2,
+      "difficulty": "easy",
+      "description": {
+        "en": "Iconic Starbuzz Blue Mist on its own — sweet blueberry with cool mint, no need for anything else.",
+        "uk": "Іконічний Blue Mist соло — солодка чорниця з прохолодою, нічого більше не треба."
+      },
+      "targetPersona": "beginner",
+      "tags": [
+        "sweet",
+        "fresh",
+        "iconic"
+      ],
+      "popularity": 90,
+      "isCurated": true,
+      "authorId": null,
+      "createdAt": "2026-05-06T07:22:53.970986+00:00",
+      "updatedAt": "2026-05-06T07:22:53.970991+00:00"
+    },
+    {
+      "id": "mix_love66_mint_boost",
+      "name": {
+        "en": "Love 66 Mint Boost",
+        "uk": "Лав 66 з м'ятним підсиленням"
+      },
+      "components": [
+        {
+          "tobaccoId": "adalya__love_66",
+          "percentage": 70
+        },
+        {
+          "tobaccoId": "adalya__mint",
+          "percentage": 30
+        }
+      ],
+      "expectedProfile": {
+        "sweet": 3,
+        "sour": 0,
+        "fresh": 3,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 2
+      },
+      "strengthLevel": 2,
+      "difficulty": "easy",
+      "description": {
+        "en": "Adalya's flagship Love 66 with extra mint kick.",
+        "uk": "Флагман Adalya Love 66 з додатковим м'ятним ударом."
+      },
+      "targetPersona": "beginner",
+      "tags": [
+        "sweet",
+        "fresh",
+        "fruity"
+      ],
+      "popularity": 85,
+      "isCurated": true,
+      "authorId": null,
+      "createdAt": "2026-05-06T07:22:53.970995+00:00",
+      "updatedAt": "2026-05-06T07:22:53.970996+00:00"
+    },
+    {
+      "id": "mix_summer_citrus",
+      "name": {
+        "en": "Summer Citrus",
+        "uk": "Літній цитрус"
+      },
+      "components": [
+        {
+          "tobaccoId": "al_fakher__lemon_with_mint",
+          "percentage": 50
+        },
+        {
+          "tobaccoId": "al_fakher__watermelon_with_mint",
+          "percentage": 30
+        },
+        {
+          "tobaccoId": "al_fakher__mint",
+          "percentage": 20
+        }
+      ],
+      "expectedProfile": {
+        "sweet": 2,
+        "sour": 3,
+        "fresh": 4,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "strengthLevel": 2,
+      "difficulty": "medium",
+      "description": {
+        "en": "Citrus-watermelon-mint trifecta — the ultimate summer cooler.",
+        "uk": "Цитрус-кавун-м'ята — найкращий літній освіжувач."
+      },
+      "targetPersona": "intermediate",
+      "tags": [
+        "sour",
+        "fresh",
+        "summer",
+        "citrus"
+      ],
+      "popularity": 80,
+      "isCurated": true,
+      "authorId": null,
+      "createdAt": "2026-05-06T07:22:53.970999+00:00",
+      "updatedAt": "2026-05-06T07:22:53.971000+00:00"
+    },
+    {
+      "id": "mix_dessert_peaches_cream",
+      "name": {
+        "en": "Peaches and Cream",
+        "uk": "Персики з вершками"
+      },
+      "components": [
+        {
+          "tobaccoId": "al_fakher__peach",
+          "percentage": 40
+        },
+        {
+          "tobaccoId": "fumari__white_peach",
+          "percentage": 40
+        },
+        {
+          "tobaccoId": "al_fakher__vanilla",
+          "percentage": 20
+        }
+      ],
+      "expectedProfile": {
+        "sweet": 4,
+        "sour": 0,
+        "fresh": 0,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "strengthLevel": 2,
+      "difficulty": "medium",
+      "description": {
+        "en": "Sweet creamy peach dessert — like a peach milkshake.",
+        "uk": "Солодкий вершковий персиковий десерт — як персиковий коктейль."
+      },
+      "targetPersona": "intermediate",
+      "tags": [
+        "sweet",
+        "dessert",
+        "creamy"
+      ],
+      "popularity": 75,
+      "isCurated": true,
+      "authorId": null,
+      "createdAt": "2026-05-06T07:22:53.971003+00:00",
+      "updatedAt": "2026-05-06T07:22:53.971005+00:00"
+    },
+    {
+      "id": "mix_dark_strong_evening",
+      "name": {
+        "en": "Dark Strong Evening",
+        "uk": "Темний міцний вечір"
+      },
+      "components": [
+        {
+          "tobaccoId": "tangiers__cane_mint",
+          "percentage": 50
+        },
+        {
+          "tobaccoId": "tangiers__cocoa",
+          "percentage": 50
+        }
+      ],
+      "expectedProfile": {
+        "sweet": 2,
+        "sour": 0,
+        "fresh": 3,
+        "spicy": 0,
+        "bitter": 2,
+        "floral": 0
+      },
+      "strengthLevel": 4,
+      "difficulty": "hard",
+      "description": {
+        "en": "For experienced smokers — dark leaf cocoa with intense mint. Long, deep session.",
+        "uk": "Для досвідчених — темне какао з інтенсивною м'ятою. Довга глибока сесія."
+      },
+      "targetPersona": "expert",
+      "tags": [
+        "strong",
+        "bitter",
+        "fresh",
+        "evening"
+      ],
+      "popularity": 65,
+      "isCurated": true,
+      "authorId": null,
+      "createdAt": "2026-05-06T07:22:53.971007+00:00",
+      "updatedAt": "2026-05-06T07:22:53.971009+00:00"
+    },
+    {
+      "id": "mix_tropical_paradise",
+      "name": {
+        "en": "Tropical Paradise",
+        "uk": "Тропічний рай"
+      },
+      "components": [
+        {
+          "tobaccoId": "al_fakher__mango",
+          "percentage": 40
+        },
+        {
+          "tobaccoId": "al_fakher__pineapple",
+          "percentage": 40
+        },
+        {
+          "tobaccoId": "al_fakher__coconut",
+          "percentage": 20
+        }
+      ],
+      "expectedProfile": {
+        "sweet": 4,
+        "sour": 1,
+        "fresh": 0,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "strengthLevel": 2,
+      "difficulty": "medium",
+      "description": {
+        "en": "Mango, pineapple and coconut — escape to the tropics.",
+        "uk": "Манго, ананас та кокос — втеча в тропіки."
+      },
+      "targetPersona": "intermediate",
+      "tags": [
+        "sweet",
+        "tropical",
+        "fruity"
+      ],
+      "popularity": 78,
+      "isCurated": true,
+      "authorId": null,
+      "createdAt": "2026-05-06T07:22:53.971034+00:00",
+      "updatedAt": "2026-05-06T07:22:53.971060+00:00"
+    },
+    {
+      "id": "mix_grape_chill",
+      "name": {
+        "en": "Grape Chill",
+        "uk": "Виноградна прохолода"
+      },
+      "components": [
+        {
+          "tobaccoId": "al_fakher__grape_with_mint",
+          "percentage": 70
+        },
+        {
+          "tobaccoId": "al_fakher__mint",
+          "percentage": 30
+        }
+      ],
+      "expectedProfile": {
+        "sweet": 3,
+        "sour": 0,
+        "fresh": 4,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "strengthLevel": 2,
+      "difficulty": "easy",
+      "description": {
+        "en": "Sweet grape boosted with extra mint — classic chill mix.",
+        "uk": "Солодкий виноград з додатковою м'ятою — класична прохолода."
+      },
+      "targetPersona": "beginner",
+      "tags": [
+        "sweet",
+        "fresh",
+        "classic"
+      ],
+      "popularity": 78,
+      "isCurated": true,
+      "authorId": null,
+      "createdAt": "2026-05-06T07:22:53.971109+00:00",
+      "updatedAt": "2026-05-06T07:22:53.971113+00:00"
+    },
+    {
+      "id": "mix_cocktail_hour",
+      "name": {
+        "en": "Cocktail Hour",
+        "uk": "Час коктейлів"
+      },
+      "components": [
+        {
+          "tobaccoId": "starbuzz__sex_on_the_beach",
+          "percentage": 50
+        },
+        {
+          "tobaccoId": "al_fakher__lemon_with_mint",
+          "percentage": 30
+        },
+        {
+          "tobaccoId": "al_fakher__mint",
+          "percentage": 20
+        }
+      ],
+      "expectedProfile": {
+        "sweet": 3,
+        "sour": 2,
+        "fresh": 3,
+        "spicy": 0,
+        "bitter": 0,
+        "floral": 0
+      },
+      "strengthLevel": 2,
+      "difficulty": "medium",
+      "description": {
+        "en": "Cocktail-inspired tropical mix — peach, orange, cranberry with citrus mint.",
+        "uk": "Коктейльний тропічний мікс — персик, апельсин, журавлина з цитрусом."
+      },
+      "targetPersona": "intermediate",
+      "tags": [
+        "sweet",
+        "sour",
+        "cocktail"
+      ],
+      "popularity": 72,
+      "isCurated": true,
+      "authorId": null,
+      "createdAt": "2026-05-06T07:22:53.971139+00:00",
+      "updatedAt": "2026-05-06T07:22:53.971143+00:00"
+    },
+    {
+      "id": "mix_spicy_warm",
+      "name": {
+        "en": "Spicy Warm",
+        "uk": "Пряний і теплий"
+      },
+      "components": [
+        {
+          "tobaccoId": "fumari__spiced_chai",
+          "percentage": 50
+        },
+        {
+          "tobaccoId": "al_fakher__cinnamon",
+          "percentage": 30
+        },
+        {
+          "tobaccoId": "al_fakher__vanilla",
+          "percentage": 20
+        }
+      ],
+      "expectedProfile": {
+        "sweet": 3,
+        "sour": 0,
+        "fresh": 0,
+        "spicy": 4,
+        "bitter": 0,
+        "floral": 0
+      },
+      "strengthLevel": 2,
+      "difficulty": "medium",
+      "description": {
+        "en": "Warm chai with cinnamon and vanilla — autumn evening in a bowl.",
+        "uk": "Теплий чай з корицею та ваніллю — осінній вечір у чаші."
+      },
+      "targetPersona": "intermediate",
+      "tags": [
+        "spicy",
+        "warm",
+        "autumn"
+      ],
+      "popularity": 60,
+      "isCurated": true,
+      "authorId": null,
+      "createdAt": "2026-05-06T07:22:53.971173+00:00",
+      "updatedAt": "2026-05-06T07:22:53.971177+00:00"
+    }
+  ]
+}

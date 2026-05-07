@@ -3,7 +3,11 @@ import 'package:hookah_mix_master/features/tobacco_catalog/domain/entities/taste
 import 'package:hookah_mix_master/features/tobacco_catalog/presentation/widgets/taste_profile_radar.dart';
 
 class TastePreviewCard extends StatelessWidget {
-  const TastePreviewCard({super.key, required this.profile, required this.title});
+  const TastePreviewCard({
+    super.key,
+    required this.profile,
+    required this.title,
+  });
 
   final TasteProfile profile;
   final String title;

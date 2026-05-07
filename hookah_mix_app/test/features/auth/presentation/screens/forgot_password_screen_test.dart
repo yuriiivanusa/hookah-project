@@ -15,7 +15,9 @@ void main() {
 
   setUp(() {
     mockRepo = _MockAuthRepository();
-    when(() => mockRepo.authStateChanges).thenAnswer((_) => const Stream.empty());
+    when(
+      () => mockRepo.authStateChanges,
+    ).thenAnswer((_) => const Stream.empty());
     when(() => mockRepo.resetPassword(any())).thenAnswer((_) async {});
   });
 

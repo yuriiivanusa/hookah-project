@@ -11,7 +11,8 @@ class ForgotPasswordScreen extends ConsumerStatefulWidget {
   const ForgotPasswordScreen({super.key});
 
   @override
-  ConsumerState<ForgotPasswordScreen> createState() => _ForgotPasswordScreenState();
+  ConsumerState<ForgotPasswordScreen> createState() =>
+      _ForgotPasswordScreenState();
 }
 
 class _ForgotPasswordScreenState extends ConsumerState<ForgotPasswordScreen> {
@@ -59,7 +60,10 @@ class _ForgotPasswordScreenState extends ConsumerState<ForgotPasswordScreen> {
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
                       const SizedBox(height: 24),
-                      Text(context.l10n.authForgotPasswordHint, style: context.textTheme.bodyLarge),
+                      Text(
+                        context.l10n.authForgotPasswordHint,
+                        style: context.textTheme.bodyLarge,
+                      ),
                       const SizedBox(height: 24),
                       AppTextField(
                         label: context.l10n.authLoginEmail,

@@ -33,7 +33,10 @@ final class AppLocaleProvider extends $NotifierProvider<AppLocale, Locale> {
 
   /// {@macro riverpod.override_with_value}
   Override overrideWithValue(Locale value) {
-    return $ProviderOverride(origin: this, providerOverride: $SyncValueProvider<Locale>(value));
+    return $ProviderOverride(
+      origin: this,
+      providerOverride: $SyncValueProvider<Locale>(value),
+    );
   }
 }
 
@@ -46,7 +49,13 @@ abstract class _$AppLocale extends $Notifier<Locale> {
   void runBuild() {
     final ref = this.ref as $Ref<Locale, Locale>;
     final element =
-        ref.element as $ClassProviderElement<AnyNotifier<Locale, Locale>, Locale, Object?, Object?>;
+        ref.element
+            as $ClassProviderElement<
+              AnyNotifier<Locale, Locale>,
+              Locale,
+              Object?,
+              Object?
+            >;
     element.handleCreate(ref, build);
   }
 }

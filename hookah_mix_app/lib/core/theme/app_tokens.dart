@@ -9,10 +9,18 @@ sealed class AppTokens {
   static const double radiusXl = 24;
   static const double radiusFull = 999;
 
-  static const BorderRadius borderRadiusSm = BorderRadius.all(Radius.circular(radiusSm));
-  static const BorderRadius borderRadiusMd = BorderRadius.all(Radius.circular(radiusMd));
-  static const BorderRadius borderRadiusLg = BorderRadius.all(Radius.circular(radiusLg));
-  static const BorderRadius borderRadiusXl = BorderRadius.all(Radius.circular(radiusXl));
+  static const BorderRadius borderRadiusSm = BorderRadius.all(
+    Radius.circular(radiusSm),
+  );
+  static const BorderRadius borderRadiusMd = BorderRadius.all(
+    Radius.circular(radiusMd),
+  );
+  static const BorderRadius borderRadiusLg = BorderRadius.all(
+    Radius.circular(radiusLg),
+  );
+  static const BorderRadius borderRadiusXl = BorderRadius.all(
+    Radius.circular(radiusXl),
+  );
 
   // Elevation
   static const double elevationNone = 0;

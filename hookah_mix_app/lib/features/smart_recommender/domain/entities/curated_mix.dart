@@ -24,5 +24,6 @@ abstract class CuratedMix with _$CuratedMix {
   const CuratedMix._();
 
   String localName(String locale) => locale == 'uk' ? nameUk : nameEn;
-  String localDescription(String locale) => locale == 'uk' ? descriptionUk : descriptionEn;
+  String localDescription(String locale) =>
+      locale == 'uk' ? descriptionUk : descriptionEn;
 }

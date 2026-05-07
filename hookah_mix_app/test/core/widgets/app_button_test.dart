@@ -12,7 +12,9 @@ void main() {
 
   testWidgets('calls onPressed when tapped', (tester) async {
     var pressed = false;
-    await tester.pumpWidget(wrap(AppButton(label: 'Tap', onPressed: () => pressed = true)));
+    await tester.pumpWidget(
+      wrap(AppButton(label: 'Tap', onPressed: () => pressed = true)),
+    );
     await tester.tap(find.text('Tap'));
     expect(pressed, isTrue);
   });
@@ -20,7 +22,13 @@ void main() {
   testWidgets('disabled when isLoading is true', (tester) async {
     var pressed = false;
     await tester.pumpWidget(
-      wrap(AppButton(label: 'Loading', onPressed: () => pressed = true, isLoading: true)),
+      wrap(
+        AppButton(
+          label: 'Loading',
+          onPressed: () => pressed = true,
+          isLoading: true,
+        ),
+      ),
     );
     await tester.tap(find.byType(ElevatedButton));
     expect(pressed, isFalse);
@@ -28,7 +36,13 @@ void main() {
 
   testWidgets('outlined variant renders OutlinedButton', (tester) async {
     await tester.pumpWidget(
-      wrap(AppButton(label: 'Outlined', onPressed: () {}, variant: AppButtonVariant.outlined)),
+      wrap(
+        AppButton(
+          label: 'Outlined',
+          onPressed: () {},
+          variant: AppButtonVariant.outlined,
+        ),
+      ),
     );
     expect(find.byType(OutlinedButton), findsOneWidget);
   });

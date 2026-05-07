@@ -6,10 +6,11 @@ class AuthErrorDialog extends StatelessWidget {
 
   final String message;
 
-  static Future<void> show(BuildContext context, String message) => showDialog<void>(
-    context: context,
-    builder: (_) => AuthErrorDialog(message: message),
-  );
+  static Future<void> show(BuildContext context, String message) =>
+      showDialog<void>(
+        context: context,
+        builder: (_) => AuthErrorDialog(message: message),
+      );
 
   @override
   Widget build(BuildContext context) => AlertDialog(

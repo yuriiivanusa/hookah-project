@@ -18,10 +18,12 @@ TobaccoRepository tobaccoRepository(Ref ref) {
 }
 
 @riverpod
-Future<List<Tobacco>> tobaccoList(Ref ref) => ref.watch(tobaccoRepositoryProvider).getTobaccos();
+Future<List<Tobacco>> tobaccoList(Ref ref) =>
+    ref.watch(tobaccoRepositoryProvider).getTobaccos();
 
 @riverpod
-Future<List<Brand>> brandList(Ref ref) => ref.watch(tobaccoRepositoryProvider).getBrands();
+Future<List<Brand>> brandList(Ref ref) =>
+    ref.watch(tobaccoRepositoryProvider).getBrands();
 
 @riverpod
 Future<Tobacco?> tobaccoDetail(Ref ref, String id) =>

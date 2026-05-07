@@ -14,5 +14,6 @@ extension AuthContextExtensions on BuildContext {
   }
 
   bool get isAuthenticated =>
-      ProviderScope.containerOf(this).read(authProvider) is AuthStateAuthenticated;
+      ProviderScope.containerOf(this).read(authProvider)
+          is AuthStateAuthenticated;
 }

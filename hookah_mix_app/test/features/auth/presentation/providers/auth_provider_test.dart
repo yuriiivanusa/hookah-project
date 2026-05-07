@@ -16,9 +16,13 @@ void main() {
 
   setUp(() {
     mockRepo = _MockAuthRepository();
-    when(() => mockRepo.authStateChanges).thenAnswer((_) => const Stream.empty());
+    when(
+      () => mockRepo.authStateChanges,
+    ).thenAnswer((_) => const Stream.empty());
 
-    container = ProviderContainer(overrides: [authRepositoryProvider.overrideWithValue(mockRepo)]);
+    container = ProviderContainer(
+      overrides: [authRepositoryProvider.overrideWithValue(mockRepo)],
+    );
   });
 
   tearDown(() => container.dispose());
@@ -52,7 +56,9 @@ void main() {
       ),
     ).thenThrow(Exception('wrong-password'));
 
-    await container.read(authProvider.notifier).login(email: 'test@test.com', password: 'wrong');
+    await container
+        .read(authProvider.notifier)
+        .login(email: 'test@test.com', password: 'wrong');
 
     expect(container.read(authProvider), isA<AuthStateError>());
   });

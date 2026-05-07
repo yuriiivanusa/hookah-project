@@ -1,6 +1,7 @@
 import 'package:hookah_mix_master/core/services/providers.dart';
 import 'package:hookah_mix_master/features/smart_recommender/data/datasources/curated_mixes_datasource.dart';
 import 'package:hookah_mix_master/features/smart_recommender/data/repositories/recommendation_repository_impl.dart';
+import 'package:hookah_mix_master/features/smart_recommender/domain/entities/curated_mix.dart';
 import 'package:hookah_mix_master/features/smart_recommender/domain/repositories/recommendation_repository.dart';
 import 'package:hookah_mix_master/features/smart_recommender/domain/services/recommendation_algorithm.dart';
 import 'package:hookah_mix_master/features/smart_recommender/presentation/providers/wizard_notifier.dart';
@@ -18,12 +19,28 @@ RecommendationRepository recommendationRepository(Ref ref) {
 }
 
 @riverpod
+Future<CuratedMix?> curatedMixById(Ref ref, String id) async {
+  final mixes = await ref
+      .watch(recommendationRepositoryProvider)
+      .getCuratedMixes();
+  try {
+    return mixes.firstWhere((m) => m.id == id);
+  } catch (_) {
+    return null;
+  }
+}
+
+@riverpod
 Future<List<RecommendationResult>> recommendations(Ref ref) async {
   final wizard = ref.watch(wizardProvider);
   if (!wizard.submitted) return [];
 
-  final mixes = await ref.watch(recommendationRepositoryProvider).getCuratedMixes();
-  final userProfile = RecommendationAlgorithm.buildUserProfile(wizard.selectedFlavors);
+  final mixes = await ref
+      .watch(recommendationRepositoryProvider)
+      .getCuratedMixes();
+  final userProfile = RecommendationAlgorithm.buildUserProfile(
+    wizard.selectedFlavors,
+  );
 
   final persona = switch (wizard.persona) {
     'relax' => 'beginner',

@@ -44,9 +44,18 @@ class _WizardView extends ConsumerWidget {
           child: SingleChildScrollView(
             padding: const EdgeInsets.all(24),
             child: switch (wizard.step) {
-              0 => _FlavorStep(selected: wizard.selectedFlavors, onToggle: notifier.toggleFlavor),
-              1 => _StrengthStep(value: wizard.strengthPreference, onChanged: notifier.setStrength),
-              _ => _MoodStep(selected: wizard.persona, onSelected: notifier.setPersona),
+              0 => _FlavorStep(
+                selected: wizard.selectedFlavors,
+                onToggle: notifier.toggleFlavor,
+              ),
+              1 => _StrengthStep(
+                value: wizard.strengthPreference,
+                onChanged: notifier.setStrength,
+              ),
+              _ => _MoodStep(
+                selected: wizard.persona,
+                onSelected: notifier.setPersona,
+              ),
             },
           ),
         ),
@@ -70,7 +79,9 @@ class _WizardView extends ConsumerWidget {
                         ? (wizard.canSubmit ? notifier.submit : null)
                         : notifier.nextStep,
                     child: Text(
-                      wizard.isLastStep ? l10n.recommenderGetMixes : l10n.recommenderNext,
+                      wizard.isLastStep
+                          ? l10n.recommenderGetMixes
+                          : l10n.recommenderNext,
                     ),
                   ),
                 ),
@@ -96,7 +107,10 @@ class _ResultsView extends ConsumerWidget {
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
-                Text(l10n.recommenderResultEmpty, style: Theme.of(context).textTheme.bodyLarge),
+                Text(
+                  l10n.recommenderResultEmpty,
+                  style: Theme.of(context).textTheme.bodyLarge,
+                ),
                 const SizedBox(height: 16),
                 OutlinedButton(
                   onPressed: () => ref.read(wizardProvider.notifier).reset(),
@@ -163,13 +177,16 @@ class _FlavorStep extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(l10n.recommenderStepFlavor, style: Theme.of(context).textTheme.headlineSmall),
+        Text(
+          l10n.recommenderStepFlavor,
+          style: Theme.of(context).textTheme.headlineSmall,
+        ),
         const SizedBox(height: 4),
         Text(
           l10n.recommenderSubtitle,
-          style: Theme.of(
-            context,
-          ).textTheme.bodyMedium?.copyWith(color: Theme.of(context).colorScheme.onSurfaceVariant),
+          style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+            color: Theme.of(context).colorScheme.onSurfaceVariant,
+          ),
         ),
         const SizedBox(height: 24),
         Wrap(
@@ -203,7 +220,10 @@ class _StrengthStep extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(l10n.recommenderStepStrength, style: theme.textTheme.headlineSmall),
+        Text(
+          l10n.recommenderStepStrength,
+          style: theme.textTheme.headlineSmall,
+        ),
         const SizedBox(height: 32),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -312,17 +332,26 @@ class _MoodStep extends StatelessWidget {
             padding: const EdgeInsets.only(bottom: 12),
             child: ListTile(
               onTap: () => onSelected(m.$1),
-              leading: Icon(m.$3, color: isSelected ? cs.primary : cs.onSurfaceVariant),
+              leading: Icon(
+                m.$3,
+                color: isSelected ? cs.primary : cs.onSurfaceVariant,
+              ),
               title: Text(m.$2),
-              tileColor: isSelected ? cs.primaryContainer : cs.surfaceContainerHighest,
+              tileColor: isSelected
+                  ? cs.primaryContainer
+                  : cs.surfaceContainerHighest,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(12),
                 side: BorderSide(
-                  color: isSelected ? cs.primary : cs.outline.withValues(alpha: 0.3),
+                  color: isSelected
+                      ? cs.primary
+                      : cs.outline.withValues(alpha: 0.3),
                   width: isSelected ? 2 : 1,
                 ),
               ),
-              trailing: isSelected ? Icon(Icons.check_circle, color: cs.primary) : null,
+              trailing: isSelected
+                  ? Icon(Icons.check_circle, color: cs.primary)
+                  : null,
             ),
           );
         }),

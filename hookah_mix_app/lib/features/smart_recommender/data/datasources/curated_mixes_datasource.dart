@@ -27,7 +27,9 @@ class CuratedMixesDatasource {
     final raw = _hive.get(_boxName, _mixesKey);
     if (raw == null) return null;
     final list = jsonDecode(raw) as List<dynamic>;
-    return list.map((e) => CuratedMixDto.fromJson(e as Map<String, dynamic>)).toList();
+    return list
+        .map((e) => CuratedMixDto.fromJson(e as Map<String, dynamic>))
+        .toList();
   }
 
   Future<List<CuratedMixDto>> _fetchAndCache() async {
@@ -35,7 +37,11 @@ class CuratedMixesDatasource {
     final dtos = snapshot.docs
         .map((doc) => CuratedMixDto.fromFirestore(doc.id, doc.data()))
         .toList();
-    await _hive.put(_boxName, _mixesKey, jsonEncode(dtos.map((d) => d.toJson()).toList()));
+    await _hive.put(
+      _boxName,
+      _mixesKey,
+      jsonEncode(dtos.map((d) => d.toJson()).toList()),
+    );
     await _hive.touchTimestamp(_boxName, _timestampKey);
     return dtos;
   }

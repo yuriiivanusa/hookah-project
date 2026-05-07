@@ -70,6 +70,8 @@
   "catalogTobaccoDetailTitle": "Tobacco details",
   "catalogAddToFavorites": "Add to favorites",
   "catalogRemoveFromFavorites": "Remove from favorites",
+  "catalogAddToMixDone": "Added to mix",
+  "catalogRemoveFromMix": "Remove from mix",
   "catalogAddToMix": "Add to mix",
   "catalogFlavorNotes": "Flavor notes",
   "catalogNicotineContent": "Nicotine",
@@ -183,5 +185,9 @@
   "mixBuilderComponentsLabel": "Components",
   "mixBuilderMyMixes": "My Mixes",
   "mixBuilderEmptyMixes": "No saved mixes yet",
-  "mixBuilderCreateFirst": "Create your first mix"
+  "mixBuilderCreateFirst": "Create your first mix",
+
+  "mixHistorySortDate": "Newest first",
+  "mixHistorySortRating": "Highest rated",
+  "mixHistorySortName": "Name (A–Z)"
 }

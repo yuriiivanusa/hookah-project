@@ -70,7 +70,10 @@ class _RadarPainter extends CustomPainter {
       final path = Path();
       for (int i = 0; i < _sides; i++) {
         final angle = _angleForIndex(i);
-        final point = Offset(center.dx + r * cos(angle), center.dy + r * sin(angle));
+        final point = Offset(
+          center.dx + r * cos(angle),
+          center.dy + r * sin(angle),
+        );
         if (i == 0) {
           path.moveTo(point.dx, point.dy);
         } else {
@@ -85,7 +88,10 @@ class _RadarPainter extends CustomPainter {
       final angle = _angleForIndex(i);
       canvas.drawLine(
         center,
-        Offset(center.dx + radius * cos(angle), center.dy + radius * sin(angle)),
+        Offset(
+          center.dx + radius * cos(angle),
+          center.dy + radius * sin(angle),
+        ),
         paint,
       );
     }
@@ -106,7 +112,10 @@ class _RadarPainter extends CustomPainter {
       final ratio = value / _scale;
       final r = radius * ratio.clamp(0.0, 1.0);
       final angle = _angleForIndex(i);
-      final point = Offset(center.dx + r * cos(angle), center.dy + r * sin(angle));
+      final point = Offset(
+        center.dx + r * cos(angle),
+        center.dy + r * sin(angle),
+      );
       if (i == 0) {
         path.moveTo(point.dx, point.dy);
       } else {
@@ -132,9 +141,13 @@ class _RadarPainter extends CustomPainter {
         text: label,
         style: style.copyWith(color: labelColor),
       );
-      final painter = TextPainter(text: span, textDirection: TextDirection.ltr)..layout();
+      final painter = TextPainter(text: span, textDirection: TextDirection.ltr)
+        ..layout();
 
-      painter.paint(canvas, Offset(x - painter.width / 2, y - painter.height / 2));
+      painter.paint(
+        canvas,
+        Offset(x - painter.width / 2, y - painter.height / 2),
+      );
     }
   }
 
@@ -142,5 +155,7 @@ class _RadarPainter extends CustomPainter {
 
   @override
   bool shouldRepaint(_RadarPainter old) =>
-      old.values != values || old.fillColor != fillColor || old.strokeColor != strokeColor;
+      old.values != values ||
+      old.fillColor != fillColor ||
+      old.strokeColor != strokeColor;
 }

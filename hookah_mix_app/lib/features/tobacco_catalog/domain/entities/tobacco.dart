@@ -26,5 +26,6 @@ abstract class Tobacco with _$Tobacco {
   const Tobacco._();
 
   String localName(String locale) => locale == 'uk' ? nameUk : nameEn;
-  String localDescription(String locale) => locale == 'uk' ? descriptionUk : descriptionEn;
+  String localDescription(String locale) =>
+      locale == 'uk' ? descriptionUk : descriptionEn;
 }

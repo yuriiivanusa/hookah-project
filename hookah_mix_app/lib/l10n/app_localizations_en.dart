@@ -108,13 +108,15 @@ class AppLocalizationsEn extends AppLocalizations {
   String get authForgotPasswordTitle => 'Reset password';
 
   @override
-  String get authForgotPasswordHint => 'Enter your email to receive a reset link';
+  String get authForgotPasswordHint =>
+      'Enter your email to receive a reset link';
 
   @override
   String get authForgotPasswordButton => 'Send reset link';
 
   @override
-  String get authForgotPasswordSuccess => 'Check your email for reset instructions';
+  String get authForgotPasswordSuccess =>
+      'Check your email for reset instructions';
 
   @override
   String get authErrorInvalidEmail => 'Invalid email address';
@@ -138,7 +140,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get authGuestModeTitle => 'Guest Mode';
 
   @override
-  String get authGuestModeBody => 'Sign in to save favorites and create custom mixes.';
+  String get authGuestModeBody =>
+      'Sign in to save favorites and create custom mixes.';
 
   @override
   String get authGuestSignIn => 'Sign in';
@@ -205,6 +208,12 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get catalogRemoveFromFavorites => 'Remove from favorites';
+
+  @override
+  String get catalogAddToMixDone => 'Added to mix';
+
+  @override
+  String get catalogRemoveFromMix => 'Remove from mix';
 
   @override
   String get catalogAddToMix => 'Add to mix';
@@ -444,7 +453,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get mixBuilderAddTobacco => 'Add tobacco';
 
   @override
-  String get mixBuilderNoComponents => 'Add at least 2 tobaccos to create a mix';
+  String get mixBuilderNoComponents =>
+      'Add at least 2 tobaccos to create a mix';
 
   @override
   String get mixBuilderTastePreview => 'Taste preview';
@@ -519,4 +529,13 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get mixBuilderCreateFirst => 'Create your first mix';
+
+  @override
+  String get mixHistorySortDate => 'Newest first';
+
+  @override
+  String get mixHistorySortRating => 'Highest rated';
+
+  @override
+  String get mixHistorySortName => 'Name (A–Z)';
 }

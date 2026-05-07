@@ -19,7 +19,10 @@ void main() {
         home: Scaffold(
           body: Form(
             key: key,
-            child: AppTextField(label: 'Email', validator: (v) => v!.isEmpty ? 'Required' : null),
+            child: AppTextField(
+              label: 'Email',
+              validator: (v) => v!.isEmpty ? 'Required' : null,
+            ),
           ),
         ),
       ),
@@ -30,7 +33,9 @@ void main() {
   });
 
   testWidgets('password field shows visibility toggle', (tester) async {
-    await tester.pumpWidget(wrap(const AppTextField(label: 'Password', isPassword: true)));
+    await tester.pumpWidget(
+      wrap(const AppTextField(label: 'Password', isPassword: true)),
+    );
     expect(find.byIcon(Icons.visibility_off), findsOneWidget);
     await tester.tap(find.byIcon(Icons.visibility_off));
     await tester.pump();

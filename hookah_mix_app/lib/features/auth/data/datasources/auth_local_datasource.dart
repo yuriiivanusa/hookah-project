@@ -9,7 +9,8 @@ class AuthLocalDataSource {
 
   static const _userKey = 'cached_user';
 
-  Future<void> cacheUser(UserDto user) => _secureStorage.write(_userKey, jsonEncode(user.toJson()));
+  Future<void> cacheUser(UserDto user) =>
+      _secureStorage.write(_userKey, jsonEncode(user.toJson()));
 
   Future<UserDto?> getCachedUser() async {
     final raw = await _secureStorage.read(_userKey);

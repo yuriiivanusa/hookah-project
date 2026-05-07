@@ -18,14 +18,21 @@ class MixComponentDto {
   final String tobaccoName;
   final int percentage;
 
-  factory MixComponentDto.fromJson(Map<String, dynamic> json) => _$MixComponentDtoFromJson(json);
+  factory MixComponentDto.fromJson(Map<String, dynamic> json) =>
+      _$MixComponentDtoFromJson(json);
   Map<String, dynamic> toJson() => _$MixComponentDtoToJson(this);
 
-  factory MixComponentDto.fromDomain(MixComponent c) =>
-      MixComponentDto(tobaccoId: c.tobaccoId, tobaccoName: c.tobaccoName, percentage: c.percentage);
+  factory MixComponentDto.fromDomain(MixComponent c) => MixComponentDto(
+    tobaccoId: c.tobaccoId,
+    tobaccoName: c.tobaccoName,
+    percentage: c.percentage,
+  );
 
-  MixComponent toDomain() =>
-      MixComponent(tobaccoId: tobaccoId, tobaccoName: tobaccoName, percentage: percentage);
+  MixComponent toDomain() => MixComponent(
+    tobaccoId: tobaccoId,
+    tobaccoName: tobaccoName,
+    percentage: percentage,
+  );
 }
 
 @JsonSerializable()
@@ -52,7 +59,8 @@ class TasteProfileDto3 {
   @JsonKey(defaultValue: 0)
   final int floral;
 
-  factory TasteProfileDto3.fromJson(Map<String, dynamic> json) => _$TasteProfileDto3FromJson(json);
+  factory TasteProfileDto3.fromJson(Map<String, dynamic> json) =>
+      _$TasteProfileDto3FromJson(json);
   Map<String, dynamic> toJson() => _$TasteProfileDto3ToJson(this);
 
   factory TasteProfileDto3.fromDomain(TasteProfile p) => TasteProfileDto3(
@@ -102,7 +110,9 @@ class UserMixDto {
         .map((e) => MixComponentDto.fromJson(e as Map<String, dynamic>))
         .toList();
     final tp = data['tasteProfile'] != null
-        ? TasteProfileDto3.fromJson(data['tasteProfile'] as Map<String, dynamic>)
+        ? TasteProfileDto3.fromJson(
+            data['tasteProfile'] as Map<String, dynamic>,
+          )
         : null;
     return UserMixDto(
       id: docId,
@@ -134,7 +144,9 @@ class UserMixDto {
     name: mix.name,
     description: mix.description,
     components: mix.components.map(MixComponentDto.fromDomain).toList(),
-    tasteProfile: mix.tasteProfile != null ? TasteProfileDto3.fromDomain(mix.tasteProfile!) : null,
+    tasteProfile: mix.tasteProfile != null
+        ? TasteProfileDto3.fromDomain(mix.tasteProfile!)
+        : null,
     rating: mix.rating,
     createdAt: mix.createdAt,
     updatedAt: mix.updatedAt,

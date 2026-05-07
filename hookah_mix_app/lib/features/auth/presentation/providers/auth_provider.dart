@@ -17,7 +17,9 @@ class Auth extends _$Auth {
   AuthState build() {
     ref.listen(authRepositoryProvider, (_, repo) {
       repo.authStateChanges.listen((user) {
-        state = user != null ? AuthState.authenticated(user) : const AuthState.unauthenticated();
+        state = user != null
+            ? AuthState.authenticated(user)
+            : const AuthState.unauthenticated();
       });
     });
     return const AuthState.initial();

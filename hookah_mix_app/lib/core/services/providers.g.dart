@@ -54,7 +54,12 @@ String _$firebaseAuthHash() => r'8c3e9d11b27110ca96130356b5ef4d5d34a5ffc2';
 final firebaseFirestoreProvider = FirebaseFirestoreProvider._();
 
 final class FirebaseFirestoreProvider
-    extends $FunctionalProvider<FirebaseFirestore, FirebaseFirestore, FirebaseFirestore>
+    extends
+        $FunctionalProvider<
+          FirebaseFirestore,
+          FirebaseFirestore,
+          FirebaseFirestore
+        >
     with $Provider<FirebaseFirestore> {
   FirebaseFirestoreProvider._()
     : super(
@@ -72,8 +77,9 @@ final class FirebaseFirestoreProvider
 
   @$internal
   @override
-  $ProviderElement<FirebaseFirestore> $createElement($ProviderPointer pointer) =>
-      $ProviderElement(pointer);
+  $ProviderElement<FirebaseFirestore> $createElement(
+    $ProviderPointer pointer,
+  ) => $ProviderElement(pointer);
 
   @override
   FirebaseFirestore create(Ref ref) {
@@ -95,7 +101,8 @@ String _$firebaseFirestoreHash() => r'211c9d7cd91051da8adfacbf85a09b8bad1d41e8';
 final firebaseStorageProvider = FirebaseStorageProvider._();
 
 final class FirebaseStorageProvider
-    extends $FunctionalProvider<FirebaseStorage, FirebaseStorage, FirebaseStorage>
+    extends
+        $FunctionalProvider<FirebaseStorage, FirebaseStorage, FirebaseStorage>
     with $Provider<FirebaseStorage> {
   FirebaseStorageProvider._()
     : super(
@@ -136,7 +143,12 @@ String _$firebaseStorageHash() => r'4d34fbbd82ac849c74805e19a05079afa5e20cad';
 final firebaseAnalyticsProvider = FirebaseAnalyticsProvider._();
 
 final class FirebaseAnalyticsProvider
-    extends $FunctionalProvider<FirebaseAnalytics, FirebaseAnalytics, FirebaseAnalytics>
+    extends
+        $FunctionalProvider<
+          FirebaseAnalytics,
+          FirebaseAnalytics,
+          FirebaseAnalytics
+        >
     with $Provider<FirebaseAnalytics> {
   FirebaseAnalyticsProvider._()
     : super(
@@ -154,8 +166,9 @@ final class FirebaseAnalyticsProvider
 
   @$internal
   @override
-  $ProviderElement<FirebaseAnalytics> $createElement($ProviderPointer pointer) =>
-      $ProviderElement(pointer);
+  $ProviderElement<FirebaseAnalytics> $createElement(
+    $ProviderPointer pointer,
+  ) => $ProviderElement(pointer);
 
   @override
   FirebaseAnalytics create(Ref ref) {
@@ -176,7 +189,8 @@ String _$firebaseAnalyticsHash() => r'56d00b6867092340320caab1234380c8d1c2583d';
 @ProviderFor(authService)
 final authServiceProvider = AuthServiceProvider._();
 
-final class AuthServiceProvider extends $FunctionalProvider<AuthService, AuthService, AuthService>
+final class AuthServiceProvider
+    extends $FunctionalProvider<AuthService, AuthService, AuthService>
     with $Provider<AuthService> {
   AuthServiceProvider._()
     : super(
@@ -217,7 +231,12 @@ String _$authServiceHash() => r'0794e8eb90ec0449ad5e8bfcc0fc7eb1afd838ca';
 final firestoreServiceProvider = FirestoreServiceProvider._();
 
 final class FirestoreServiceProvider
-    extends $FunctionalProvider<FirestoreService, FirestoreService, FirestoreService>
+    extends
+        $FunctionalProvider<
+          FirestoreService,
+          FirestoreService,
+          FirestoreService
+        >
     with $Provider<FirestoreService> {
   FirestoreServiceProvider._()
     : super(
@@ -299,7 +318,12 @@ String _$storageServiceHash() => r'59089dd4b324792c34d02b017c5f98d2a57ed388';
 final analyticsServiceProvider = AnalyticsServiceProvider._();
 
 final class AnalyticsServiceProvider
-    extends $FunctionalProvider<AnalyticsService, AnalyticsService, AnalyticsService>
+    extends
+        $FunctionalProvider<
+          AnalyticsService,
+          AnalyticsService,
+          AnalyticsService
+        >
     with $Provider<AnalyticsService> {
   AnalyticsServiceProvider._()
     : super(
@@ -339,7 +363,8 @@ String _$analyticsServiceHash() => r'70f8bb9509bd05d685443d12167b0c6cb5cfac4b';
 @ProviderFor(hiveService)
 final hiveServiceProvider = HiveServiceProvider._();
 
-final class HiveServiceProvider extends $FunctionalProvider<HiveService, HiveService, HiveService>
+final class HiveServiceProvider
+    extends $FunctionalProvider<HiveService, HiveService, HiveService>
     with $Provider<HiveService> {
   HiveServiceProvider._()
     : super(
@@ -380,7 +405,12 @@ String _$hiveServiceHash() => r'7c72fd97faa6878f9ec376c863b52ef6c0bfcba1';
 final secureStorageProvider = SecureStorageProvider._();
 
 final class SecureStorageProvider
-    extends $FunctionalProvider<SecureStorageService, SecureStorageService, SecureStorageService>
+    extends
+        $FunctionalProvider<
+          SecureStorageService,
+          SecureStorageService,
+          SecureStorageService
+        >
     with $Provider<SecureStorageService> {
   SecureStorageProvider._()
     : super(
@@ -398,8 +428,9 @@ final class SecureStorageProvider
 
   @$internal
   @override
-  $ProviderElement<SecureStorageService> $createElement($ProviderPointer pointer) =>
-      $ProviderElement(pointer);
+  $ProviderElement<SecureStorageService> $createElement(
+    $ProviderPointer pointer,
+  ) => $ProviderElement(pointer);
 
   @override
   SecureStorageService create(Ref ref) {

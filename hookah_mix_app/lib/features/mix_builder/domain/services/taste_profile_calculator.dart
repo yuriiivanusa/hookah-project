@@ -3,16 +3,28 @@ import 'package:hookah_mix_master/features/tobacco_catalog/domain/entities/taste
 import 'package:hookah_mix_master/features/tobacco_catalog/domain/entities/tobacco.dart';
 
 abstract final class TasteProfileCalculator {
-  static TasteProfile calculate(List<MixComponent> components, List<Tobacco> tobaccos) {
+  static TasteProfile calculate(
+    List<MixComponent> components,
+    List<Tobacco> tobaccos,
+  ) {
     if (components.isEmpty) {
-      return const TasteProfile(sweet: 0, sour: 0, fresh: 0, spicy: 0, bitter: 0, floral: 0);
+      return const TasteProfile(
+        sweet: 0,
+        sour: 0,
+        fresh: 0,
+        spicy: 0,
+        bitter: 0,
+        floral: 0,
+      );
     }
 
     double sweet = 0, sour = 0, fresh = 0, spicy = 0, bitter = 0, floral = 0;
     int totalPct = 0;
 
     for (final component in components) {
-      final tobacco = tobaccos.where((t) => t.id == component.tobaccoId).firstOrNull;
+      final tobacco = tobaccos
+          .where((t) => t.id == component.tobaccoId)
+          .firstOrNull;
       if (tobacco == null) continue;
       final p = component.percentage;
       sweet += tobacco.tasteProfile.sweet * p;
@@ -25,7 +37,14 @@ abstract final class TasteProfileCalculator {
     }
 
     if (totalPct == 0) {
-      return const TasteProfile(sweet: 0, sour: 0, fresh: 0, spicy: 0, bitter: 0, floral: 0);
+      return const TasteProfile(
+        sweet: 0,
+        sour: 0,
+        fresh: 0,
+        spicy: 0,
+        bitter: 0,
+        floral: 0,
+      );
     }
 
     return TasteProfile(

@@ -2,7 +2,11 @@ import 'package:hookah_mix_master/features/smart_recommender/domain/entities/cur
 import 'package:hookah_mix_master/features/tobacco_catalog/domain/entities/taste_profile.dart';
 
 class RecommendationResult {
-  const RecommendationResult({required this.mix, required this.distance, required this.matchLabel});
+  const RecommendationResult({
+    required this.mix,
+    required this.distance,
+    required this.matchLabel,
+  });
 
   final CuratedMix mix;
   final double distance;
@@ -45,7 +49,11 @@ abstract final class RecommendationAlgorithm {
     final results =
         candidates.map((mix) {
           final d = _totalDistance(mix, userProfile, userStrength);
-          return RecommendationResult(mix: mix, distance: d, matchLabel: _label(d));
+          return RecommendationResult(
+            mix: mix,
+            distance: d,
+            matchLabel: _label(d),
+          );
         }).toList()..sort((a, b) {
           final cmp = a.distance.compareTo(b.distance);
           if (cmp != 0) return cmp;
@@ -55,7 +63,11 @@ abstract final class RecommendationAlgorithm {
     return results.take(topN).toList();
   }
 
-  static double _totalDistance(CuratedMix mix, TasteProfile user, int userStrength) {
+  static double _totalDistance(
+    CuratedMix mix,
+    TasteProfile user,
+    int userStrength,
+  ) {
     final p = mix.expectedProfile;
     final tasteDist =
         (user.sweet - p.sweet).abs() +
@@ -65,7 +77,8 @@ abstract final class RecommendationAlgorithm {
         (user.bitter - p.bitter).abs() +
         (user.floral - p.floral).abs();
 
-    final strengthDist = (userStrength - mix.strengthLevel).abs() * _strengthWeight;
+    final strengthDist =
+        (userStrength - mix.strengthLevel).abs() * _strengthWeight;
     return tasteDist + strengthDist;
   }
 

@@ -2,7 +2,13 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 
 part 'tobacco_filter.freezed.dart';
 
-enum TobaccoSortOrder { popularityDesc, nameAsc, nameDesc, strengthAsc, strengthDesc }
+enum TobaccoSortOrder {
+  popularityDesc,
+  nameAsc,
+  nameDesc,
+  strengthAsc,
+  strengthDesc,
+}
 
 @freezed
 abstract class TobaccoFilter with _$TobaccoFilter {

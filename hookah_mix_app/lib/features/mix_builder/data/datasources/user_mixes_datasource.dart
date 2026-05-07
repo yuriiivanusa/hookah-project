@@ -11,8 +11,12 @@ class UserMixesDatasource {
       _firestore.collection('users').doc(userId).collection('mixes');
 
   Future<List<UserMix>> getUserMixes(String userId) async {
-    final snap = await _col(userId).orderBy('updatedAt', descending: true).get();
-    return snap.docs.map((doc) => UserMixDto.fromFirestore(doc.id, doc.data()).toDomain()).toList();
+    final snap = await _col(
+      userId,
+    ).orderBy('updatedAt', descending: true).get();
+    return snap.docs
+        .map((doc) => UserMixDto.fromFirestore(doc.id, doc.data()).toDomain())
+        .toList();
   }
 
   Future<UserMix> createMix(UserMix mix) async {

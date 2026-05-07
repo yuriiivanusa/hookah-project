@@ -18,7 +18,9 @@ void main() {
 
   setUp(() {
     mockRepo = _MockAuthRepository();
-    when(() => mockRepo.authStateChanges).thenAnswer((_) => const Stream.empty());
+    when(
+      () => mockRepo.authStateChanges,
+    ).thenAnswer((_) => const Stream.empty());
   });
 
   Widget buildApp() => ProviderScope(
@@ -29,10 +31,22 @@ void main() {
       routerConfig: GoRouter(
         initialLocation: '/login',
         routes: [
-          GoRoute(path: '/login', builder: (context, state) => const LoginScreen()),
-          GoRoute(path: '/signup', builder: (context, state) => const SizedBox()),
-          GoRoute(path: '/forgot-password', builder: (context, state) => const SizedBox()),
-          GoRoute(path: '/catalog', builder: (context, state) => const Text('Catalog')),
+          GoRoute(
+            path: '/login',
+            builder: (context, state) => const LoginScreen(),
+          ),
+          GoRoute(
+            path: '/signup',
+            builder: (context, state) => const SizedBox(),
+          ),
+          GoRoute(
+            path: '/forgot-password',
+            builder: (context, state) => const SizedBox(),
+          ),
+          GoRoute(
+            path: '/catalog',
+            builder: (context, state) => const Text('Catalog'),
+          ),
         ],
       ),
     ),
@@ -46,7 +60,9 @@ void main() {
     expect(find.byType(ElevatedButton), findsOneWidget);
   });
 
-  testWidgets('submit with empty fields shows validation errors', (tester) async {
+  testWidgets('submit with empty fields shows validation errors', (
+    tester,
+  ) async {
     await tester.pumpWidget(buildApp());
     await tester.pumpAndSettle();
 

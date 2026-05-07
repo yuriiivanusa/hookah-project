@@ -21,8 +21,16 @@ class TobaccoLocalDataSource {
     List<BrandDto> brands,
     String version,
   ) async {
-    await _hive.put(_boxName, _tobaccosKey, jsonEncode(tobaccos.map((t) => t.toJson()).toList()));
-    await _hive.put(_boxName, _brandsKey, jsonEncode(brands.map((b) => b.toJson()).toList()));
+    await _hive.put(
+      _boxName,
+      _tobaccosKey,
+      jsonEncode(tobaccos.map((t) => t.toJson()).toList()),
+    );
+    await _hive.put(
+      _boxName,
+      _brandsKey,
+      jsonEncode(brands.map((b) => b.toJson()).toList()),
+    );
     await _hive.put(_boxName, _versionKey, version);
     await _hive.touchTimestamp(_boxName, _timestampKey);
   }
@@ -31,14 +39,18 @@ class TobaccoLocalDataSource {
     final raw = _hive.get(_boxName, _tobaccosKey);
     if (raw == null) return null;
     final list = jsonDecode(raw) as List<dynamic>;
-    return list.map((e) => TobaccoDto.fromJson(e as Map<String, dynamic>)).toList();
+    return list
+        .map((e) => TobaccoDto.fromJson(e as Map<String, dynamic>))
+        .toList();
   }
 
   List<BrandDto>? getCachedBrands() {
     final raw = _hive.get(_boxName, _brandsKey);
     if (raw == null) return null;
     final list = jsonDecode(raw) as List<dynamic>;
-    return list.map((e) => BrandDto.fromJson(e as Map<String, dynamic>)).toList();
+    return list
+        .map((e) => BrandDto.fromJson(e as Map<String, dynamic>))
+        .toList();
   }
 
   bool isCacheValid() => _hive.isCacheValid(_boxName, _timestampKey);

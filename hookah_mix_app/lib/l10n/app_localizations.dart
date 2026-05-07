@@ -62,7 +62,8 @@ import 'app_localizations_uk.dart';
 /// be consistent with the languages listed in the AppLocalizations.supportedLocales
 /// property.
 abstract class AppLocalizations {
-  AppLocalizations(String locale) : localeName = intl.Intl.canonicalizedLocale(locale.toString());
+  AppLocalizations(String locale)
+    : localeName = intl.Intl.canonicalizedLocale(locale.toString());
 
   final String localeName;
 
@@ -70,7 +71,8 @@ abstract class AppLocalizations {
     return Localizations.of<AppLocalizations>(context, AppLocalizations);
   }
 
-  static const LocalizationsDelegate<AppLocalizations> delegate = _AppLocalizationsDelegate();
+  static const LocalizationsDelegate<AppLocalizations> delegate =
+      _AppLocalizationsDelegate();
 
   /// A list of this localizations delegate along with the default localizations
   /// delegates.
@@ -91,7 +93,10 @@ abstract class AppLocalizations {
       ];
 
   /// A list of this localizations delegate's supported locales.
-  static const List<Locale> supportedLocales = <Locale>[Locale('en'), Locale('uk')];
+  static const List<Locale> supportedLocales = <Locale>[
+    Locale('en'),
+    Locale('uk'),
+  ];
 
   /// No description provided for @appName.
   ///
@@ -488,6 +493,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Remove from favorites'**
   String get catalogRemoveFromFavorites;
+
+  /// No description provided for @catalogAddToMixDone.
+  ///
+  /// In en, this message translates to:
+  /// **'Added to mix'**
+  String get catalogAddToMixDone;
+
+  /// No description provided for @catalogRemoveFromMix.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove from mix'**
+  String get catalogRemoveFromMix;
 
   /// No description provided for @catalogAddToMix.
   ///
@@ -1112,9 +1129,28 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Create your first mix'**
   String get mixBuilderCreateFirst;
+
+  /// No description provided for @mixHistorySortDate.
+  ///
+  /// In en, this message translates to:
+  /// **'Newest first'**
+  String get mixHistorySortDate;
+
+  /// No description provided for @mixHistorySortRating.
+  ///
+  /// In en, this message translates to:
+  /// **'Highest rated'**
+  String get mixHistorySortRating;
+
+  /// No description provided for @mixHistorySortName.
+  ///
+  /// In en, this message translates to:
+  /// **'Name (A–Z)'**
+  String get mixHistorySortName;
 }
 
-class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {
+class _AppLocalizationsDelegate
+    extends LocalizationsDelegate<AppLocalizations> {
   const _AppLocalizationsDelegate();
 
   @override
@@ -1123,7 +1159,8 @@ class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> 
   }
 
   @override
-  bool isSupported(Locale locale) => <String>['en', 'uk'].contains(locale.languageCode);
+  bool isSupported(Locale locale) =>
+      <String>['en', 'uk'].contains(locale.languageCode);
 
   @override
   bool shouldReload(_AppLocalizationsDelegate old) => false;

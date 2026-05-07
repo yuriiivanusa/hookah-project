@@ -13,7 +13,12 @@ part of 'mix_builder_notifier.dart';
 final mixBuilderRepositoryProvider = MixBuilderRepositoryProvider._();
 
 final class MixBuilderRepositoryProvider
-    extends $FunctionalProvider<MixBuilderRepository, MixBuilderRepository, MixBuilderRepository>
+    extends
+        $FunctionalProvider<
+          MixBuilderRepository,
+          MixBuilderRepository,
+          MixBuilderRepository
+        >
     with $Provider<MixBuilderRepository> {
   MixBuilderRepositoryProvider._()
     : super(
@@ -31,8 +36,9 @@ final class MixBuilderRepositoryProvider
 
   @$internal
   @override
-  $ProviderElement<MixBuilderRepository> $createElement($ProviderPointer pointer) =>
-      $ProviderElement(pointer);
+  $ProviderElement<MixBuilderRepository> $createElement(
+    $ProviderPointer pointer,
+  ) => $ProviderElement(pointer);
 
   @override
   MixBuilderRepository create(Ref ref) {
@@ -48,7 +54,8 @@ final class MixBuilderRepositoryProvider
   }
 }
 
-String _$mixBuilderRepositoryHash() => r'2ae08c9995e1666898ce6aed77f5598888465a1d';
+String _$mixBuilderRepositoryHash() =>
+    r'2ae08c9995e1666898ce6aed77f5598888465a1d';
 
 @ProviderFor(MixBuilderNotifier)
 final mixBuilderProvider = MixBuilderNotifierProvider._();
@@ -61,7 +68,7 @@ final class MixBuilderNotifierProvider
         argument: null,
         retry: null,
         name: r'mixBuilderProvider',
-        isAutoDispose: true,
+        isAutoDispose: false,
         dependencies: null,
         $allTransitiveDependencies: null,
       );
@@ -82,7 +89,8 @@ final class MixBuilderNotifierProvider
   }
 }
 
-String _$mixBuilderNotifierHash() => r'263cce1c16163bed0a0901c0d476f6c61aff134f';
+String _$mixBuilderNotifierHash() =>
+    r'c4ce5eb247068d92875019479b35959d934e9a38';
 
 abstract class _$MixBuilderNotifier extends $Notifier<CurrentMixState> {
   CurrentMixState build();

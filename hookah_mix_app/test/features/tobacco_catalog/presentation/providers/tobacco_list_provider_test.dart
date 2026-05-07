@@ -48,15 +48,19 @@ void main() {
       var all = [_makeTobacco()];
       if (filter.query.isNotEmpty) {
         all = all
-            .where((t) => t.nameEn.toLowerCase().contains(filter.query.toLowerCase()))
+            .where(
+              (t) =>
+                  t.nameEn.toLowerCase().contains(filter.query.toLowerCase()),
+            )
             .toList();
       }
       return all;
     });
   });
 
-  ProviderContainer makeContainer() =>
-      ProviderContainer(overrides: [tobaccoRepositoryProvider.overrideWithValue(repo)]);
+  ProviderContainer makeContainer() => ProviderContainer(
+    overrides: [tobaccoRepositoryProvider.overrideWithValue(repo)],
+  );
 
   group('filteredTobaccoListProvider', () {
     test('returns tobacco list with default filter', () async {

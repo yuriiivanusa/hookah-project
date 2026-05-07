@@ -14,5 +14,6 @@ class MixComponent {
     return _capitalize(tobaccoId.replaceAll('_', ' '));
   }
 
-  String _capitalize(String s) => s.isEmpty ? s : s[0].toUpperCase() + s.substring(1);
+  String _capitalize(String s) =>
+      s.isEmpty ? s : s[0].toUpperCase() + s.substring(1);
 }

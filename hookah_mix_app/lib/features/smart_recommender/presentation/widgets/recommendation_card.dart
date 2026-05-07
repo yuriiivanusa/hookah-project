@@ -1,23 +1,31 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:hookah_mix_master/core/extensions/context_extensions.dart';
 import 'package:hookah_mix_master/core/theme/app_tokens.dart';
+import 'package:hookah_mix_master/features/favorites/domain/entities/favorite_entry.dart';
+import 'package:hookah_mix_master/features/favorites/presentation/providers/favorites_notifier.dart';
 import 'package:hookah_mix_master/features/smart_recommender/domain/services/recommendation_algorithm.dart';
 
-class RecommendationCard extends StatelessWidget {
+class RecommendationCard extends ConsumerWidget {
   const RecommendationCard({super.key, required this.result});
 
   final RecommendationResult result;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     final theme = Theme.of(context);
     final l10n = context.l10n;
     final locale = Localizations.localeOf(context).languageCode;
     final mix = result.mix;
+    final isFav = ref
+        .watch(favoritesProvider)
+        .any((e) => e.type == FavoriteType.mix && e.refId == mix.id);
 
     return Card(
       margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-      shape: const RoundedRectangleBorder(borderRadius: AppTokens.borderRadiusMd),
+      shape: const RoundedRectangleBorder(
+        borderRadius: AppTokens.borderRadiusMd,
+      ),
       child: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(
@@ -25,8 +33,26 @@ class RecommendationCard extends StatelessWidget {
           children: [
             Row(
               children: [
-                Expanded(child: Text(mix.localName(locale), style: theme.textTheme.titleMedium)),
+                Expanded(
+                  child: Text(
+                    mix.localName(locale),
+                    style: theme.textTheme.titleMedium,
+                  ),
+                ),
                 _MatchBadge(label: result.matchLabel, l10n: l10n),
+                const SizedBox(width: 4),
+                IconButton(
+                  visualDensity: VisualDensity.compact,
+                  icon: Icon(
+                    isFav ? Icons.favorite : Icons.favorite_border,
+                    color: isFav
+                        ? Colors.red
+                        : theme.colorScheme.onSurfaceVariant,
+                  ),
+                  onPressed: () => ref
+                      .read(favoritesProvider.notifier)
+                      .toggle(FavoriteType.mix, mix.id, mix.localName(locale)),
+                ),
               ],
             ),
             const SizedBox(height: 4),
@@ -40,7 +66,9 @@ class RecommendationCard extends StatelessWidget {
             const SizedBox(height: 10),
             Text(
               mix.localDescription(locale),
-              style: theme.textTheme.bodySmall?.copyWith(color: theme.colorScheme.onSurfaceVariant),
+              style: theme.textTheme.bodySmall?.copyWith(
+                color: theme.colorScheme.onSurfaceVariant,
+              ),
               maxLines: 2,
               overflow: TextOverflow.ellipsis,
             ),

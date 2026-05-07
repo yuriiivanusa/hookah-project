@@ -19,7 +19,9 @@ CuratedMix _mix({
   id: id,
   nameEn: 'Mix $id',
   nameUk: 'Мікс $id',
-  components: const [MixComponent(tobaccoId: 'brand__tobacco', percentage: 100)],
+  components: const [
+    MixComponent(tobaccoId: 'brand__tobacco', percentage: 100),
+  ],
   expectedProfile: TasteProfile(
     sweet: sweet,
     sour: sour,
@@ -40,7 +42,10 @@ CuratedMix _mix({
 void main() {
   group('RecommendationAlgorithm.buildUserProfile', () {
     test('selected axis gets value 8, unselected gets 2', () {
-      final profile = RecommendationAlgorithm.buildUserProfile({'sweet', 'fresh'});
+      final profile = RecommendationAlgorithm.buildUserProfile({
+        'sweet',
+        'fresh',
+      });
       expect(profile.sweet, 8);
       expect(profile.fresh, 8);
       expect(profile.sour, 2);
@@ -60,9 +65,20 @@ void main() {
       // m1: sweet+fresh=5 each → distance to user sweet+fresh=8 is |8-5|*2 + |2-0|+|2-0|+|2-0|+|2-0| = 6 + 8 = 14 + strength
       // m2: sweet=8, fresh=8 → distance 0 for those axes
       final m1 = _mix(id: 'm1', sweet: 5, fresh: 5);
-      final m2 = _mix(id: 'm2', sweet: 8, fresh: 8, sour: 2, spicy: 2, bitter: 2, floral: 2);
+      final m2 = _mix(
+        id: 'm2',
+        sweet: 8,
+        fresh: 8,
+        sour: 2,
+        spicy: 2,
+        bitter: 2,
+        floral: 2,
+      );
 
-      final profile = RecommendationAlgorithm.buildUserProfile({'sweet', 'fresh'});
+      final profile = RecommendationAlgorithm.buildUserProfile({
+        'sweet',
+        'fresh',
+      });
       final results = RecommendationAlgorithm.recommend(
         mixes: [m1, m2],
         userProfile: profile,
@@ -94,7 +110,10 @@ void main() {
         popularity: 90,
       );
 
-      final profile = RecommendationAlgorithm.buildUserProfile({'sweet', 'fresh'});
+      final profile = RecommendationAlgorithm.buildUserProfile({
+        'sweet',
+        'fresh',
+      });
       final results = RecommendationAlgorithm.recommend(
         mixes: [m1, m2],
         userProfile: profile,
@@ -131,8 +150,18 @@ void main() {
     });
 
     test('match label is excellent for distance ≤ 8', () {
-      final mix = _mix(sweet: 8, fresh: 8, sour: 2, spicy: 2, bitter: 2, floral: 2);
-      final profile = RecommendationAlgorithm.buildUserProfile({'sweet', 'fresh'});
+      final mix = _mix(
+        sweet: 8,
+        fresh: 8,
+        sour: 2,
+        spicy: 2,
+        bitter: 2,
+        floral: 2,
+      );
+      final profile = RecommendationAlgorithm.buildUserProfile({
+        'sweet',
+        'fresh',
+      });
       final results = RecommendationAlgorithm.recommend(
         mixes: [mix],
         userProfile: profile,

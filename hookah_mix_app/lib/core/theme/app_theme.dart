@@ -23,13 +23,17 @@ sealed class AppTheme {
     cardTheme: CardThemeData(
       color: scheme.surfaceContainerHighest,
       elevation: AppTokens.elevationSm,
-      shape: const RoundedRectangleBorder(borderRadius: AppTokens.borderRadiusMd),
+      shape: const RoundedRectangleBorder(
+        borderRadius: AppTokens.borderRadiusMd,
+      ),
     ),
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
         backgroundColor: scheme.primary,
         foregroundColor: scheme.onPrimary,
-        shape: const RoundedRectangleBorder(borderRadius: AppTokens.borderRadiusMd),
+        shape: const RoundedRectangleBorder(
+          borderRadius: AppTokens.borderRadiusMd,
+        ),
         minimumSize: const Size.fromHeight(52),
       ),
     ),
@@ -37,7 +41,9 @@ sealed class AppTheme {
       style: OutlinedButton.styleFrom(
         foregroundColor: scheme.primary,
         side: BorderSide(color: scheme.primary),
-        shape: const RoundedRectangleBorder(borderRadius: AppTokens.borderRadiusMd),
+        shape: const RoundedRectangleBorder(
+          borderRadius: AppTokens.borderRadiusMd,
+        ),
         minimumSize: const Size.fromHeight(52),
       ),
     ),
@@ -61,7 +67,10 @@ sealed class AppTheme {
       type: BottomNavigationBarType.fixed,
       elevation: AppTokens.elevationMd,
     ),
-    dividerTheme: DividerThemeData(color: scheme.outline.withValues(alpha: 0.3), thickness: 1),
+    dividerTheme: DividerThemeData(
+      color: scheme.outline.withValues(alpha: 0.3),
+      thickness: 1,
+    ),
     scaffoldBackgroundColor: scheme.surface,
   );
 }

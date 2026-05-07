@@ -31,6 +31,7 @@ class TobaccoFiltersSheet extends ConsumerWidget {
   static Future<void> show(BuildContext context) => showModalBottomSheet<void>(
     context: context,
     isScrollControlled: true,
+    useRootNavigator: true,
     shape: const RoundedRectangleBorder(
       borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
     ),
@@ -68,15 +69,21 @@ class TobaccoFiltersSheet extends ConsumerWidget {
                 const Divider(height: 32),
                 brandsAsync.when(
                   data: (brands) => _BrandSection(
-                    brands: brands.map((b) => (id: b.id, name: b.name)).toList(),
+                    brands: brands
+                        .map((b) => (id: b.id, name: b.name))
+                        .toList(),
                     selectedBrandId: filter.brandId,
-                    onChanged: (id) => ref.read(catalogFilterProvider.notifier).setBrand(id),
+                    onChanged: (id) =>
+                        ref.read(catalogFilterProvider.notifier).setBrand(id),
                   ),
                   loading: () => const SizedBox.shrink(),
                   error: (_, _) => const SizedBox.shrink(),
                 ),
                 const Divider(height: 32),
-                Text(l10n.catalogFilterLeafType, style: Theme.of(context).textTheme.titleSmall),
+                Text(
+                  l10n.catalogFilterLeafType,
+                  style: Theme.of(context).textTheme.titleSmall,
+                ),
                 const SizedBox(height: 8),
                 Wrap(
                   spacing: 8,
@@ -92,7 +99,10 @@ class TobaccoFiltersSheet extends ConsumerWidget {
                   }).toList(),
                 ),
                 const Divider(height: 32),
-                Text(l10n.catalogFilterFlavor, style: Theme.of(context).textTheme.titleSmall),
+                Text(
+                  l10n.catalogFilterFlavor,
+                  style: Theme.of(context).textTheme.titleSmall,
+                ),
                 const SizedBox(height: 8),
                 Wrap(
                   spacing: 8,
@@ -108,13 +118,17 @@ class TobaccoFiltersSheet extends ConsumerWidget {
                   }).toList(),
                 ),
                 const Divider(height: 32),
-                Text(l10n.catalogFilterStrength, style: Theme.of(context).textTheme.titleSmall),
+                Text(
+                  l10n.catalogFilterStrength,
+                  style: Theme.of(context).textTheme.titleSmall,
+                ),
                 const SizedBox(height: 8),
                 _StrengthRangeSlider(filter: filter, ref: ref),
                 const SizedBox(height: 24),
                 if (filter.hasActiveFilters)
                   OutlinedButton(
-                    onPressed: () => ref.read(catalogFilterProvider.notifier).clearFilters(),
+                    onPressed: () =>
+                        ref.read(catalogFilterProvider.notifier).clearFilters(),
                     child: Text(l10n.catalogFilterReset),
                   ),
               ],
@@ -155,7 +169,10 @@ class _SortSection extends StatelessWidget {
             contentPadding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
           ),
           items: TobaccoSortOrder.values.map((order) {
-            return DropdownMenuItem(value: order, child: Text(sortLabels[order] ?? order.name));
+            return DropdownMenuItem(
+              value: order,
+              child: Text(sortLabels[order] ?? order.name),
+            );
           }).toList(),
           onChanged: (order) {
             if (order != null) {
@@ -185,7 +202,10 @@ class _BrandSection extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(l10n.catalogFilterBrand, style: Theme.of(context).textTheme.titleSmall),
+        Text(
+          l10n.catalogFilterBrand,
+          style: Theme.of(context).textTheme.titleSmall,
+        ),
         const SizedBox(height: 8),
         DropdownButtonFormField<String?>(
           initialValue: selectedBrandId,
@@ -194,8 +214,13 @@ class _BrandSection extends StatelessWidget {
             contentPadding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
           ),
           items: [
-            DropdownMenuItem(value: null, child: Text('— ${l10n.catalogFilterBrand} —')),
-            ...brands.map((b) => DropdownMenuItem(value: b.id, child: Text(b.name))),
+            DropdownMenuItem(
+              value: null,
+              child: Text('— ${l10n.catalogFilterBrand} —'),
+            ),
+            ...brands.map(
+              (b) => DropdownMenuItem(value: b.id, child: Text(b.name)),
+            ),
           ],
           onChanged: onChanged,
         ),
@@ -218,16 +243,28 @@ class _StrengthRangeSlider extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Text(l10n.catalogStrengthLight, style: Theme.of(context).textTheme.bodySmall),
-            Text(l10n.catalogStrengthStrong, style: Theme.of(context).textTheme.bodySmall),
+            Text(
+              l10n.catalogStrengthLight,
+              style: Theme.of(context).textTheme.bodySmall,
+            ),
+            Text(
+              l10n.catalogStrengthStrong,
+              style: Theme.of(context).textTheme.bodySmall,
+            ),
           ],
         ),
         RangeSlider(
-          values: RangeValues(filter.minStrength.toDouble(), filter.maxStrength.toDouble()),
+          values: RangeValues(
+            filter.minStrength.toDouble(),
+            filter.maxStrength.toDouble(),
+          ),
           min: 1,
           max: 5,
           divisions: 4,
-          labels: RangeLabels(filter.minStrength.toString(), filter.maxStrength.toString()),
+          labels: RangeLabels(
+            filter.minStrength.toString(),
+            filter.maxStrength.toString(),
+          ),
           onChanged: (range) => ref
               .read(catalogFilterProvider.notifier)
               .setStrengthRange(range.start.round(), range.end.round()),

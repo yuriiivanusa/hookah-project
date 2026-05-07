@@ -19,7 +19,11 @@ class GuestModeScreen extends ConsumerWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              const Icon(Icons.person_outline, size: 80, color: AppColors.primary),
+              const Icon(
+                Icons.person_outline,
+                size: 80,
+                color: AppColors.primary,
+              ),
               const SizedBox(height: 24),
               Text(
                 context.l10n.authGuestModeTitle,

@@ -33,7 +33,10 @@ final class AuthProvider extends $NotifierProvider<Auth, AuthState> {
 
   /// {@macro riverpod.override_with_value}
   Override overrideWithValue(AuthState value) {
-    return $ProviderOverride(origin: this, providerOverride: $SyncValueProvider<AuthState>(value));
+    return $ProviderOverride(
+      origin: this,
+      providerOverride: $SyncValueProvider<AuthState>(value),
+    );
   }
 }
 
@@ -101,7 +104,8 @@ String _$authRepositoryHash() => r'86743b1b804ff8b40651aa3835e8c9e41f7663d7';
 @ProviderFor(currentUser)
 final currentUserProvider = CurrentUserProvider._();
 
-final class CurrentUserProvider extends $FunctionalProvider<AppUser?, AppUser?, AppUser?>
+final class CurrentUserProvider
+    extends $FunctionalProvider<AppUser?, AppUser?, AppUser?>
     with $Provider<AppUser?> {
   CurrentUserProvider._()
     : super(
@@ -119,7 +123,8 @@ final class CurrentUserProvider extends $FunctionalProvider<AppUser?, AppUser?, 
 
   @$internal
   @override
-  $ProviderElement<AppUser?> $createElement($ProviderPointer pointer) => $ProviderElement(pointer);
+  $ProviderElement<AppUser?> $createElement($ProviderPointer pointer) =>
+      $ProviderElement(pointer);
 
   @override
   AppUser? create(Ref ref) {
@@ -128,7 +133,10 @@ final class CurrentUserProvider extends $FunctionalProvider<AppUser?, AppUser?, 
 
   /// {@macro riverpod.override_with_value}
   Override overrideWithValue(AppUser? value) {
-    return $ProviderOverride(origin: this, providerOverride: $SyncValueProvider<AppUser?>(value));
+    return $ProviderOverride(
+      origin: this,
+      providerOverride: $SyncValueProvider<AppUser?>(value),
+    );
   }
 }
 
@@ -137,7 +145,8 @@ String _$currentUserHash() => r'8d3318b30c4530007ecb1338a0236505aa1c2e1a';
 @ProviderFor(isGuest)
 final isGuestProvider = IsGuestProvider._();
 
-final class IsGuestProvider extends $FunctionalProvider<bool, bool, bool> with $Provider<bool> {
+final class IsGuestProvider extends $FunctionalProvider<bool, bool, bool>
+    with $Provider<bool> {
   IsGuestProvider._()
     : super(
         from: null,
@@ -154,7 +163,8 @@ final class IsGuestProvider extends $FunctionalProvider<bool, bool, bool> with $
 
   @$internal
   @override
-  $ProviderElement<bool> $createElement($ProviderPointer pointer) => $ProviderElement(pointer);
+  $ProviderElement<bool> $createElement($ProviderPointer pointer) =>
+      $ProviderElement(pointer);
 
   @override
   bool create(Ref ref) {
@@ -163,7 +173,10 @@ final class IsGuestProvider extends $FunctionalProvider<bool, bool, bool> with $
 
   /// {@macro riverpod.override_with_value}
   Override overrideWithValue(bool value) {
-    return $ProviderOverride(origin: this, providerOverride: $SyncValueProvider<bool>(value));
+    return $ProviderOverride(
+      origin: this,
+      providerOverride: $SyncValueProvider<bool>(value),
+    );
   }
 }
 

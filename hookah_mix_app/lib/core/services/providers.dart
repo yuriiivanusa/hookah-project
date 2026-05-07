@@ -27,14 +27,16 @@ FirebaseStorage firebaseStorage(Ref ref) => FirebaseStorage.instance;
 FirebaseAnalytics firebaseAnalytics(Ref ref) => FirebaseAnalytics.instance;
 
 @Riverpod(keepAlive: true)
-AuthService authService(Ref ref) => AuthService(ref.watch(firebaseAuthProvider));
+AuthService authService(Ref ref) =>
+    AuthService(ref.watch(firebaseAuthProvider));
 
 @Riverpod(keepAlive: true)
 FirestoreService firestoreService(Ref ref) =>
     FirestoreService(ref.watch(firebaseFirestoreProvider));
 
 @Riverpod(keepAlive: true)
-StorageService storageService(Ref ref) => StorageService(ref.watch(firebaseStorageProvider));
+StorageService storageService(Ref ref) =>
+    StorageService(ref.watch(firebaseStorageProvider));
 
 @Riverpod(keepAlive: true)
 AnalyticsService analyticsService(Ref ref) =>
@@ -44,7 +46,8 @@ AnalyticsService analyticsService(Ref ref) =>
 HiveService hiveService(Ref ref) => HiveService();
 
 @Riverpod(keepAlive: true)
-SecureStorageService secureStorage(Ref ref) => SecureStorageService(const FlutterSecureStorage());
+SecureStorageService secureStorage(Ref ref) =>
+    SecureStorageService(const FlutterSecureStorage());
 
 @Riverpod(keepAlive: true)
 GoogleSignIn googleSignIn(Ref ref) => GoogleSignIn();

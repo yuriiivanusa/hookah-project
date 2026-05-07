@@ -27,7 +27,9 @@ class EmptyState extends StatelessWidget {
             const SizedBox(height: 16),
             Text(
               message,
-              style: theme.textTheme.bodyLarge?.copyWith(color: theme.colorScheme.outline),
+              style: theme.textTheme.bodyLarge?.copyWith(
+                color: theme.colorScheme.outline,
+              ),
               textAlign: TextAlign.center,
             ),
             if (action != null && actionLabel != null) ...[

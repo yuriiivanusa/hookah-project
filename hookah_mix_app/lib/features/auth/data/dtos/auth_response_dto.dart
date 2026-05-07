@@ -5,5 +5,6 @@ part 'auth_response_dto.freezed.dart';
 
 @freezed
 abstract class AuthResponseDto with _$AuthResponseDto {
-  const factory AuthResponseDto({required UserDto user, String? accessToken}) = _AuthResponseDto;
+  const factory AuthResponseDto({required UserDto user, String? accessToken}) =
+      _AuthResponseDto;
 }

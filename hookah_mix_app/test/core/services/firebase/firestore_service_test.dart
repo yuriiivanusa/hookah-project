@@ -13,7 +13,10 @@ void main() {
 
   group('FirestoreService.addDocument + getDocument', () {
     test('adds and retrieves a document', () async {
-      final id = await sut.addDocument('brands', {'name': 'Adalya', 'country': 'TR'});
+      final id = await sut.addDocument('brands', {
+        'name': 'Adalya',
+        'country': 'TR',
+      });
       expect(id, isNotEmpty);
 
       final doc = await sut.getDocument('brands/$id');

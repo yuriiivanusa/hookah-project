@@ -15,7 +15,9 @@ void main() {
 
   setUp(() {
     mockRepo = _MockAuthRepository();
-    when(() => mockRepo.authStateChanges).thenAnswer((_) => const Stream.empty());
+    when(
+      () => mockRepo.authStateChanges,
+    ).thenAnswer((_) => const Stream.empty());
   });
 
   Widget buildApp() => ProviderScope(
@@ -26,8 +28,14 @@ void main() {
       routerConfig: GoRouter(
         initialLocation: '/signup',
         routes: [
-          GoRoute(path: '/signup', builder: (context, state) => const SignupScreen()),
-          GoRoute(path: '/login', builder: (context, state) => const SizedBox()),
+          GoRoute(
+            path: '/signup',
+            builder: (context, state) => const SignupScreen(),
+          ),
+          GoRoute(
+            path: '/login',
+            builder: (context, state) => const SizedBox(),
+          ),
         ],
       ),
     ),

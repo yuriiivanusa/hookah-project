@@ -24,9 +24,30 @@ Tobacco _tobacco(String id, TasteProfile profile) => Tobacco(
 MixComponent _comp(String id, int pct) =>
     MixComponent(tobaccoId: id, tobaccoName: id, percentage: pct);
 
-const _sweet = TasteProfile(sweet: 8, sour: 0, fresh: 0, spicy: 0, bitter: 0, floral: 0);
-const _fresh = TasteProfile(sweet: 0, sour: 0, fresh: 8, spicy: 0, bitter: 0, floral: 0);
-const _zeros = TasteProfile(sweet: 0, sour: 0, fresh: 0, spicy: 0, bitter: 0, floral: 0);
+const _sweet = TasteProfile(
+  sweet: 8,
+  sour: 0,
+  fresh: 0,
+  spicy: 0,
+  bitter: 0,
+  floral: 0,
+);
+const _fresh = TasteProfile(
+  sweet: 0,
+  sour: 0,
+  fresh: 8,
+  spicy: 0,
+  bitter: 0,
+  floral: 0,
+);
+const _zeros = TasteProfile(
+  sweet: 0,
+  sour: 0,
+  fresh: 0,
+  spicy: 0,
+  bitter: 0,
+  floral: 0,
+);
 
 void main() {
   group('TasteProfileCalculator', () {

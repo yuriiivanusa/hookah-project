@@ -14,18 +14,19 @@ class AuthRepositoryImpl implements AuthRepository {
   static const _minAgeYears = 18;
 
   @override
-  Stream<AppUser?> get authStateChanges => _remote.authStateChanges.asyncMap((user) async {
-    if (user == null) return null;
-    final dto = UserDto.fromFirebaseUser(
-      user.uid,
-      user.email ?? '',
-      displayName: user.displayName,
-      photoUrl: user.photoURL,
-      isEmailVerified: user.emailVerified,
-    );
-    await _local.cacheUser(dto);
-    return dto.toDomain();
-  });
+  Stream<AppUser?> get authStateChanges =>
+      _remote.authStateChanges.asyncMap((user) async {
+        if (user == null) return null;
+        final dto = UserDto.fromFirebaseUser(
+          user.uid,
+          user.email ?? '',
+          displayName: user.displayName,
+          photoUrl: user.photoURL,
+          isEmailVerified: user.emailVerified,
+        );
+        await _local.cacheUser(dto);
+        return dto.toDomain();
+      });
 
   @override
   AppUser? get currentUser {
@@ -40,7 +41,10 @@ class AuthRepositoryImpl implements AuthRepository {
   }
 
   @override
-  Future<AppUser> login({required String email, required String password}) async {
+  Future<AppUser> login({
+    required String email,
+    required String password,
+  }) async {
     final dto = await _remote.signInWithEmail(email, password);
     await _local.cacheUser(dto);
     return dto.toDomain();
@@ -82,7 +86,8 @@ class AuthRepositoryImpl implements AuthRepository {
   }
 
   @override
-  Future<void> resetPassword(String email) => _remote.sendPasswordResetEmail(email);
+  Future<void> resetPassword(String email) =>
+      _remote.sendPasswordResetEmail(email);
 
   @override
   Future<void> verifyEmail() => _remote.sendEmailVerification();
@@ -112,7 +117,10 @@ class AuthRepositoryImpl implements AuthRepository {
   void _verifyAge(DateTime dateOfBirth) {
     final age = DateTime.now().difference(dateOfBirth).inDays ~/ 365;
     if (age < _minAgeYears) {
-      throw AuthException(message: 'You must be $_minAgeYears or older', code: 'under-age');
+      throw AuthException(
+        message: 'You must be $_minAgeYears or older',
+        code: 'under-age',
+      );
     }
   }
 }

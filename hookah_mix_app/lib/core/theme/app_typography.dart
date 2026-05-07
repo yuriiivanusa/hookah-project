@@ -11,14 +11,38 @@ sealed class AppTypography {
       fontWeight: FontWeight.w400,
       letterSpacing: -0.25,
     ),
-    displayMedium: TextStyle(fontFamily: _fontFamily, fontSize: 45, fontWeight: FontWeight.w400),
-    displaySmall: TextStyle(fontFamily: _fontFamily, fontSize: 36, fontWeight: FontWeight.w400),
+    displayMedium: TextStyle(
+      fontFamily: _fontFamily,
+      fontSize: 45,
+      fontWeight: FontWeight.w400,
+    ),
+    displaySmall: TextStyle(
+      fontFamily: _fontFamily,
+      fontSize: 36,
+      fontWeight: FontWeight.w400,
+    ),
     // Headline
-    headlineLarge: TextStyle(fontFamily: _fontFamily, fontSize: 32, fontWeight: FontWeight.w600),
-    headlineMedium: TextStyle(fontFamily: _fontFamily, fontSize: 28, fontWeight: FontWeight.w600),
-    headlineSmall: TextStyle(fontFamily: _fontFamily, fontSize: 24, fontWeight: FontWeight.w600),
+    headlineLarge: TextStyle(
+      fontFamily: _fontFamily,
+      fontSize: 32,
+      fontWeight: FontWeight.w600,
+    ),
+    headlineMedium: TextStyle(
+      fontFamily: _fontFamily,
+      fontSize: 28,
+      fontWeight: FontWeight.w600,
+    ),
+    headlineSmall: TextStyle(
+      fontFamily: _fontFamily,
+      fontSize: 24,
+      fontWeight: FontWeight.w600,
+    ),
     // Title
-    titleLarge: TextStyle(fontFamily: _fontFamily, fontSize: 22, fontWeight: FontWeight.w500),
+    titleLarge: TextStyle(
+      fontFamily: _fontFamily,
+      fontSize: 22,
+      fontWeight: FontWeight.w500,
+    ),
     titleMedium: TextStyle(
       fontFamily: _fontFamily,
       fontSize: 16,

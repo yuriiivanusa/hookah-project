@@ -8,7 +8,8 @@ class MixBuilderRepositoryImpl implements MixBuilderRepository {
   final LocalMixesDatasource _datasource;
 
   @override
-  Future<List<UserMix>> getUserMixes(String userId) async => _datasource.getUserMixes();
+  Future<List<UserMix>> getUserMixes(String userId) async =>
+      _datasource.getUserMixes();
 
   @override
   Future<UserMix> createMix(UserMix mix) => _datasource.createMix(mix);
@@ -17,5 +18,6 @@ class MixBuilderRepositoryImpl implements MixBuilderRepository {
   Future<UserMix> updateMix(UserMix mix) => _datasource.updateMix(mix);
 
   @override
-  Future<void> deleteMix(String mixId, String userId) => _datasource.deleteMix(mixId);
+  Future<void> deleteMix(String mixId, String userId) =>
+      _datasource.deleteMix(mixId);
 }

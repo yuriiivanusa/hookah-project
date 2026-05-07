@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 import 'package:hookah_mix_master/core/extensions/async_value_extensions.dart';
 import 'package:hookah_mix_master/core/extensions/context_extensions.dart';
+import 'package:hookah_mix_master/core/router/routes.dart';
 import 'package:hookah_mix_master/features/mix_builder/presentation/providers/current_mix_state.dart';
 import 'package:hookah_mix_master/features/mix_builder/presentation/providers/mix_builder_notifier.dart';
 import 'package:hookah_mix_master/features/mix_builder/presentation/screens/save_mix_dialog.dart';
@@ -23,7 +25,18 @@ class MixBuilderScreen extends ConsumerWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(mixState.isEditing ? l10n.mixBuilderEditTitle : l10n.mixBuilderTitle),
+        leading: mixState.isEditing
+            ? IconButton(
+                icon: const Icon(Icons.arrow_back),
+                onPressed: () {
+                  notifier.reset();
+                  context.go(Routes.profile);
+                },
+              )
+            : null,
+        title: Text(
+          mixState.isEditing ? l10n.mixBuilderEditTitle : l10n.mixBuilderTitle,
+        ),
         actions: [
           if (mixState.isEditing)
             IconButton(
@@ -67,17 +80,23 @@ class MixBuilderScreen extends ConsumerWidget {
                   ...mixState.components.asMap().entries.map(
                     (e) => ComponentPercentageSlider(
                       component: e.value,
-                      onPercentageChanged: (v) =>
-                          notifier.updateComponentPercentage(e.key, v, tobaccos),
+                      onPercentageChanged: (v) => notifier
+                          .updateComponentPercentage(e.key, v, tobaccos),
                       onRemove: () => notifier.removeComponent(e.key),
                     ),
                   ),
                   if (!mixState.isPercentageValid)
                     Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 16,
+                        vertical: 4,
+                      ),
                       child: Text(
                         l10n.mixBuilderPercentageWarning,
-                        style: TextStyle(color: Theme.of(context).colorScheme.error, fontSize: 12),
+                        style: TextStyle(
+                          color: Theme.of(context).colorScheme.error,
+                          fontSize: 12,
+                        ),
                       ),
                     ),
                 ],
@@ -103,15 +122,20 @@ class MixBuilderScreen extends ConsumerWidget {
                         label: Text(l10n.mixBuilderAddTobacco),
                       ),
                     ),
-                  if (mixState.components.length < 5 && mixState.components.isNotEmpty)
+                  if (mixState.components.length < 5 &&
+                      mixState.components.isNotEmpty)
                     const SizedBox(width: 12),
                   if (mixState.components.isNotEmpty)
                     Expanded(
                       flex: 2,
                       child: FilledButton(
-                        onPressed: mixState.canSave ? () => _openSaveDialog(context, ref) : null,
+                        onPressed: mixState.canSave
+                            ? () => _openSaveDialog(context, ref)
+                            : null,
                         child: Text(
-                          mixState.isEditing ? l10n.mixBuilderUpdate : l10n.mixBuilderSave,
+                          mixState.isEditing
+                              ? l10n.mixBuilderUpdate
+                              : l10n.mixBuilderSave,
                         ),
                       ),
                     ),
@@ -130,6 +154,7 @@ class MixBuilderScreen extends ConsumerWidget {
       context: context,
       isScrollControlled: true,
       useSafeArea: true,
+      useRootNavigator: true,
       builder: (_) => DraggableScrollableSheet(
         expand: false,
         initialChildSize: 0.75,
@@ -140,7 +165,10 @@ class MixBuilderScreen extends ConsumerWidget {
   }
 
   Future<void> _openSaveDialog(BuildContext context, WidgetRef ref) async {
-    await showDialog<void>(context: context, builder: (_) => const SaveMixDialog());
+    await showDialog<void>(
+      context: context,
+      builder: (_) => const SaveMixDialog(),
+    );
   }
 
   Future<void> _confirmDelete(BuildContext context, WidgetRef ref) async {

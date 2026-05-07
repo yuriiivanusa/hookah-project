@@ -44,7 +44,10 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
     ref.listen(authProvider, (_, state) {
       if (state is AuthStateError) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text(state.message), backgroundColor: context.colorScheme.error),
+          SnackBar(
+            content: Text(state.message),
+            backgroundColor: context.colorScheme.error,
+          ),
         );
       }
     });
@@ -59,7 +62,10 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
                 const SizedBox(height: 48),
-                Text(context.l10n.authLoginTitle, style: context.textTheme.headlineMedium),
+                Text(
+                  context.l10n.authLoginTitle,
+                  style: context.textTheme.headlineMedium,
+                ),
                 const SizedBox(height: 32),
                 AppTextField(
                   label: context.l10n.authLoginEmail,

@@ -30,7 +30,9 @@ class ComponentPercentageSlider extends StatelessWidget {
                 Expanded(
                   child: Text(
                     component.tobaccoName,
-                    style: theme.textTheme.bodyMedium?.copyWith(fontWeight: FontWeight.w600),
+                    style: theme.textTheme.bodyMedium?.copyWith(
+                      fontWeight: FontWeight.w600,
+                    ),
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
                   ),
@@ -47,7 +49,10 @@ class ComponentPercentageSlider extends StatelessWidget {
                   onPressed: onRemove,
                   color: cs.onSurfaceVariant,
                   padding: EdgeInsets.zero,
-                  constraints: const BoxConstraints(minWidth: 36, minHeight: 36),
+                  constraints: const BoxConstraints(
+                    minWidth: 36,
+                    minHeight: 36,
+                  ),
                 ),
               ],
             ),

@@ -17,20 +17,28 @@ abstract final class PercentageValidator {
       return [components[0].copyWith(percentage: 100)];
     }
 
-    final others = components.asMap().entries.where((e) => e.key != changedIndex).toList();
+    final others = components
+        .asMap()
+        .entries
+        .where((e) => e.key != changedIndex)
+        .toList();
 
     final remaining = 100 - newValue;
     final othersTotal = others.fold(0, (sum, e) => sum + e.value.percentage);
 
     List<MixComponent> result = List.from(components);
-    result[changedIndex] = components[changedIndex].copyWith(percentage: newValue);
+    result[changedIndex] = components[changedIndex].copyWith(
+      percentage: newValue,
+    );
 
     if (othersTotal == 0) {
       final perItem = remaining ~/ others.length;
       final leftover = remaining - perItem * others.length;
       for (int i = 0; i < others.length; i++) {
         final idx = others[i].key;
-        result[idx] = components[idx].copyWith(percentage: perItem + (i == 0 ? leftover : 0));
+        result[idx] = components[idx].copyWith(
+          percentage: perItem + (i == 0 ? leftover : 0),
+        );
       }
     } else {
       int assigned = 0;

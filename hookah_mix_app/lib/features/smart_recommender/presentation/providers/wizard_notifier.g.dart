@@ -12,7 +12,8 @@ part of 'wizard_notifier.dart';
 @ProviderFor(WizardNotifier)
 final wizardProvider = WizardNotifierProvider._();
 
-final class WizardNotifierProvider extends $NotifierProvider<WizardNotifier, WizardState> {
+final class WizardNotifierProvider
+    extends $NotifierProvider<WizardNotifier, WizardState> {
   WizardNotifierProvider._()
     : super(
         from: null,

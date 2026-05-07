@@ -24,12 +24,19 @@ class AppButton extends StatelessWidget {
         ? const SizedBox(
             width: 20,
             height: 20,
-            child: CircularProgressIndicator(strokeWidth: 2, color: Colors.white),
+            child: CircularProgressIndicator(
+              strokeWidth: 2,
+              color: Colors.white,
+            ),
           )
         : icon != null
         ? Row(
             mainAxisSize: MainAxisSize.min,
-            children: [Icon(icon, size: 18), const SizedBox(width: 8), Text(label)],
+            children: [
+              Icon(icon, size: 18),
+              const SizedBox(width: 8),
+              Text(label),
+            ],
           )
         : Text(label);
 
@@ -42,7 +49,10 @@ class AppButton extends StatelessWidget {
         onPressed: isLoading ? null : onPressed,
         child: child,
       ),
-      AppButtonVariant.text => TextButton(onPressed: isLoading ? null : onPressed, child: child),
+      AppButtonVariant.text => TextButton(
+        onPressed: isLoading ? null : onPressed,
+        child: child,
+      ),
     };
   }
 }

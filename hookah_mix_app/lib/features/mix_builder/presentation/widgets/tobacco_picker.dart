@@ -84,7 +84,10 @@ class _TobaccoPickerTile extends ConsumerWidget {
       title: Text(tobacco.nameEn),
       subtitle: Text(tobacco.brandName),
       trailing: isAdded
-          ? Text(l10n.mixBuilderAlreadyAdded, style: TextStyle(color: cs.outline))
+          ? Text(
+              l10n.mixBuilderAlreadyAdded,
+              style: TextStyle(color: cs.outline),
+            )
           : FilledButton.tonal(
               onPressed: () {
                 ref.read(mixBuilderProvider.notifier).addComponent(tobacco);

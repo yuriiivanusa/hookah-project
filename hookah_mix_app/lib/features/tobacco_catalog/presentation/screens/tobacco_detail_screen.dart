@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 import 'package:hookah_mix_master/core/extensions/context_extensions.dart';
+import 'package:hookah_mix_master/core/router/routes.dart';
 import 'package:hookah_mix_master/core/theme/app_tokens.dart';
 import 'package:hookah_mix_master/core/widgets/error_view.dart';
+import 'package:hookah_mix_master/features/favorites/domain/entities/favorite_entry.dart';
+import 'package:hookah_mix_master/features/favorites/presentation/providers/favorites_notifier.dart';
+import 'package:hookah_mix_master/features/mix_builder/presentation/providers/mix_builder_notifier.dart';
 import 'package:hookah_mix_master/features/tobacco_catalog/domain/entities/tobacco.dart';
 import 'package:hookah_mix_master/features/tobacco_catalog/presentation/providers/tobacco_providers.dart';
 import 'package:hookah_mix_master/features/tobacco_catalog/presentation/widgets/taste_profile_radar.dart';
@@ -37,28 +42,42 @@ class TobaccoDetailScreen extends ConsumerWidget {
   }
 }
 
-class _TobaccoDetailBody extends StatelessWidget {
+class _TobaccoDetailBody extends ConsumerWidget {
   const _TobaccoDetailBody({required this.tobacco});
 
   final Tobacco tobacco;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     final theme = Theme.of(context);
     final l10n = context.l10n;
     final locale = Localizations.localeOf(context).languageCode;
+    final isFav = ref
+        .watch(favoritesProvider)
+        .any((e) => e.type == FavoriteType.tobacco && e.refId == tobacco.id);
+    final isInMix = ref
+        .watch(mixBuilderProvider)
+        .components
+        .any((c) => c.tobaccoId == tobacco.id);
 
     return SingleChildScrollView(
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          TobaccoImagePlaceholder(imageUrl: tobacco.imageUrl, width: double.infinity, height: 220),
+          TobaccoImagePlaceholder(
+            imageUrl: tobacco.imageUrl,
+            width: double.infinity,
+            height: 220,
+          ),
           Padding(
             padding: const EdgeInsets.all(16),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(tobacco.localName(locale), style: theme.textTheme.headlineSmall),
+                Text(
+                  tobacco.localName(locale),
+                  style: theme.textTheme.headlineSmall,
+                ),
                 const SizedBox(height: 4),
                 Text(
                   tobacco.brandName,
@@ -72,12 +91,21 @@ class _TobaccoDetailBody extends StatelessWidget {
                   value: '${tobacco.brandName} · ${tobacco.brandCountry}',
                 ),
                 const SizedBox(height: 4),
-                _InfoRow(label: l10n.catalogFilterStrength, value: '${tobacco.strength} / 5'),
+                _InfoRow(
+                  label: l10n.catalogFilterStrength,
+                  value: '${tobacco.strength} / 5',
+                ),
                 const SizedBox(height: 16),
-                Text(tobacco.localDescription(locale), style: theme.textTheme.bodyMedium),
+                Text(
+                  tobacco.localDescription(locale),
+                  style: theme.textTheme.bodyMedium,
+                ),
                 const SizedBox(height: 24),
                 if (tobacco.tasteNotes.isNotEmpty) ...[
-                  Text(l10n.catalogFlavorNotes, style: theme.textTheme.titleSmall),
+                  Text(
+                    l10n.catalogFlavorNotes,
+                    style: theme.textTheme.titleSmall,
+                  ),
                   const SizedBox(height: 8),
                   Wrap(
                     spacing: 8,
@@ -94,25 +122,67 @@ class _TobaccoDetailBody extends StatelessWidget {
                   ),
                   const SizedBox(height: 24),
                 ],
-                Center(child: TasteProfileRadar(profile: tobacco.tasteProfile, size: 220)),
+                Center(
+                  child: TasteProfileRadar(
+                    profile: tobacco.tasteProfile,
+                    size: 220,
+                  ),
+                ),
                 const SizedBox(height: 32),
                 SizedBox(
                   width: double.infinity,
                   child: FilledButton.icon(
-                    icon: const Icon(Icons.science_outlined),
-                    label: Text(l10n.catalogAddToMix),
-                    onPressed: () {},
+                    icon: Icon(
+                      isInMix
+                          ? Icons.remove_circle_outline
+                          : Icons.science_outlined,
+                    ),
+                    label: Text(
+                      isInMix
+                          ? l10n.catalogRemoveFromMix
+                          : l10n.catalogAddToMix,
+                    ),
+                    onPressed: () {
+                      if (isInMix) {
+                        final idx = ref
+                            .read(mixBuilderProvider)
+                            .components
+                            .indexWhere((c) => c.tobaccoId == tobacco.id);
+                        if (idx != -1) {
+                          ref
+                              .read(mixBuilderProvider.notifier)
+                              .removeComponent(idx);
+                        }
+                      } else {
+                        ref
+                            .read(mixBuilderProvider.notifier)
+                            .addComponent(tobacco);
+                        context.go(Routes.builder);
+                      }
+                    },
                   ),
                 ),
                 const SizedBox(height: 12),
                 SizedBox(
                   width: double.infinity,
                   child: OutlinedButton.icon(
-                    icon: const Icon(Icons.favorite_outline),
-                    label: Text(l10n.catalogAddToFavorites),
-                    onPressed: () {},
+                    icon: Icon(isFav ? Icons.favorite : Icons.favorite_outline),
+                    label: Text(
+                      isFav
+                          ? l10n.catalogRemoveFromFavorites
+                          : l10n.catalogAddToFavorites,
+                    ),
+                    onPressed: () => ref
+                        .read(favoritesProvider.notifier)
+                        .toggle(
+                          FavoriteType.tobacco,
+                          tobacco.id,
+                          tobacco.localName(locale),
+                        ),
                     style: OutlinedButton.styleFrom(
-                      shape: const RoundedRectangleBorder(borderRadius: AppTokens.borderRadiusMd),
+                      shape: const RoundedRectangleBorder(
+                        borderRadius: AppTokens.borderRadiusMd,
+                      ),
                     ),
                   ),
                 ),
@@ -138,7 +208,9 @@ class _InfoRow extends StatelessWidget {
       children: [
         Text(
           '$label: ',
-          style: theme.textTheme.bodySmall?.copyWith(color: theme.colorScheme.onSurfaceVariant),
+          style: theme.textTheme.bodySmall?.copyWith(
+            color: theme.colorScheme.onSurfaceVariant,
+          ),
         ),
         Text(value, style: theme.textTheme.bodySmall),
       ],

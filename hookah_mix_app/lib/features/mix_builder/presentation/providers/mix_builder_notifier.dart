@@ -18,7 +18,7 @@ MixBuilderRepository mixBuilderRepository(Ref ref) {
   return MixBuilderRepositoryImpl(ds);
 }
 
-@riverpod
+@Riverpod(keepAlive: true)
 class MixBuilderNotifier extends _$MixBuilderNotifier {
   @override
   CurrentMixState build() => const CurrentMixState();
@@ -51,22 +51,35 @@ class MixBuilderNotifier extends _$MixBuilderNotifier {
     _recalcProfile(scaled, []);
   }
 
-  void updateComponentPercentage(int index, int newValue, List<Tobacco> tobaccos) {
+  void updateComponentPercentage(
+    int index,
+    int newValue,
+    List<Tobacco> tobaccos,
+  ) {
     final clamped = newValue.clamp(1, 99);
-    final scaled = PercentageValidator.autoScale(state.components, index, clamped);
+    final scaled = PercentageValidator.autoScale(
+      state.components,
+      index,
+      clamped,
+    );
     state = state.copyWith(components: scaled);
     _recalcProfile(scaled, tobaccos);
   }
 
   void setMixName(String name) => state = state.copyWith(name: name);
 
-  void setMixDescription(String description) => state = state.copyWith(description: description);
+  void setMixDescription(String description) =>
+      state = state.copyWith(description: description);
 
-  void setMixRating(int rating) => state = state.copyWith(rating: rating.clamp(0, 5));
+  void setMixRating(int rating) =>
+      state = state.copyWith(rating: rating.clamp(0, 5));
 
   Future<UserMix?> saveMix() async {
     if (!state.canSave) return null;
-    state = state.copyWith(saveStatus: MixSaveStatus.saving, errorMessage: null);
+    state = state.copyWith(
+      saveStatus: MixSaveStatus.saving,
+      errorMessage: null,
+    );
     try {
       final repo = ref.read(mixBuilderRepositoryProvider);
       final now = DateTime.now();
@@ -81,11 +94,16 @@ class MixBuilderNotifier extends _$MixBuilderNotifier {
         createdAt: now,
         updatedAt: now,
       );
-      final saved = state.isEditing ? await repo.updateMix(mix) : await repo.createMix(mix);
+      final saved = state.isEditing
+          ? await repo.updateMix(mix)
+          : await repo.createMix(mix);
       state = state.copyWith(saveStatus: MixSaveStatus.saved);
       return saved;
     } catch (e) {
-      state = state.copyWith(saveStatus: MixSaveStatus.error, errorMessage: e.toString());
+      state = state.copyWith(
+        saveStatus: MixSaveStatus.error,
+        errorMessage: e.toString(),
+      );
       return null;
     }
   }
@@ -108,7 +126,9 @@ class MixBuilderNotifier extends _$MixBuilderNotifier {
     final perItem = 100 ~/ components.length;
     final leftover = 100 - perItem * components.length;
     return components.asMap().entries.map((e) {
-      return e.value.copyWith(percentage: perItem + (e.key == 0 ? leftover : 0));
+      return e.value.copyWith(
+        percentage: perItem + (e.key == 0 ? leftover : 0),
+      );
     }).toList();
   }
 

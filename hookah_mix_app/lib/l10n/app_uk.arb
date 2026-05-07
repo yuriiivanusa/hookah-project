@@ -70,6 +70,8 @@
   "catalogTobaccoDetailTitle": "Деталі тютюну",
   "catalogAddToFavorites": "Додати до улюблених",
   "catalogRemoveFromFavorites": "Видалити з улюблених",
+  "catalogAddToMixDone": "Додано до міксу",
+  "catalogRemoveFromMix": "Прибрати з міксу",
   "catalogAddToMix": "Додати до міксу",
   "catalogFlavorNotes": "Смакові ноти",
   "catalogNicotineContent": "Нікотин",
@@ -183,5 +185,9 @@
   "mixBuilderComponentsLabel": "Компоненти",
   "mixBuilderMyMixes": "Мої мікси",
   "mixBuilderEmptyMixes": "Збережених міксів ще немає",
-  "mixBuilderCreateFirst": "Створіть свій перший мікс"
+  "mixBuilderCreateFirst": "Створіть свій перший мікс",
+
+  "mixHistorySortDate": "Спочатку нові",
+  "mixHistorySortRating": "За рейтингом",
+  "mixHistorySortName": "За назвою (А–Я)"
 }

@@ -13,10 +13,12 @@ class MixComponentDto {
   final String tobaccoId;
   final int percentage;
 
-  factory MixComponentDto.fromJson(Map<String, dynamic> json) => _$MixComponentDtoFromJson(json);
+  factory MixComponentDto.fromJson(Map<String, dynamic> json) =>
+      _$MixComponentDtoFromJson(json);
   Map<String, dynamic> toJson() => _$MixComponentDtoToJson(this);
 
-  MixComponent toDomain() => MixComponent(tobaccoId: tobaccoId, percentage: percentage);
+  MixComponent toDomain() =>
+      MixComponent(tobaccoId: tobaccoId, percentage: percentage);
 }
 
 @JsonSerializable()
@@ -43,7 +45,8 @@ class TasteProfileDto2 {
   @JsonKey(defaultValue: 0)
   final int floral;
 
-  factory TasteProfileDto2.fromJson(Map<String, dynamic> json) => _$TasteProfileDto2FromJson(json);
+  factory TasteProfileDto2.fromJson(Map<String, dynamic> json) =>
+      _$TasteProfileDto2FromJson(json);
   Map<String, dynamic> toJson() => _$TasteProfileDto2ToJson(this);
 
   TasteProfile toDomain() => TasteProfile(
@@ -83,11 +86,14 @@ class CuratedMixDto {
   final List<String> tags;
   final int popularity;
 
-  factory CuratedMixDto.fromJson(Map<String, dynamic> json) => _$CuratedMixDtoFromJson(json);
+  factory CuratedMixDto.fromJson(Map<String, dynamic> json) =>
+      _$CuratedMixDtoFromJson(json);
   Map<String, dynamic> toJson() => _$CuratedMixDtoToJson(this);
 
-  factory CuratedMixDto.fromFirestore(String docId, Map<String, dynamic> data) =>
-      CuratedMixDto.fromJson({...data, 'id': docId});
+  factory CuratedMixDto.fromFirestore(
+    String docId,
+    Map<String, dynamic> data,
+  ) => CuratedMixDto.fromJson({...data, 'id': docId});
 
   CuratedMix toDomain() => CuratedMix(
     id: id,

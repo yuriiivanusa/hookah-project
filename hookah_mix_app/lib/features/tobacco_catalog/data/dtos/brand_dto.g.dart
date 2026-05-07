@@ -10,10 +10,14 @@ BrandDto _$BrandDtoFromJson(Map<String, dynamic> json) => BrandDto(
   id: json['id'] as String,
   name: json['name'] as String,
   country: json['country'] as String,
-  countryName: LocalizedString.fromJson(json['countryName'] as Map<String, dynamic>),
+  countryName: LocalizedString.fromJson(
+    json['countryName'] as Map<String, dynamic>,
+  ),
   leafType: json['leafType'] as String,
   foundedYear: (json['foundedYear'] as num?)?.toInt(),
-  description: LocalizedString.fromJson(json['description'] as Map<String, dynamic>),
+  description: LocalizedString.fromJson(
+    json['description'] as Map<String, dynamic>,
+  ),
   popularity: (json['popularity'] as num).toInt(),
 );
 

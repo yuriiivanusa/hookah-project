@@ -54,7 +54,8 @@ class AppLocalizationsUk extends AppLocalizations {
   String get authAgeGateTitle => 'Підтвердіть вік';
 
   @override
-  String get authAgeGateBody => 'Вам має бути не менше 18 років для використання цього додатку';
+  String get authAgeGateBody =>
+      'Вам має бути не менше 18 років для використання цього додатку';
 
   @override
   String get authAgeGateConfirm => 'Мені є 18 або більше';
@@ -138,7 +139,8 @@ class AppLocalizationsUk extends AppLocalizations {
   String get authGuestModeTitle => 'Гостьовий режим';
 
   @override
-  String get authGuestModeBody => 'Увійдіть, щоб зберігати улюблені та створювати мікси.';
+  String get authGuestModeBody =>
+      'Увійдіть, щоб зберігати улюблені та створювати мікси.';
 
   @override
   String get authGuestSignIn => 'Увійти';
@@ -205,6 +207,12 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get catalogRemoveFromFavorites => 'Видалити з улюблених';
+
+  @override
+  String get catalogAddToMixDone => 'Додано до міксу';
+
+  @override
+  String get catalogRemoveFromMix => 'Прибрати з міксу';
 
   @override
   String get catalogAddToMix => 'Додати до міксу';
@@ -339,7 +347,8 @@ class AppLocalizationsUk extends AppLocalizations {
   String get builderEmptyState => 'Додайте тютюн щоб почати створювати мікс';
 
   @override
-  String get builderErrorExceeds100 => 'Сума відсотків не може перевищувати 100%';
+  String get builderErrorExceeds100 =>
+      'Сума відсотків не може перевищувати 100%';
 
   @override
   String get builderErrorMaxComponents => 'Максимум 5 компонентів у міксі';
@@ -426,7 +435,8 @@ class AppLocalizationsUk extends AppLocalizations {
   String get errorNetworkTitle => 'Помилка з\'єднання';
 
   @override
-  String get errorNetworkBody => 'Перевірте підключення до інтернету та спробуйте знову';
+  String get errorNetworkBody =>
+      'Перевірте підключення до інтернету та спробуйте знову';
 
   @override
   String get errorPermissionDenied => 'Доступ заборонено';
@@ -444,7 +454,8 @@ class AppLocalizationsUk extends AppLocalizations {
   String get mixBuilderAddTobacco => 'Додати табак';
 
   @override
-  String get mixBuilderNoComponents => 'Додайте щонайменше 2 табаки для створення міксу';
+  String get mixBuilderNoComponents =>
+      'Додайте щонайменше 2 табаки для створення міксу';
 
   @override
   String get mixBuilderTastePreview => 'Смаковий профіль';
@@ -519,4 +530,13 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get mixBuilderCreateFirst => 'Створіть свій перший мікс';
+
+  @override
+  String get mixHistorySortDate => 'Спочатку нові';
+
+  @override
+  String get mixHistorySortRating => 'За рейтингом';
+
+  @override
+  String get mixHistorySortName => 'За назвою (А–Я)';
 }

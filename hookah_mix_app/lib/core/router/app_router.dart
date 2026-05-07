@@ -10,7 +10,10 @@ import 'package:hookah_mix_master/features/auth/presentation/screens/forgot_pass
 import 'package:hookah_mix_master/features/auth/presentation/screens/login_screen.dart';
 import 'package:hookah_mix_master/features/auth/presentation/screens/signup_screen.dart';
 import 'package:hookah_mix_master/features/auth/presentation/screens/splash_screen.dart';
+import 'package:hookah_mix_master/features/favorites/presentation/screens/favorites_screen.dart';
 import 'package:hookah_mix_master/features/mix_builder/presentation/screens/mix_builder_screen.dart';
+import 'package:hookah_mix_master/features/mix_history/presentation/screens/mix_history_screen.dart';
+import 'package:hookah_mix_master/features/profile/presentation/screens/profile_screen.dart';
 import 'package:hookah_mix_master/features/smart_recommender/presentation/screens/recommender_screen.dart';
 import 'package:hookah_mix_master/features/tobacco_catalog/presentation/screens/catalog_screen.dart';
 import 'package:hookah_mix_master/features/tobacco_catalog/presentation/screens/tobacco_detail_screen.dart';
@@ -27,10 +30,22 @@ GoRouter appRouter(Ref ref) {
       matchedLocation: state.matchedLocation,
     ),
     routes: [
-      GoRoute(path: Routes.splash, builder: (context, state) => const SplashScreen()),
-      GoRoute(path: Routes.ageGate, builder: (context, state) => const AgeGateScreen()),
-      GoRoute(path: Routes.login, builder: (context, state) => const LoginScreen()),
-      GoRoute(path: Routes.signup, builder: (context, state) => const SignupScreen()),
+      GoRoute(
+        path: Routes.splash,
+        builder: (context, state) => const SplashScreen(),
+      ),
+      GoRoute(
+        path: Routes.ageGate,
+        builder: (context, state) => const AgeGateScreen(),
+      ),
+      GoRoute(
+        path: Routes.login,
+        builder: (context, state) => const LoginScreen(),
+      ),
+      GoRoute(
+        path: Routes.signup,
+        builder: (context, state) => const SignupScreen(),
+      ),
       GoRoute(
         path: Routes.forgotPassword,
         builder: (context, state) => const ForgotPasswordScreen(),
@@ -49,15 +64,27 @@ GoRouter appRouter(Ref ref) {
               ),
             ],
           ),
-          GoRoute(path: Routes.recommender, builder: (context, state) => const RecommenderScreen()),
-          GoRoute(path: Routes.builder, builder: (context, state) => const MixBuilderScreen()),
+          GoRoute(
+            path: Routes.recommender,
+            builder: (context, state) => const RecommenderScreen(),
+          ),
+          GoRoute(
+            path: Routes.builder,
+            builder: (context, state) => const MixBuilderScreen(),
+          ),
           GoRoute(
             path: Routes.favorites,
-            builder: (context, state) => const _PlaceholderScreen(label: 'Favorites'),
+            builder: (context, state) => const FavoritesScreen(),
           ),
           GoRoute(
             path: Routes.profile,
-            builder: (context, state) => const _PlaceholderScreen(label: 'Profile'),
+            builder: (context, state) => const ProfileScreen(),
+            routes: [
+              GoRoute(
+                path: 'history',
+                builder: (context, state) => const MixHistoryScreen(),
+              ),
+            ],
           ),
         ],
       ),
@@ -89,10 +116,22 @@ class _AppShell extends ConsumerWidget {
             icon: Icon(Icons.local_fire_department_outlined),
             label: 'Catalog',
           ),
-          BottomNavigationBarItem(icon: Icon(Icons.auto_awesome_outlined), label: 'Recommender'),
-          BottomNavigationBarItem(icon: Icon(Icons.science_outlined), label: 'Builder'),
-          BottomNavigationBarItem(icon: Icon(Icons.favorite_outline), label: 'Favorites'),
-          BottomNavigationBarItem(icon: Icon(Icons.person_outline), label: 'Profile'),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.auto_awesome_outlined),
+            label: 'Recommender',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.science_outlined),
+            label: 'Builder',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.favorite_outline),
+            label: 'Favorites',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.person_outline),
+            label: 'Profile',
+          ),
         ],
       ),
     );
@@ -117,16 +156,4 @@ class _AppShell extends ConsumerWidget {
     ][index];
     context.go(path);
   }
-}
-
-class _PlaceholderScreen extends StatelessWidget {
-  const _PlaceholderScreen({required this.label});
-
-  final String label;
-
-  @override
-  Widget build(BuildContext context) => Scaffold(
-    appBar: AppBar(title: Text(label)),
-    body: Center(child: Text(label, style: Theme.of(context).textTheme.headlineMedium)),
-  );
 }

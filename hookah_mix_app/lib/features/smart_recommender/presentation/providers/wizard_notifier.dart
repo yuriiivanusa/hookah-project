@@ -18,7 +18,8 @@ class WizardNotifier extends _$WizardNotifier {
     state = state.copyWith(selectedFlavors: current);
   }
 
-  void setStrength(int strength) => state = state.copyWith(strengthPreference: strength);
+  void setStrength(int strength) =>
+      state = state.copyWith(strengthPreference: strength);
 
   void setPersona(String persona) => state = state.copyWith(persona: persona);
 

@@ -1,80 +1,13 @@
-# Spec Kit & Claude AI tooling (auto-generated, not tracked)
-.specify/
+# Firebase emulator data
+.firebase/
+firestore-debug.log
+ui-debug.log
+
+# Node modules for rules tests
+firestore-rules-tests/node_modules/
+firestore-rules-tests/package-lock.json
+
+# Tool metadata
 .claude/
-
-# Flutter / Dart
-hookah_mix_app/build/
-hookah_mix_app/.dart_tool/
-hookah_mix_app/.flutter-plugins
-hookah_mix_app/.flutter-plugins-dependencies
-hookah_mix_app/.packages
-hookah_mix_app/coverage/
-hookah_mix_app/.generated/
-
-# Firebase
-hookah_mix_app/lib/firebase_options.dart
-google-services.json
-GoogleService-Info.plist
-
-# Environment & Secrets
-.env
-.env.local
-.env.*.local
-serviceAccountKey.json
-*.keystore
-*.jks
-
-# IDE & Editor
-.idea/
-.vscode/
-*.swp
-*.swo
-*.iml
-*.sublime-workspace
-.DS_Store
-
-# Python (data-pipeline)
-hookah-data-pipeline/venv/
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-env/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-hookah-data-pipeline/lib/
-hookah-data-pipeline/lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-
-# OS
-Thumbs.db
-.AppleDouble
-.LSOverride
-*.tmp
-
-# Temporary files
-*.bak
-*.swp
-*~
-.#*
-
-# iOS build artifacts
-ios/Pods/
-ios/Podfile.lock
-ios/Flutter/Flutter.framework
-ios/Flutter/Flutter.podspec
-
-# Android build artifacts
-android/.gradle/
-android/local.properties
-android/build/
+hookah_mix_app/.claude/
+hookah_mix_app/.specify/

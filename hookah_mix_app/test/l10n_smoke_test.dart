@@ -55,5 +55,18 @@ void main() {
       expect(en.generalError, isNotEmpty);
       expect(uk.generalError, isNotEmpty);
     });
+
+    test('nav keys', () {
+      expect(en.navCatalog, isNotEmpty);
+      expect(uk.navCatalog, isNotEmpty);
+      expect(en.navRecommender, isNotEmpty);
+      expect(uk.navRecommender, isNotEmpty);
+      expect(en.navBuilder, isNotEmpty);
+      expect(uk.navBuilder, isNotEmpty);
+      expect(en.navFavorites, isNotEmpty);
+      expect(uk.navFavorites, isNotEmpty);
+      expect(en.navProfile, isNotEmpty);
+      expect(uk.navProfile, isNotEmpty);
+    });
   });
 }

@@ -1147,6 +1147,36 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Name (A–Z)'**
   String get mixHistorySortName;
+
+  /// No description provided for @navCatalog.
+  ///
+  /// In en, this message translates to:
+  /// **'Catalog'**
+  String get navCatalog;
+
+  /// No description provided for @navRecommender.
+  ///
+  /// In en, this message translates to:
+  /// **'For You'**
+  String get navRecommender;
+
+  /// No description provided for @navBuilder.
+  ///
+  /// In en, this message translates to:
+  /// **'Mixer'**
+  String get navBuilder;
+
+  /// No description provided for @navFavorites.
+  ///
+  /// In en, this message translates to:
+  /// **'Favorites'**
+  String get navFavorites;
+
+  /// No description provided for @navProfile.
+  ///
+  /// In en, this message translates to:
+  /// **'Profile'**
+  String get navProfile;
 }
 
 class _AppLocalizationsDelegate

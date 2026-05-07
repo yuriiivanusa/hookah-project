@@ -11,6 +11,7 @@ String? authGuard({required bool isLoggedIn, required String matchedLocation}) {
   final isPublic = publicRoutes.contains(matchedLocation);
 
   if (!isLoggedIn && !isPublic) return Routes.login;
-  if (isLoggedIn && isPublic) return Routes.catalog;
+  if (isLoggedIn && isPublic && matchedLocation != Routes.splash)
+    return Routes.catalog;
   return null;
 }

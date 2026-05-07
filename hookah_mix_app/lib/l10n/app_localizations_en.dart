@@ -538,4 +538,19 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get mixHistorySortName => 'Name (A–Z)';
+
+  @override
+  String get navCatalog => 'Catalog';
+
+  @override
+  String get navRecommender => 'For You';
+
+  @override
+  String get navBuilder => 'Mixer';
+
+  @override
+  String get navFavorites => 'Favorites';
+
+  @override
+  String get navProfile => 'Profile';
 }

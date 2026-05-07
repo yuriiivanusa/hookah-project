@@ -67,6 +67,34 @@ dev_dependencies:
   fake_cloud_firestore: ^3.1.0
   firebase_auth_mocks: ^0.14.1
 
+  # App icon & splash
+  flutter_launcher_icons: ^0.14.3
+  flutter_native_splash: ^2.4.5
+
 flutter:
   uses-material-design: true
   generate: true
+
+  assets:
+    - assets/icon/
+    - assets/splash/
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/icon.png"
+  adaptive_icon_background: "#1A1612"
+  adaptive_icon_foreground: "assets/icon/icon.png"
+  remove_alpha_ios: true
+  min_sdk_android: 21
+  web:
+    generate: false
+
+flutter_native_splash:
+  color: "#120F0C"
+  image: assets/splash/splash.png
+  android_12:
+    color: "#120F0C"
+    image: assets/splash/splash.png
+    icon_background_color: "#1A1612"
+  fullscreen: false

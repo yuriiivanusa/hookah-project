@@ -148,7 +148,7 @@ class _MixTile extends ConsumerWidget {
         borderRadius: BorderRadius.vertical(top: Radius.circular(16)),
       ),
       builder: (ctx) => SafeArea(
-        bottom:true,
+        bottom: true,
         child: Padding(
           padding: const EdgeInsets.fromLTRB(20, 20, 20, 32),
           child: Column(

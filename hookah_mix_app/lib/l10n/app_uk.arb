@@ -189,5 +189,11 @@
 
   "mixHistorySortDate": "Спочатку нові",
   "mixHistorySortRating": "За рейтингом",
-  "mixHistorySortName": "За назвою (А–Я)"
+  "mixHistorySortName": "За назвою (А–Я)",
+
+  "navCatalog": "Каталог",
+  "navRecommender": "Для вас",
+  "navBuilder": "Міксер",
+  "navFavorites": "Улюблені",
+  "navProfile": "Профіль"
 }

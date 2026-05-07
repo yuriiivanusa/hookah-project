@@ -539,4 +539,19 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get mixHistorySortName => 'За назвою (А–Я)';
+
+  @override
+  String get navCatalog => 'Каталог';
+
+  @override
+  String get navRecommender => 'Для вас';
+
+  @override
+  String get navBuilder => 'Міксер';
+
+  @override
+  String get navFavorites => 'Улюблені';
+
+  @override
+  String get navProfile => 'Профіль';
 }

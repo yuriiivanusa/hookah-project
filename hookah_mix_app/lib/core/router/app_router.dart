@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import 'package:hookah_mix_master/core/extensions/context_extensions.dart';
 import 'package:hookah_mix_master/core/router/auth_guard.dart';
 import 'package:hookah_mix_master/core/router/routes.dart';
 import 'package:hookah_mix_master/core/services/providers.dart';
@@ -106,31 +107,37 @@ class _AppShell extends ConsumerWidget {
     final location = GoRouterState.of(context).matchedLocation;
     final currentIndex = _indexForLocation(location);
 
+    final l10n = context.l10n;
     return Scaffold(
       body: child,
-      bottomNavigationBar: BottomNavigationBar(
-        currentIndex: currentIndex,
-        onTap: (i) => _onTap(context, i),
-        items: const [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.local_fire_department_outlined),
-            label: 'Catalog',
+      bottomNavigationBar: NavigationBar(
+        selectedIndex: currentIndex,
+        onDestinationSelected: (i) => _onTap(context, i),
+        destinations: [
+          NavigationDestination(
+            icon: const Icon(Icons.local_fire_department_outlined),
+            selectedIcon: const Icon(Icons.local_fire_department),
+            label: l10n.navCatalog,
           ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.auto_awesome_outlined),
-            label: 'Recommender',
+          NavigationDestination(
+            icon: const Icon(Icons.auto_awesome_outlined),
+            selectedIcon: const Icon(Icons.auto_awesome),
+            label: l10n.navRecommender,
           ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.science_outlined),
-            label: 'Builder',
+          NavigationDestination(
+            icon: const Icon(Icons.science_outlined),
+            selectedIcon: const Icon(Icons.science),
+            label: l10n.navBuilder,
           ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.favorite_outline),
-            label: 'Favorites',
+          NavigationDestination(
+            icon: const Icon(Icons.favorite_outline),
+            selectedIcon: const Icon(Icons.favorite),
+            label: l10n.navFavorites,
           ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.person_outline),
-            label: 'Profile',
+          NavigationDestination(
+            icon: const Icon(Icons.person_outline),
+            selectedIcon: const Icon(Icons.person),
+            label: l10n.navProfile,
           ),
         ],
       ),

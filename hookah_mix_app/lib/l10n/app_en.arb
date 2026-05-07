@@ -189,5 +189,11 @@
 
   "mixHistorySortDate": "Newest first",
   "mixHistorySortRating": "Highest rated",
-  "mixHistorySortName": "Name (A–Z)"
+  "mixHistorySortName": "Name (A–Z)",
+
+  "navCatalog": "Catalog",
+  "navRecommender": "For You",
+  "navBuilder": "Mixer",
+  "navFavorites": "Favorites",
+  "navProfile": "Profile"
 }

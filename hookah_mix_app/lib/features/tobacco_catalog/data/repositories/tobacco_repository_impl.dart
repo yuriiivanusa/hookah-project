@@ -29,7 +29,17 @@ class TobaccoRepositoryImpl implements TobaccoRepository {
         return cached.map((d) => d.toDomain()).toList();
       }
     }
-    return _fetchAndCache();
+    try {
+      return await _fetchAndCache();
+    } catch (_) {
+      final stale = _local.getCachedTobaccos();
+      if (stale != null) {
+        _tobaccoCache = stale;
+        _brandCache = _local.getCachedBrands();
+        return stale.map((d) => d.toDomain()).toList();
+      }
+      rethrow;
+    }
   }
 
   @override

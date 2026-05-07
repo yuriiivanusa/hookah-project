@@ -62,6 +62,7 @@ void main() {
 
     when(() => local.isCacheValid()).thenReturn(false);
     when(() => local.getCachedTobaccos()).thenReturn(null);
+    when(() => local.getCachedBrands()).thenReturn(null);
     when(() => remote.getTobaccos()).thenAnswer((_) async => [sampleDto]);
     when(() => remote.getBrands()).thenAnswer((_) async => [sampleBrand]);
     when(() => remote.getCatalogVersion()).thenAnswer((_) async => '1.0.0');
@@ -83,6 +84,25 @@ void main() {
       await sut.getTobaccos();
       await sut.getTobaccos();
       verify(() => remote.getTobaccos()).called(1);
+    });
+
+    test('falls back to stale Hive cache when remote throws', () async {
+      when(() => remote.getTobaccos()).thenThrow(Exception('network error'));
+      when(() => local.getCachedTobaccos()).thenReturn([sampleDto]);
+      when(() => local.getCachedBrands()).thenReturn([sampleBrand]);
+
+      final result = await sut.getTobaccos();
+
+      expect(result.length, 1);
+      expect(result.first.nameEn, 'Blue Mist');
+      verify(() => remote.getTobaccos()).called(1);
+    });
+
+    test('rethrows when remote throws and no stale cache exists', () async {
+      when(() => remote.getTobaccos()).thenThrow(Exception('network error'));
+      when(() => local.getCachedTobaccos()).thenReturn(null);
+
+      expect(() => sut.getTobaccos(), throwsException);
     });
   });
 
